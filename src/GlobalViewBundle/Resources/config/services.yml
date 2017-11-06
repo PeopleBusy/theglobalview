@@ -1,0 +1,4 @@
+services:
+#    global_view.example:
+#        class: GlobalViewBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -113,6 +113,15 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // global_view_homepage
+        if ('' === $trimmedPathinfo) {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'global_view_homepage');
+            }
+
+            return array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::indexAction',  '_route' => 'global_view_homepage',);
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             if (substr($pathinfo, -1) !== '/') {

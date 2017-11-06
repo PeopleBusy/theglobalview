@@ -1,0 +1,137 @@
+/* FRAME
+============================================================================= */
+.frame {    
+        background-color: white;
+        border          : 1px solid @light-border;
+        padding         : 4px;
+
+        &.thick     { padding       : 9px }    
+
+        > * {
+                max-width: 100%;
+                overflow: hidden;
+        }
+        
+        > h4, 
+        > .post-meta {
+                overflow: visible; 
+        }
+        
+        iframe, embed { width: 100% }
+        
+        .featured-media {
+                margin          : 0 0 10px;
+                position        : relative;
+                font-family     : @headings-font;
+                font-size       : 20px;
+                
+                &.quote,
+                &.link,
+                &.status,
+                &.aside,
+                &.chat {              
+                        background      : @lighter-bg; 
+                        padding         : 15px;  
+                                                
+                        &:after {
+                                color           : darken(@lighter-bg, 4%);
+                                font-family     : FontAwesome;
+                                position        : absolute;
+                                bottom          : 0;
+                                right           : 4px;
+                                font-size       : 40px;
+                                line-height     : 1;
+                        }
+                        
+                        
+                        &, p { line-height: 1.4 }
+                        p:last-child { margin-bottom: 0 }
+                }
+                
+                &.quote blockquote,
+                &.link a,
+                &.status .status-content,
+                &.aside .aside-content,
+                &.chat .chat-content {
+                        position: relative;
+                        z-index : 1;
+                }
+                
+                &.quote {
+                        &:after { content: '\f10e'; }                        
+                        blockquote { 
+                                margin          : 0;
+                                border-color    : darken(@lighter-bg, 6%);
+                        }
+                }
+                
+                &.link {
+                        font-size       : 30px;
+                        display         : block;
+                        
+                        &:after { 
+                                content         : '\f08e'; 
+                        }
+                }
+                
+                &.status {      
+                        .status-content {
+                                padding         : 15px;
+                                border-left     : 4px dotted darken(@lighter-bg, 6%);
+                                
+                                &:before { 
+                                        content         : '\f068';
+                                        color           : darken(@lighter-bg, 6%);
+                                        font-family     : FontAwesome;
+                                        position        : absolute;
+                                        left            : -10px;
+                                }
+                        }
+                        
+                        &:after { content: '\f044'  }
+                }
+                
+                &.aside {                   
+                        &:after { content: '\f192'; }
+                }
+                
+                &.chat {                  
+                        background      : none;
+                        padding         : 0;
+                        
+                        &:after { content: '\f0e6'; }
+                        
+                        p {
+                                margin  : 0;
+                                padding : 15px;
+                                
+                                &:nth-child(odd) {
+                                        background: fade( darken(@lighter-bg, 4%), 40% );
+                                }
+                        }
+                }
+                
+                &.gallery {
+                        img.shadow { display: none }                        
+                        .frame { 
+                                padding : 0;
+                                border  : 0;
+                        }
+                }
+        }
+}
+.flat-style .frame { margin-bottom: 15px }
+
+iframe {
+        border      : none;
+        overflow    : hidden; 
+        max-width   : 100%;
+}
+
+/* SHADOW
+============================================================================= */
+.shadow { 
+        float           : left;
+        width           : 100%;
+        margin-bottom   : 10px;
+}

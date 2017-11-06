@@ -1,0 +1,61 @@
+/* MIXINS 
+========= */
+.box-shadow(@offset-x: 0, @offset-y: 1px, @blur-radius: 1px, @spread-radius: 0, @color: rgba(0, 0, 0, .12)) {
+     -webkit-box-shadow : @arguments;
+    -moz-box-shadow     : @arguments;
+    box-shadow          : @arguments;
+}
+
+.box-shadow-inset(@offset-x: 0, @offset-y: 15px, @blur-radius: 0, @spread-radius: 0, @color: rgba(255, 255, 255, .12)) {
+     -webkit-box-shadow : inset @arguments;
+    -moz-box-shadow     : inset @arguments;
+    box-shadow          : inset @arguments;
+}
+
+.box-shadow-none() {
+    -webkit-box-shadow  : none;
+    -moz-box-shadow     : none;
+    box-shadow          : none;
+}
+
+.column-count(@column) {
+    -moz-column-count   : @column; /* Firefox */
+    -webkit-column-count: @column; /* Safari and Chrome */
+    column-count        : @column;
+}
+
+.text-shadow() {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+.transition(@property: all, @duration: .4s, @easing: ease-out) {
+    -webkit-transition  : @property @duration @easing;
+    -moz-transition     : @property @duration @easing;
+    -o-transition       : @property @duration @easing;
+    transition          : @property @duration @easing;
+}
+
+.transition-none() {
+    -webkit-transition  : none;
+    -moz-transition     : none;
+    -o-transition       : none;
+    transition          : none;
+}
+
+.transform(@args) {
+        -webkit-transform       : @args;
+        -ms-transform           : @args;
+        transform               : @args;
+}
+
+.ul-no-style() {
+    list-style  : none;
+    margin      : 0;
+    padding     : 0;
+    
+    li { float: left }
+}
+
+/* NO-MOBILE
+============ */
+.no-mobile { display: none }

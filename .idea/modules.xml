@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///Applications/MAMP/htdocs/WarTa/.idea/WarTa.iml" filepath="/Applications/MAMP/htdocs/WarTa/.idea/WarTa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../agi_protection/.idea/agi_protection.iml" filepath="$PROJECT_DIR$/../agi_protection/.idea/agi_protection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/theglobalview.iml" filepath="$PROJECT_DIR$/.idea/theglobalview.iml" />
+    </modules>
+  </component>
+</project>

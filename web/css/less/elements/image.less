@@ -1,0 +1,72 @@
+/* IMAGES 
+========= */
+.image {   
+        display             : block;
+        overflow            : hidden;
+        position            : relative; 
+
+        .image-holder { 
+            .backface-visibility(hidden);
+            .transition(transform, 2s); 
+        }
+        
+        .dashicons {                 
+                color           : white;
+                position        : absolute;
+                top             : 0;
+                margin          : 10px;
+                text-shadow     : 0 0 4px rgba(0, 0, 0, .5);
+                opacity         : 0;
+                .transition(opacity);
+        }        
+        
+        &:hover {
+                .image-holder   { .transform( scale(1.04) rotate(0.0000000001deg) ); }
+                .dashicons      { opacity: .8 }
+        }
+} 
+
+.csstransforms .image-holder {
+    position:       relative;
+    padding-bottom: 9/16 * 100%;
+    
+    img {
+        position:   absolute;
+        top:        50%;
+        width:      100%;
+        height:     auto;
+        min-height: 100%;
+        .translate(0; -50%);
+    }
+}
+
+// image caption
+.image,
+.carousel-small .item {
+        .caption {
+                background-color: rgba(0, 0, 0, .6);                
+                bottom          : 0;
+                color           : @light-text;
+                position        : absolute;
+                width           : 100%; 
+                .transition(all, .5s);
+
+                h1, h2, h3, h4, h5, h6 { 
+                        color   : @light-text;
+                        padding : 4px 10px 5px; 
+                        margin  : 0;
+                }
+                
+                .format { margin-right: 10px; }
+        }
+        
+        &:hover {
+                .caption {
+                        bottom  : -45px;
+                        opacity : 0;
+                }
+        }
+}
+
+// Remove zoom effect
+.no-zoom-effect .image:hover .image-holder { .transform(none); }

@@ -1,0 +1,66 @@
+/* REVIEW BOX 
+============= */
+.review {
+        float   : left;
+        margin  : 0 15px 0 0;
+        width   : 45%;
+
+        header {
+                border-bottom   : 1px solid @light-border;
+                margin-bottom   : 15px;
+
+                h5 {
+                        border-bottom   : 7px solid @light-border;
+                        display         : inline-block; 
+                        margin          : 0;  
+                        padding         : 0 0 10px;
+                }
+        }
+
+        .review-total-score {
+                background  : @primary;
+                color       : @light-text;
+                float       : left;
+                margin      : 0 15px 15px 0; 
+                padding     : 10px;
+                text-align  : center;
+
+                h1 { margin: 0 }
+        }
+
+        &.full-width {
+                border-bottom   : 1px solid @light-border;
+                margin-right    : 0;
+                margin-bottom   : 15px; 
+                width           : 100%;
+                
+                @media( min-width: @screen-sm-min ) {
+                        padding-bottom  : 15px;
+                }
+        }    
+        
+        hr { margin-top: 15px }
+}
+
+.user-rating { 
+        clear   : both; 
+        display : block; 
+        margin  : 15px 0;
+
+        .rating { 
+                display: inline-block;
+        }
+        
+        .rateit {
+                margin-bottom   : 15px;
+        }
+
+        .after-vote {
+                clear   : both;
+                display : none;
+        } 
+}
+    
+@media( max-width: @screen-xs-max ) { 
+        .review { width: 100% }
+}

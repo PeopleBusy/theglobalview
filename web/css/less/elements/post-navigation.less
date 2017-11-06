@@ -1,0 +1,27 @@
+/* -------------------------------------------------------------------------- *
+ * Post navigation (next post/previous post)
+ * -------------------------------------------------------------------------- */
+.post-navigation {
+        margin-bottom   : 45px;
+
+        .nav-previous,
+        .nav-next {
+                border-bottom   : 1px solid @light-border;
+                margin-bottom   : 1em;
+
+                .meta-nav {
+                        color       : @darker-text;
+                        font-size   : 15px; 
+                        font-family : @headings-font;
+                        line-height : 1; 
+                }
+
+                a { 
+                        color   : @headings-link-color;
+                        
+                        &:hover { 
+                                color   : @primary 
+                        }
+                }
+        }
+}

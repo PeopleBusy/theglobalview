@@ -1,0 +1,39 @@
+/* RECENT COMMENTS
+================== */
+.recent-comments {  
+        list-style  : none;
+        margin      : 0;
+        padding     : 0;
+
+        li {
+                border-bottom   : 1px solid @lighter-border; 
+                display         : table;
+                margin-bottom   : 15px;
+
+                > div.avatar { 
+                        display : table-cell;
+                        padding : 0 15px 15px 0;
+
+                        a { 
+                                display : block; 
+                                position: relative; 
+                        }
+
+                        img { width: 75px;  }            
+                }
+
+                .content { 
+                        display         : table-cell; 
+                        vertical-align  : top;
+                        padding-bottom  : 15px;
+
+                        .comment-content {
+                                margin-bottom: 10px;
+                        }
+                }
+        }
+}
+
+#footer-main .recent-comments {
+        li { border: none }
+}

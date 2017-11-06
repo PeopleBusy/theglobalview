@@ -17,6 +17,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="AppBundle">AppBundle\AppBundle</parameter>
+      <parameter key="GlobalViewBundle">GlobalViewBundle\GlobalViewBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -63,6 +64,11 @@
         <parameter key="parent">null</parameter>
         <parameter key="path">/Users/rachid/Documents/Projet Client/theglobalview/src/AppBundle</parameter>
         <parameter key="namespace">AppBundle</parameter>
+      </parameter>
+      <parameter key="GlobalViewBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/Users/rachid/Documents/Projet Client/theglobalview/src/GlobalViewBundle</parameter>
+        <parameter key="namespace">GlobalViewBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
         <parameter key="parent">null</parameter>
@@ -573,7 +579,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>elrE7igM-WCGLExolxJM1O</argument>
+      <argument>qLl4CXOREr11MZGfaA-uuD</argument>
       <argument>/Users/rachid/Documents/Projet Client/theglobalview/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -583,7 +589,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>elrE7igM-WCGLExolxJM1O</argument>
+      <argument>qLl4CXOREr11MZGfaA-uuD</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -1285,11 +1291,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="closure-proxy" id="debug.debug_handlers_listener" method="configure"/>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="closure-proxy" id="debug.debug_handlers_listener" method="configure"/>
         <argument>2048</argument>
       </call>
@@ -2009,12 +2010,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>59ff8c6c66f0f4.81288314</argument>
+      <argument>5a00f438f19b36.10372146</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>59ff8c6c66f0f4.81288314</argument>
+      <argument>5a00f438f19b36.10372146</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -2192,6 +2193,10 @@
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
+        <argument>/Users/rachid/Documents/Projet Client/theglobalview/src/GlobalViewBundle/Resources/views</argument>
+        <argument>GlobalView</argument>
+      </call>
+      <call method="addPath">
         <argument>/Users/rachid/Documents/Projet Client/theglobalview/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
@@ -2332,6 +2337,10 @@
       <call method="addPath">
         <argument>/Users/rachid/Documents/Projet Client/theglobalview/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/rachid/Documents/Projet Client/theglobalview/src/GlobalViewBundle/Resources/views</argument>
+        <argument>GlobalView</argument>
       </call>
       <call method="addPath">
         <argument>/Users/rachid/Documents/Projet Client/theglobalview/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
@@ -3200,7 +3209,7 @@
     <service id="cache.system.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>PEG+7-RI-O</argument>
       <argument>0</argument>
-      <argument>elrE7igM-WCGLExolxJM1O</argument>
+      <argument>qLl4CXOREr11MZGfaA-uuD</argument>
       <argument>/Users/rachid/Documents/Projet Client/theglobalview/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3208,7 +3217,7 @@
     <service id="cache.validator.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>qnAtn7RoSv</argument>
       <argument>0</argument>
-      <argument>elrE7igM-WCGLExolxJM1O</argument>
+      <argument>qLl4CXOREr11MZGfaA-uuD</argument>
       <argument>/Users/rachid/Documents/Projet Client/theglobalview/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3216,7 +3225,7 @@
     <service id="cache.serializer.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>AzwXe4wGwG</argument>
       <argument>0</argument>
-      <argument>elrE7igM-WCGLExolxJM1O</argument>
+      <argument>qLl4CXOREr11MZGfaA-uuD</argument>
       <argument>/Users/rachid/Documents/Projet Client/theglobalview/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3224,7 +3233,7 @@
     <service id="cache.annotations.recorder.inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>ZKFJ+XaTc8</argument>
       <argument>0</argument>
-      <argument>elrE7igM-WCGLExolxJM1O</argument>
+      <argument>qLl4CXOREr11MZGfaA-uuD</argument>
       <argument>/Users/rachid/Documents/Projet Client/theglobalview/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

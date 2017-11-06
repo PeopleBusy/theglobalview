@@ -1,0 +1,167 @@
+/* WIDGET 
+========= */
+.widget {
+        margin-bottom   : 45px;
+        max-width       : 100%; 
+        z-index         : 1;
+
+        header {
+                border-bottom   : 1px solid @light-border;
+                margin-bottom   : 15px;
+                height          : 30px;
+
+                h4 {
+                        float           : left;
+                        margin-bottom   : -1px; 
+                        padding         : 0 10px;
+                        line-height     : 30px; 
+                        color           : @light-text; 
+                        background-color: @secondary;
+                        .box-shadow-inset(0, 15px, 0, 0, rgba(255, 255, 255, .12)); 
+
+                        a { color: @light-text }
+                }
+
+                .control {
+                        background  : @light-border;
+                        color       : @secondary;
+                        float       : right;
+                        font-size   : 10px;
+                        line-height : 30px;
+                        margin      : 0 0 -1px 1px; 
+                        padding     : 0 10px;
+                        .box-shadow-inset(0, 14px, 0, 0, rgba(255, 255, 255, .32));
+
+                        &:hover {                
+                            color           : @light-text; 
+                            background-color: @secondary;
+                            .box-shadow-inset(0, 15px, 0, 0, rgba(255, 255, 255, .12)); 
+                        }
+                }
+        }
+
+        .nav-tabs {        
+                border-color    : @light-border;  
+                margin-bottom   : 15px;
+
+                li {
+                        margin: 0 1px -1px 0;
+
+                        a {
+                                border          : none; 
+                                background-color: @light-border;
+                                color           : @secondary;
+                                font-family     : @headings-font;
+                                font-size       : 18px;
+                                font-weight     : bold; 
+                                line-height     : 30px;
+                                margin          : 0; 
+                                padding         : 0 10px;
+                                .box-shadow-inset(0, 14px, 0, 0, rgba(255, 255, 255, .32));
+
+                                &:hover,
+                                &:focus { border: none }
+                        }
+
+                        &.control   { 
+                                margin-left: 1px;
+                                margin-right: 0;
+                        } 
+
+                        &.active a,
+                        a:hover {
+                                color           : @light-text; 
+                                background-color: @secondary;
+                                .box-shadow-inset(0, 15px, 0, 0, rgba(255, 255, 255, .12)); 
+                        }
+
+                        &.control {           
+                                display : none;
+                                float   : right;
+
+                                a { font-size: 10px  } 
+
+                                @media(max-width: 576px) { display: none; }
+                        }            
+
+                        &.current { display: block }
+                }            
+        }
+
+        .tab-pane { overflow: hidden; }
+}    
+
+.entry-content .widget { 
+        margin-bottom: 15px;
+        .nav-tabs { 
+                margin-bottom: 0;
+                padding: 0;
+        } 
+        
+        header {
+                border-bottom   : 1px solid @light-border;
+                margin-bottom   : 15px;
+
+                h4, h5 {
+                        border-bottom   : 7px solid @light-border;
+                        display         : inline-block; 
+                        margin          : 0;  
+                        padding         : 0 0 10px;
+                }
+        }
+}
+
+#footer-main {
+    .title,
+    .nav-tabs,
+    .widget header {
+        border-bottom   : 1px solid @dark-border;
+        display         : block;
+        margin-bottom   : 15px; 
+
+        li + li { margin-left: 15px }
+    }
+
+    .title h1,
+    .title h2,
+    .title h3,
+    .title h4,
+    .title h5,
+    .title h6,
+    .widget header h1,
+    .widget header h2,
+    .widget header h3,
+    .widget header h4,
+    .widget header h5,
+    .widget header h6,
+    .nav-tabs a {
+        background      : none; 
+        border          : none;
+        border-bottom   : 7px solid @dark-border;
+        display         : inline-block; 
+        padding         : 0;
+        margin          : 0;
+        .box-shadow-none();
+    }
+
+    .title,
+    .widget header { 
+        h1, h2, h3, h4, h5, h6 {
+            padding-bottom: 10px; 
+        }
+    }
+    
+    .widget header {
+        height: auto;
+        
+        h1, h2, h3, h4, h5, h6 {
+            line-height:    1;
+            color:          inherit;
+        }
+        
+        .control {
+            background: none;
+            .box-shadow-none();
+        }
+    }
+}

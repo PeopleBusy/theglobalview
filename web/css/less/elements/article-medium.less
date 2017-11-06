@@ -1,0 +1,27 @@
+/* ARTICLE MEDIUM 
+================= */
+.article-medium {  
+    .frame {
+            .featured-media {                
+                    margin          : 0;
+                    font-size       : 16px;
+
+                    &.link                  { font-size     : 20px }
+                    &.quote blockquote      { font-size     : 16px }
+                    &.chat p                { padding       : 5px 10px }
+
+                    &.video,
+                    &.audio { line-height: .9 }
+
+                    .carousel-medium .item  { 
+                            .carousel-caption { display: none }
+                    }
+            }
+
+            iframe, embed { max-height: 185px }
+    }
+
+    .csstransforms & .image-holder {
+        padding-bottom: 185/350 * 100%;
+    }
+} 
