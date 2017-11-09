@@ -1,5 +1,5 @@
 global_view_homepage:
     path:     /{_locale}
-    defaults: { _controller: GlobalViewBundle:Default:index }
+    defaults: { _controller: GlobalViewBundle:Default:index, _locale: en }
     requirements:
         _locale: en|fr|de

@@ -114,8 +114,8 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // global_view_homepage
-        if (preg_match('#^/(?P<_locale>en|fr|de)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_homepage')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::indexAction',));
+        if (preg_match('#^/(?P<_locale>en|fr|de)?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_homepage')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::indexAction',  '_locale' => 'en',));
         }
 
         // homepage
