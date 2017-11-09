@@ -19,11 +19,11 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f87d3ba5f202cc8ffce0b10ce4763613490788080b719a502782c4abb0d2b645 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f87d3ba5f202cc8ffce0b10ce4763613490788080b719a502782c4abb0d2b645->enter($__internal_f87d3ba5f202cc8ffce0b10ce4763613490788080b719a502782c4abb0d2b645_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
+        $__internal_fd92267e3bd0665339466b80a7bef87ccacf02d568a41155109af51a7283b8ff = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fd92267e3bd0665339466b80a7bef87ccacf02d568a41155109af51a7283b8ff->enter($__internal_fd92267e3bd0665339466b80a7bef87ccacf02d568a41155109af51a7283b8ff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
 
-        $__internal_97b9ebc56fff26979dd6800f8a841bd6fa5ccff804e8f6045f72e079e19b9734 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_97b9ebc56fff26979dd6800f8a841bd6fa5ccff804e8f6045f72e079e19b9734->enter($__internal_97b9ebc56fff26979dd6800f8a841bd6fa5ccff804e8f6045f72e079e19b9734_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
+        $__internal_f67d9bb4ad5b2a53736597ecbceb0611de30fe8e855c0844c97467619d89630c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f67d9bb4ad5b2a53736597ecbceb0611de30fe8e855c0844c97467619d89630c->enter($__internal_f67d9bb4ad5b2a53736597ecbceb0611de30fe8e855c0844c97467619d89630c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -51,9 +51,15 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/css/custom.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
+        <!-- Flags icons css -->
+        <link href=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/css/flags/css/flag-icon.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+
         <!--Modernizr-->
         <script src=\"";
-        // line 18
+        // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/modernizr.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -61,30 +67,30 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
              ie8.css and ie8.js custom style  and script that needed for IE8. -->
         <!--[if lt IE 9]>
         <link href=\"";
-        // line 23
+        // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/css/ie8.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
         <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
         <script src=\"https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js\"></script>
         <script src=\"";
-        // line 26
+        // line 29
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/ie8.js"), "html", null, true);
         echo "\"></script>
         <![endif]-->
 
         ";
-        // line 29
+        // line 32
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 30
+        // line 33
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
     </head>
     <body>
         ";
-        // line 33
+        // line 36
         $this->displayBlock('body', $context, $blocks);
-        // line 34
+        // line 37
         echo "
         <!--HEADER
                 ==========-->
@@ -106,9 +112,18 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class=\"collapse navbar-collapse\" id=\"top-nav-collapse\">
                         <ul class=\"nav navbar-nav\">
-                            <li><a href=\"#\">Home</a></li>
-                            <li><a href=\"#\">About</a></li>
-                            <li><a href=\"#\">Contact</a></li>
+                            <li><a href=\"#\">";
+        // line 58
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("toplink.home"), "html", null, true);
+        echo "</a></li>
+                            <li><a href=\"#\">";
+        // line 59
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("toplink.about"), "html", null, true);
+        echo "</a></li>
+                            <li><a href=\"#\">";
+        // line 60
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("toplink.contact"), "html", null, true);
+        echo "</a></li>
                         </ul>
 
                         <form class=\"navbar-form navbar-right\" role=\"search\">
@@ -142,10 +157,39 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <span class=\"icon-bar\"></span>
                             <span class=\"icon-bar\"></span>
                         </button>
-                        <a class=\"navbar-brand\" href=\"#\"><img src=\"";
-        // line 91
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/logo2.png"), "html", null, true);
-        echo "\" alt=\"logo\"></a>
+                        ";
+        // line 94
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "en")) {
+            // line 95
+            echo "                            <a class=\"navbar-brand\" href=\"#\"><img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/logo_en.png"), "html", null, true);
+            echo "\" alt=\"logo\"></a>
+                        ";
+        }
+        // line 97
+        echo "
+                        ";
+        // line 98
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "fr")) {
+            // line 99
+            echo "                            <a class=\"navbar-brand\" href=\"#\"><img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/logo_fr.png"), "html", null, true);
+            echo "\" alt=\"logo\"></a>
+                        ";
+        }
+        // line 101
+        echo "
+                        ";
+        // line 102
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "de")) {
+            // line 103
+            echo "                            <a class=\"navbar-brand\" href=\"#\"><img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/logo_de.png"), "html", null, true);
+            echo "\" alt=\"logo\"></a>
+                        ";
+        }
+        // line 105
+        echo "
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -153,46 +197,177 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         <ul class=\"nav navbar-nav navbar-right\">
                             <li class=\"active\"><a href=\"#\"><i class=\"fa fa-home\"></i></a></li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">News <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+        // line 113
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.news"), "html", null, true);
+        echo " <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">";
+        // line 115
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.news"), "html", null, true);
+        echo " </a></li>
+                                    <li><a href=\"#\">";
+        // line 116
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
+        echo "</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Lifestyle <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+        // line 120
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.lifestyle"), "html", null, true);
+        echo " <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Beauty</a></li>
-                                    <li><a href=\"#\">Health</a></li>
-                                    <li><a href=\"#\">Food</a></li>
-                                    <li><a href=\"#\">Culture</a></li>
-                                    <li><a href=\"#\">Travel</a></li>
-                                    <li><a href=\"#\">Advertisement</a></li>
+                                    <li><a href=\"#\">";
+        // line 122
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.beauty"), "html", null, true);
+        echo "</a></li>
+                                    <li><a href=\"#\">";
+        // line 123
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.health"), "html", null, true);
+        echo "</a></li>
+                                    <li><a href=\"#\">";
+        // line 124
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.food"), "html", null, true);
+        echo "</a></li>
+                                    <li><a href=\"#\">";
+        // line 125
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.culture"), "html", null, true);
+        echo "</a></li>
+                                    <li><a href=\"#\">";
+        // line 126
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.travel"), "html", null, true);
+        echo "</a></li>
+                                    <li><a href=\"#\">";
+        // line 127
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
+        echo "</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Music <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+        // line 131
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.music"), "html", null, true);
+        echo " <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">";
+        // line 133
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.music"), "html", null, true);
+        echo " </a></li>
+                                    <li><a href=\"#\">";
+        // line 134
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
+        echo "</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Sports <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+        // line 138
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.sports"), "html", null, true);
+        echo " <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">";
+        // line 140
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.sports"), "html", null, true);
+        echo " </a></li>
+                                    <li><a href=\"#\">";
+        // line 141
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
+        echo "</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Games <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+        // line 145
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.games"), "html", null, true);
+        echo " <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">";
+        // line 147
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.games"), "html", null, true);
+        echo " </a></li>
+                                    <li><a href=\"#\">";
+        // line 148
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
+        echo "</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Languages <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">English</a></li>
-                                    <li><a href=\"#\">Deutsch</a></li>
-                                    <li><a href=\"#\">French</a></li>
+
+                                ";
+        // line 153
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "en")) {
+            // line 154
+            echo "                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-us\"></span> <b class=\"caret\"></b></a>
+                                ";
+        }
+        // line 156
+        echo "
+                                ";
+        // line 157
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "fr")) {
+            // line 158
+            echo "                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-fr\"></span> <b class=\"caret\"></b></a>
+                                ";
+        }
+        // line 160
+        echo "
+                                ";
+        // line 161
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "de")) {
+            // line 162
+            echo "                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-de\"></span> <b class=\"caret\"></b></a>
+                                ";
+        }
+        // line 164
+        echo "
+                                <ul class=\"dropdown-menu\" style=\"min-width: 65px !important;\">
+
+                                    ";
+        // line 167
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "en")) {
+            // line 168
+            echo "                                        <li><a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "fr"))), "html", null, true);
+            echo "\"><span class=\"flag-icon flag-icon-fr\"></span></a></li>
+                                        <li><a href=\"";
+            // line 169
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "de"))), "html", null, true);
+            echo "\"><span class=\"flag-icon flag-icon-de\"></span></a></li>
+                                    ";
+        }
+        // line 171
+        echo "
+                                    ";
+        // line 172
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "fr")) {
+            // line 173
+            echo "                                        <li><a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "en"))), "html", null, true);
+            echo "\"><span class=\"flag-icon flag-icon-us\"></span></a></li>
+                                        <li><a href=\"";
+            // line 174
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "de"))), "html", null, true);
+            echo "\"><span class=\"flag-icon flag-icon-de\"></span></a></li>
+                                    ";
+        }
+        // line 176
+        echo "
+                                    ";
+        // line 177
+        if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "de")) {
+            // line 178
+            echo "                                        <li><a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "en"))), "html", null, true);
+            echo "\"><span class=\"flag-icon flag-icon-us\"></span></a></li>
+                                        <li><a href=\"";
+            // line 179
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "fr"))), "html", null, true);
+            echo "\"><span class=\"flag-icon flag-icon-fr\"></span></a></li>
+                                    ";
+        }
+        // line 181
+        echo "
                                 </ul>
                             </li>
                         </ul>
@@ -300,7 +475,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </section>
 
                         <!-- ARTICLES V1 WIDGET -->
-                        <section class=\"widget articles-v1\">
+                        <section class=\"hide widget articles-v1\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\">
                                 <h4>Headline</h4>
@@ -450,7 +625,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </section>
 
                         <!-- ADS -->
-                        <section class=\"widget\">
+                        <section class=\"hide widget\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\"><h4>Advertisement</h4></header>
 
@@ -465,7 +640,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
 
                         <!-- ARTICLES V2 WIDGET -->
-                        <section class=\"widget articles-v2\">
+                        <section class=\"hide widget articles-v2\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\">
                                 <h4>Politics</h4>
@@ -566,7 +741,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </section><!--.widget-->
 
 
-                        <div class=\"row\">
+                        <div class=\"hide row\">
                             <!-- ARTICLES V3 WIDGET -->
                             <section class=\"widget articles-v3 col-sm-6\">
                                 <!-- Widget header -->
@@ -765,7 +940,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </div>
 
                         <!-- ADS -->
-                        <section class=\"widget\">
+                        <section class=\"hide widget\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\"><h4>Advertisement</h4></header>
 
@@ -778,7 +953,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <img src=\"img/shadow.png\" alt=\"shadow\" class=\"shadow\">
                         </section>
 
-                        <div class=\"row\">
+                        <div class=\"hide row\">
                             <!-- ARTICLES V4 WIDGET -->
                             <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
                                 <!-- Widget Header -->
@@ -1009,7 +1184,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <!-- SEARCH WIDGET -->
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Widget header -->
-                                <header class=\"clearfix\"><h4>Search Widget</h4></header>
+                                <header class=\"clearfix\"><h4>Search </h4></header>
 
                                 <!-- Widget content -->
                                 <form method=\"get\" action=\"home-version-1.html\">
@@ -1118,7 +1293,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </section>
 
                             <!-- FEEDBURNER WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget feedburner\">
+                            <section class=\"hide col-sm-6 col-md-12 widget feedburner\">
                                 <!-- Widget Header -->
                                 <header class=\"clearfix\"><h4>Feedburner</h4></header>
 
@@ -1143,7 +1318,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </section>
 
                             <!-- YOUTUBE WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
+                            <section class=\"hide col-sm-6 col-md-12 widget\">
                                 <!-- Widget Header -->
                                 <header class=\"clearfix\"><h4>Youtube Video</h4></header>
 
@@ -1390,7 +1565,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </section>
 
                             <!-- VIMEO WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
+                            <section class=\"hide col-sm-6 col-md-12 widget\">
                                 <!-- Widget header -->
                                 <header class=\"clearfix\"><h4>Vimeo Video</h4></header>
 
@@ -1403,7 +1578,6 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                 <!-- Widget header: tab menu -->
                                 <ul class=\"nav nav-tabs\">
                                     <li class=\"active\"><a href=\"#categories\" data-toggle=\"tab\">Categories</a></li>
-                                    <li><a href=\"#tags\" data-toggle=\"tab\">Tags</a></li>
                                 </ul><!--.nav-tabs-->
 
                                 <!-- Tab contents -->
@@ -1411,52 +1585,33 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     <!-- Categories-->
                                     <div class=\"tab-pane active fade in\" id=\"categories\">
                                         <ul class=\"categories\">
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> National <span class=\"post-counts\">54,435,464</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> World  <span class=\"post-counts\">34,355,346</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Politics <span class=\"post-counts\">3,234,356</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Sport <span class=\"post-counts\">874,355</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Entertainment <span class=\"post-counts\">11,234,987</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Technology <span class=\"post-counts\">9,937,397</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Lifestyle <span class=\"post-counts\">345,385</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Finance <span class=\"post-counts\">593,945</span></a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Tags -->
-                                    <div class=\"tab-pane fade\" id=\"tags\">
-                                        <ul class=\"tags clearfix\">
-                                            <li><a href=\"#\">morbi id</a></li>
-                                            <li><a href=\"#\">vulputate est</a></li>
-                                            <li><a href=\"#\">tiam quis </a></li>
-                                            <li><a href=\"#\">lectus</a></li>
-                                            <li><a href=\"#\">nunc</a></li>
-                                            <li><a href=\"#\">phasellus pharetra</a></li>
-                                            <li><a href=\"#\">velit quam</a></li>
-                                            <li><a href=\"#\">id laoreet</a></li>
-                                            <li><a href=\"#\">elit</a></li>
-                                            <li><a href=\"#\">porta</a></li>
-                                            <li><a href=\"#\">rhoncus</a></li>
-                                            <li><a href=\"#\">unc sit</a></li>
-                                            <li><a href=\"#\">amet nunc</a></li>
-                                            <li><a href=\"#\">velit tincidunt</a></li>
-                                            <li><a href=\"#\">nec fermentum</a></li>
-                                            <li><a href=\"#\">cursus</a></li>
-                                            <li><a href=\"#\">metus</a></li>
-                                            <li><a href=\"#\">estibulum</a></li>
-                                            <li><a href=\"#\">eleifend at ligula</a></li>
-                                            <li><a href=\"#\">vel aliquam</a></li>
-                                            <li><a href=\"#\">id velit</a></li>
-                                            <li><a href=\"#\">usce</a></li>
-                                            <li><a href=\"#\">hasellus</a></li>
-                                            <li><a href=\"#\">semper</a></li>
-                                            <li><a href=\"#\">dui ut</a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
+        // line 1399
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.news"), "html", null, true);
+        echo " <span class=\"post-counts\">54,435,464</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
+        // line 1400
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.lifestyle"), "html", null, true);
+        echo "  <span class=\"post-counts\">34,355,346</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
+        // line 1401
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.music"), "html", null, true);
+        echo " <span class=\"post-counts\">3,234,356</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
+        // line 1402
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.sports"), "html", null, true);
+        echo " <span class=\"post-counts\">874,355</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
+        // line 1403
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.games"), "html", null, true);
+        echo " <span class=\"post-counts\">11,234,987</span></a></li>
                                         </ul>
                                     </div>
                                 </div><!--.tab-content-->
                             </section>
 
                             <!-- ACCORDION -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
+                            <section class=\"hide col-sm-6 col-md-12 widget\">
                                 <!--Widget header-->
                                 <header class=\"clearfix\"><h4>Accordion</h4></header>
 
@@ -1508,7 +1663,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                 </div><!--.row-->
 
                 <!-- SLIDER TABS WIDGET: GALLERY -->
-                <section id=\"slider-tabs\" class=\"widget no-mobile\">
+                <section id=\"slider-tabs\" class=\"hide widget no-mobile\">
                     <!-- Widget header -->
                     <ul class=\"nav nav-tabs\">
                         <!--Title-->
@@ -1727,38 +1882,33 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </ul>
                         </section>
 
-                        <!-- Popular Tags -->
+                        <!-- Categories -->
                         <section class=\"col-md-3 col-sm-6\">
                             <!--Title-->
-                            <div class=\"title\"><h4>Popular Tags</h4></div>
+                            <div class=\"title\"><h4>Categories</h4></div>
 
                             <!--Content-->
                             <ul class=\"tags clearfix\">
-                                <li><a href=\"#\">morbi id</a></li>
-                                <li><a href=\"#\">vulputate est</a></li>
-                                <li><a href=\"#\">tiam quis </a></li>
-                                <li><a href=\"#\">lectus</a></li>
-                                <li><a href=\"#\">nunc</a></li>
-                                <li><a href=\"#\">phasellus pharetra</a></li>
-                                <li><a href=\"#\">velit quam</a></li>
-                                <li><a href=\"#\">id laoreet</a></li>
-                                <li><a href=\"#\">elit</a></li>
-                                <li><a href=\"#\">porta</a></li>
-                                <li><a href=\"#\">rhoncus</a></li>
-                                <li><a href=\"#\">unc sit</a></li>
-                                <li><a href=\"#\">amet nunc</a></li>
-                                <li><a href=\"#\">velit tincidunt</a></li>
-                                <li><a href=\"#\">nec fermentum</a></li>
-                                <li><a href=\"#\">cursus</a></li>
-                                <li><a href=\"#\">metus</a></li>
-                                <li><a href=\"#\">estibulum</a></li>
-                                <li><a href=\"#\">eleifend at ligula</a></li>
-                                <li><a href=\"#\">vel aliquam</a></li>
-                                <li><a href=\"#\">id velit</a></li>
-                                <li><a href=\"#\">usce</a></li>
-                                <li><a href=\"#\">hasellus</a></li>
-                                <li><a href=\"#\">semper</a></li>
-                                <li><a href=\"#\">dui ut</a></li>
+                                <li><a href=\"#\">";
+        // line 1688
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.news"), "html", null, true);
+        echo "</a></li>
+                                <li><a href=\"#\">";
+        // line 1689
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.lifestyle"), "html", null, true);
+        echo "</a></li>
+                                <li><a href=\"#\">";
+        // line 1690
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.music"), "html", null, true);
+        echo " </a></li>
+                                <li><a href=\"#\">";
+        // line 1691
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.sport"), "html", null, true);
+        echo "</a></li>
+                                <li><a href=\"#\">";
+        // line 1692
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.games"), "html", null, true);
+        echo "</a></li>
                             </ul>
                         </section>
 
@@ -1871,105 +2021,105 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
         <!-- jQuery  -->
         <script src=\"";
-        // line 1816
+        // line 1804
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 1817
+        // line 1805
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/jquery-ui.custom.min.js"), "html", null, true);
         echo "\"></script>
 
         <!-- Warta scripts -->
         <script src=\"";
-        // line 1820
+        // line 1808
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/script.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 1821
+        // line 1809
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/initialize.js"), "html", null, true);
         echo "\"></script>
 
         ";
-        // line 1823
+        // line 1811
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 1824
+        // line 1812
         echo "    </body>
 </html>
 ";
         
-        $__internal_f87d3ba5f202cc8ffce0b10ce4763613490788080b719a502782c4abb0d2b645->leave($__internal_f87d3ba5f202cc8ffce0b10ce4763613490788080b719a502782c4abb0d2b645_prof);
+        $__internal_fd92267e3bd0665339466b80a7bef87ccacf02d568a41155109af51a7283b8ff->leave($__internal_fd92267e3bd0665339466b80a7bef87ccacf02d568a41155109af51a7283b8ff_prof);
 
         
-        $__internal_97b9ebc56fff26979dd6800f8a841bd6fa5ccff804e8f6045f72e079e19b9734->leave($__internal_97b9ebc56fff26979dd6800f8a841bd6fa5ccff804e8f6045f72e079e19b9734_prof);
+        $__internal_f67d9bb4ad5b2a53736597ecbceb0611de30fe8e855c0844c97467619d89630c->leave($__internal_f67d9bb4ad5b2a53736597ecbceb0611de30fe8e855c0844c97467619d89630c_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_3ad85c3e1452cb99ac09d31f6ab240d173bd60ce9644441c5445eaa1a57c07a0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3ad85c3e1452cb99ac09d31f6ab240d173bd60ce9644441c5445eaa1a57c07a0->enter($__internal_3ad85c3e1452cb99ac09d31f6ab240d173bd60ce9644441c5445eaa1a57c07a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_ec016378e1d62af3273283155758576973dd94c53b1f4d65d5ef36009dc0edb3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ec016378e1d62af3273283155758576973dd94c53b1f4d65d5ef36009dc0edb3->enter($__internal_ec016378e1d62af3273283155758576973dd94c53b1f4d65d5ef36009dc0edb3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_f86b54cc1024e922d9abd9b35fc1ea1a9f775aba384815564cee4f7bcae6dfa4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f86b54cc1024e922d9abd9b35fc1ea1a9f775aba384815564cee4f7bcae6dfa4->enter($__internal_f86b54cc1024e922d9abd9b35fc1ea1a9f775aba384815564cee4f7bcae6dfa4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_d3e9c5684c1fdc762f090f2ce6c20aeda744e26f1b487e0ea23a9aa1cf02500f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d3e9c5684c1fdc762f090f2ce6c20aeda744e26f1b487e0ea23a9aa1cf02500f->enter($__internal_d3e9c5684c1fdc762f090f2ce6c20aeda744e26f1b487e0ea23a9aa1cf02500f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "The Global View";
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("head.title"), "html", null, true);
         
-        $__internal_f86b54cc1024e922d9abd9b35fc1ea1a9f775aba384815564cee4f7bcae6dfa4->leave($__internal_f86b54cc1024e922d9abd9b35fc1ea1a9f775aba384815564cee4f7bcae6dfa4_prof);
+        $__internal_d3e9c5684c1fdc762f090f2ce6c20aeda744e26f1b487e0ea23a9aa1cf02500f->leave($__internal_d3e9c5684c1fdc762f090f2ce6c20aeda744e26f1b487e0ea23a9aa1cf02500f_prof);
 
         
-        $__internal_3ad85c3e1452cb99ac09d31f6ab240d173bd60ce9644441c5445eaa1a57c07a0->leave($__internal_3ad85c3e1452cb99ac09d31f6ab240d173bd60ce9644441c5445eaa1a57c07a0_prof);
+        $__internal_ec016378e1d62af3273283155758576973dd94c53b1f4d65d5ef36009dc0edb3->leave($__internal_ec016378e1d62af3273283155758576973dd94c53b1f4d65d5ef36009dc0edb3_prof);
 
     }
 
-    // line 29
+    // line 32
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_6da3f6d6c071bd374182fa0a0bb8f6810e9a410f8480478040befe6acecfb139 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6da3f6d6c071bd374182fa0a0bb8f6810e9a410f8480478040befe6acecfb139->enter($__internal_6da3f6d6c071bd374182fa0a0bb8f6810e9a410f8480478040befe6acecfb139_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_05c8c5f51a75b01bc2ba0474978545cf69c22d0ebc6bbeda6a43c8e582c73282 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_05c8c5f51a75b01bc2ba0474978545cf69c22d0ebc6bbeda6a43c8e582c73282->enter($__internal_05c8c5f51a75b01bc2ba0474978545cf69c22d0ebc6bbeda6a43c8e582c73282_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_a68547e5a37aa8bf6f7603e1ff3a6913fd9c44407ecc1185167891da0900abda = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a68547e5a37aa8bf6f7603e1ff3a6913fd9c44407ecc1185167891da0900abda->enter($__internal_a68547e5a37aa8bf6f7603e1ff3a6913fd9c44407ecc1185167891da0900abda_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        
-        $__internal_a68547e5a37aa8bf6f7603e1ff3a6913fd9c44407ecc1185167891da0900abda->leave($__internal_a68547e5a37aa8bf6f7603e1ff3a6913fd9c44407ecc1185167891da0900abda_prof);
+        $__internal_45d4c0024058771ba5b4c1dcca3f785f2dbcc7d513664c70a5f0c00968bd4184 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_45d4c0024058771ba5b4c1dcca3f785f2dbcc7d513664c70a5f0c00968bd4184->enter($__internal_45d4c0024058771ba5b4c1dcca3f785f2dbcc7d513664c70a5f0c00968bd4184_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_6da3f6d6c071bd374182fa0a0bb8f6810e9a410f8480478040befe6acecfb139->leave($__internal_6da3f6d6c071bd374182fa0a0bb8f6810e9a410f8480478040befe6acecfb139_prof);
+        $__internal_45d4c0024058771ba5b4c1dcca3f785f2dbcc7d513664c70a5f0c00968bd4184->leave($__internal_45d4c0024058771ba5b4c1dcca3f785f2dbcc7d513664c70a5f0c00968bd4184_prof);
+
+        
+        $__internal_05c8c5f51a75b01bc2ba0474978545cf69c22d0ebc6bbeda6a43c8e582c73282->leave($__internal_05c8c5f51a75b01bc2ba0474978545cf69c22d0ebc6bbeda6a43c8e582c73282_prof);
 
     }
 
-    // line 33
+    // line 36
     public function block_body($context, array $blocks = array())
     {
-        $__internal_bd1a94dcea712a74abd1a56a53c6ed5fba5f8116a7e0950f19f96e4c3c537470 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bd1a94dcea712a74abd1a56a53c6ed5fba5f8116a7e0950f19f96e4c3c537470->enter($__internal_bd1a94dcea712a74abd1a56a53c6ed5fba5f8116a7e0950f19f96e4c3c537470_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_977dc55e8234a4914a9c3783b0f904c0043d44edc6e995ec2d615785c09f0d32 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_977dc55e8234a4914a9c3783b0f904c0043d44edc6e995ec2d615785c09f0d32->enter($__internal_977dc55e8234a4914a9c3783b0f904c0043d44edc6e995ec2d615785c09f0d32_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_533f64995fc7143f63aa354e2eded4af161b7dba6ca5f0a39bad2aa055c777f1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_533f64995fc7143f63aa354e2eded4af161b7dba6ca5f0a39bad2aa055c777f1->enter($__internal_533f64995fc7143f63aa354e2eded4af161b7dba6ca5f0a39bad2aa055c777f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_533f64995fc7143f63aa354e2eded4af161b7dba6ca5f0a39bad2aa055c777f1->leave($__internal_533f64995fc7143f63aa354e2eded4af161b7dba6ca5f0a39bad2aa055c777f1_prof);
+        $__internal_998bd6adbb8912f591dc9701b7a3de79e910794e6f632774ea832efb06842587 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_998bd6adbb8912f591dc9701b7a3de79e910794e6f632774ea832efb06842587->enter($__internal_998bd6adbb8912f591dc9701b7a3de79e910794e6f632774ea832efb06842587_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_bd1a94dcea712a74abd1a56a53c6ed5fba5f8116a7e0950f19f96e4c3c537470->leave($__internal_bd1a94dcea712a74abd1a56a53c6ed5fba5f8116a7e0950f19f96e4c3c537470_prof);
+        $__internal_998bd6adbb8912f591dc9701b7a3de79e910794e6f632774ea832efb06842587->leave($__internal_998bd6adbb8912f591dc9701b7a3de79e910794e6f632774ea832efb06842587_prof);
+
+        
+        $__internal_977dc55e8234a4914a9c3783b0f904c0043d44edc6e995ec2d615785c09f0d32->leave($__internal_977dc55e8234a4914a9c3783b0f904c0043d44edc6e995ec2d615785c09f0d32_prof);
 
     }
 
-    // line 1823
+    // line 1811
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_6f8e0d837de4daad0a67f8fb5a2a631e825168252722a05a72f0364e7203c520 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6f8e0d837de4daad0a67f8fb5a2a631e825168252722a05a72f0364e7203c520->enter($__internal_6f8e0d837de4daad0a67f8fb5a2a631e825168252722a05a72f0364e7203c520_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_2530dbd67de0511e8c6977b33677151f94d77d58b70d66678de98ba82ff7b46f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2530dbd67de0511e8c6977b33677151f94d77d58b70d66678de98ba82ff7b46f->enter($__internal_2530dbd67de0511e8c6977b33677151f94d77d58b70d66678de98ba82ff7b46f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_62f6dcf3045ef19c99223d194848d860c4fb851befa81cf25f12b4158bacffe1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_62f6dcf3045ef19c99223d194848d860c4fb851befa81cf25f12b4158bacffe1->enter($__internal_62f6dcf3045ef19c99223d194848d860c4fb851befa81cf25f12b4158bacffe1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
-
-        
-        $__internal_62f6dcf3045ef19c99223d194848d860c4fb851befa81cf25f12b4158bacffe1->leave($__internal_62f6dcf3045ef19c99223d194848d860c4fb851befa81cf25f12b4158bacffe1_prof);
+        $__internal_56d7d2a62dbd244858faf807f80f3446be6dd1088407eb836cf1f84e4680c40a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_56d7d2a62dbd244858faf807f80f3446be6dd1088407eb836cf1f84e4680c40a->enter($__internal_56d7d2a62dbd244858faf807f80f3446be6dd1088407eb836cf1f84e4680c40a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_6f8e0d837de4daad0a67f8fb5a2a631e825168252722a05a72f0364e7203c520->leave($__internal_6f8e0d837de4daad0a67f8fb5a2a631e825168252722a05a72f0364e7203c520_prof);
+        $__internal_56d7d2a62dbd244858faf807f80f3446be6dd1088407eb836cf1f84e4680c40a->leave($__internal_56d7d2a62dbd244858faf807f80f3446be6dd1088407eb836cf1f84e4680c40a_prof);
+
+        
+        $__internal_2530dbd67de0511e8c6977b33677151f94d77d58b70d66678de98ba82ff7b46f->leave($__internal_2530dbd67de0511e8c6977b33677151f94d77d58b70d66678de98ba82ff7b46f_prof);
 
     }
 
@@ -1985,7 +2135,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
     public function getDebugInfo()
     {
-        return array (  1960 => 1823,  1943 => 33,  1926 => 29,  1908 => 5,  1896 => 1824,  1894 => 1823,  1889 => 1821,  1885 => 1820,  1879 => 1817,  1875 => 1816,  147 => 91,  88 => 34,  86 => 33,  79 => 30,  77 => 29,  71 => 26,  65 => 23,  57 => 18,  51 => 15,  47 => 14,  35 => 5,  29 => 1,);
+        return array (  2110 => 1811,  2093 => 36,  2076 => 32,  2058 => 5,  2046 => 1812,  2044 => 1811,  2039 => 1809,  2035 => 1808,  2029 => 1805,  2025 => 1804,  1910 => 1692,  1906 => 1691,  1902 => 1690,  1898 => 1689,  1894 => 1688,  1606 => 1403,  1602 => 1402,  1598 => 1401,  1594 => 1400,  1590 => 1399,  370 => 181,  365 => 179,  360 => 178,  358 => 177,  355 => 176,  350 => 174,  345 => 173,  343 => 172,  340 => 171,  335 => 169,  330 => 168,  328 => 167,  323 => 164,  319 => 162,  317 => 161,  314 => 160,  310 => 158,  308 => 157,  305 => 156,  301 => 154,  299 => 153,  291 => 148,  287 => 147,  282 => 145,  275 => 141,  271 => 140,  266 => 138,  259 => 134,  255 => 133,  250 => 131,  243 => 127,  239 => 126,  235 => 125,  231 => 124,  227 => 123,  223 => 122,  218 => 120,  211 => 116,  207 => 115,  202 => 113,  192 => 105,  186 => 103,  184 => 102,  181 => 101,  175 => 99,  173 => 98,  170 => 97,  164 => 95,  162 => 94,  125 => 60,  121 => 59,  117 => 58,  94 => 37,  92 => 36,  85 => 33,  83 => 32,  77 => 29,  71 => 26,  63 => 21,  57 => 18,  51 => 15,  47 => 14,  35 => 5,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -2002,7 +2152,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 <html id=\"home-version-2\" class=\"boxed-style\">
     <head>
         <meta charset=\"UTF-8\" />
-        <title>{% block title %}The Global View{% endblock %}</title>
+        <title>{% block title %}{{ 'head.title'|trans }}{% endblock %}</title>
 
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -2013,6 +2163,9 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
         <!-- Stylesheets -->
         <link href=\"{{ asset('/css/style.min.css') }}\" rel=\"stylesheet\">
         <link href=\"{{ asset('/css/custom.css') }}\" rel=\"stylesheet\">
+
+        <!-- Flags icons css -->
+        <link href=\"{{ asset('/css/flags/css/flag-icon.css') }}\" rel=\"stylesheet\">
 
         <!--Modernizr-->
         <script src=\"{{ asset('/js/modernizr.min.js') }}\"></script>
@@ -2052,9 +2205,9 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class=\"collapse navbar-collapse\" id=\"top-nav-collapse\">
                         <ul class=\"nav navbar-nav\">
-                            <li><a href=\"#\">Home</a></li>
-                            <li><a href=\"#\">About</a></li>
-                            <li><a href=\"#\">Contact</a></li>
+                            <li><a href=\"#\">{{ 'toplink.home'|trans }}</a></li>
+                            <li><a href=\"#\">{{ 'toplink.about'|trans }}</a></li>
+                            <li><a href=\"#\">{{ 'toplink.contact'|trans }}</a></li>
                         </ul>
 
                         <form class=\"navbar-form navbar-right\" role=\"search\">
@@ -2088,7 +2241,18 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <span class=\"icon-bar\"></span>
                             <span class=\"icon-bar\"></span>
                         </button>
-                        <a class=\"navbar-brand\" href=\"#\"><img src=\"{{ asset('/img/logo2.png') }}\" alt=\"logo\"></a>
+                        {% if (app.request.getLocale() == 'en') %}
+                            <a class=\"navbar-brand\" href=\"#\"><img src=\"{{ asset('/img/logo_en.png') }}\" alt=\"logo\"></a>
+                        {% endif %}
+
+                        {% if (app.request.getLocale() == 'fr') %}
+                            <a class=\"navbar-brand\" href=\"#\"><img src=\"{{ asset('/img/logo_fr.png') }}\" alt=\"logo\"></a>
+                        {% endif %}
+
+                        {% if (app.request.getLocale() == 'de') %}
+                            <a class=\"navbar-brand\" href=\"#\"><img src=\"{{ asset('/img/logo_de.png') }}\" alt=\"logo\"></a>
+                        {% endif %}
+
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -2096,46 +2260,75 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         <ul class=\"nav navbar-nav navbar-right\">
                             <li class=\"active\"><a href=\"#\"><i class=\"fa fa-home\"></i></a></li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">News <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.news'|trans }} <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.news'|trans }} </a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Lifestyle <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.lifestyle'|trans }} <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Beauty</a></li>
-                                    <li><a href=\"#\">Health</a></li>
-                                    <li><a href=\"#\">Food</a></li>
-                                    <li><a href=\"#\">Culture</a></li>
-                                    <li><a href=\"#\">Travel</a></li>
-                                    <li><a href=\"#\">Advertisement</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.beauty'|trans }}</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.health'|trans }}</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.food'|trans }}</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.culture'|trans }}</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.travel'|trans }}</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Music <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.music'|trans }} <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.music'|trans }} </a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Sports <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.sports'|trans }} <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.sports'|trans }} </a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Games <b class=\"caret\"></b></a>
+                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.games'|trans }} <b class=\"caret\"></b></a>
                                 <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">Sub categories</a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.games'|trans }} </a></li>
+                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Languages <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">English</a></li>
-                                    <li><a href=\"#\">Deutsch</a></li>
-                                    <li><a href=\"#\">French</a></li>
+
+                                {% if (app.request.getLocale() == 'en') %}
+                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-us\"></span> <b class=\"caret\"></b></a>
+                                {% endif %}
+
+                                {% if (app.request.getLocale() == 'fr') %}
+                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-fr\"></span> <b class=\"caret\"></b></a>
+                                {% endif %}
+
+                                {% if (app.request.getLocale() == 'de') %}
+                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-de\"></span> <b class=\"caret\"></b></a>
+                                {% endif %}
+
+                                <ul class=\"dropdown-menu\" style=\"min-width: 65px !important;\">
+
+                                    {% if (app.request.getLocale() == 'en') %}
+                                        <li><a href=\"{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'fr'})) }}\"><span class=\"flag-icon flag-icon-fr\"></span></a></li>
+                                        <li><a href=\"{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'de'})) }}\"><span class=\"flag-icon flag-icon-de\"></span></a></li>
+                                    {% endif %}
+
+                                    {% if (app.request.getLocale() == 'fr') %}
+                                        <li><a href=\"{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'en'})) }}\"><span class=\"flag-icon flag-icon-us\"></span></a></li>
+                                        <li><a href=\"{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'de'})) }}\"><span class=\"flag-icon flag-icon-de\"></span></a></li>
+                                    {% endif %}
+
+                                    {% if (app.request.getLocale() == 'de') %}
+                                        <li><a href=\"{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'en'})) }}\"><span class=\"flag-icon flag-icon-us\"></span></a></li>
+                                        <li><a href=\"{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'fr'})) }}\"><span class=\"flag-icon flag-icon-fr\"></span></a></li>
+                                    {% endif %}
+
                                 </ul>
                             </li>
                         </ul>
@@ -2243,7 +2436,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </section>
 
                         <!-- ARTICLES V1 WIDGET -->
-                        <section class=\"widget articles-v1\">
+                        <section class=\"hide widget articles-v1\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\">
                                 <h4>Headline</h4>
@@ -2393,7 +2586,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </section>
 
                         <!-- ADS -->
-                        <section class=\"widget\">
+                        <section class=\"hide widget\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\"><h4>Advertisement</h4></header>
 
@@ -2408,7 +2601,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
 
                         <!-- ARTICLES V2 WIDGET -->
-                        <section class=\"widget articles-v2\">
+                        <section class=\"hide widget articles-v2\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\">
                                 <h4>Politics</h4>
@@ -2509,7 +2702,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </section><!--.widget-->
 
 
-                        <div class=\"row\">
+                        <div class=\"hide row\">
                             <!-- ARTICLES V3 WIDGET -->
                             <section class=\"widget articles-v3 col-sm-6\">
                                 <!-- Widget header -->
@@ -2708,7 +2901,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         </div>
 
                         <!-- ADS -->
-                        <section class=\"widget\">
+                        <section class=\"hide widget\">
                             <!-- Widget Header -->
                             <header class=\"clearfix\"><h4>Advertisement</h4></header>
 
@@ -2721,7 +2914,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <img src=\"img/shadow.png\" alt=\"shadow\" class=\"shadow\">
                         </section>
 
-                        <div class=\"row\">
+                        <div class=\"hide row\">
                             <!-- ARTICLES V4 WIDGET -->
                             <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
                                 <!-- Widget Header -->
@@ -2952,7 +3145,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <!-- SEARCH WIDGET -->
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Widget header -->
-                                <header class=\"clearfix\"><h4>Search Widget</h4></header>
+                                <header class=\"clearfix\"><h4>Search </h4></header>
 
                                 <!-- Widget content -->
                                 <form method=\"get\" action=\"home-version-1.html\">
@@ -3061,7 +3254,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </section>
 
                             <!-- FEEDBURNER WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget feedburner\">
+                            <section class=\"hide col-sm-6 col-md-12 widget feedburner\">
                                 <!-- Widget Header -->
                                 <header class=\"clearfix\"><h4>Feedburner</h4></header>
 
@@ -3086,7 +3279,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </section>
 
                             <!-- YOUTUBE WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
+                            <section class=\"hide col-sm-6 col-md-12 widget\">
                                 <!-- Widget Header -->
                                 <header class=\"clearfix\"><h4>Youtube Video</h4></header>
 
@@ -3333,7 +3526,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </section>
 
                             <!-- VIMEO WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
+                            <section class=\"hide col-sm-6 col-md-12 widget\">
                                 <!-- Widget header -->
                                 <header class=\"clearfix\"><h4>Vimeo Video</h4></header>
 
@@ -3346,7 +3539,6 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                 <!-- Widget header: tab menu -->
                                 <ul class=\"nav nav-tabs\">
                                     <li class=\"active\"><a href=\"#categories\" data-toggle=\"tab\">Categories</a></li>
-                                    <li><a href=\"#tags\" data-toggle=\"tab\">Tags</a></li>
                                 </ul><!--.nav-tabs-->
 
                                 <!-- Tab contents -->
@@ -3354,52 +3546,18 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     <!-- Categories-->
                                     <div class=\"tab-pane active fade in\" id=\"categories\">
                                         <ul class=\"categories\">
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> National <span class=\"post-counts\">54,435,464</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> World  <span class=\"post-counts\">34,355,346</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Politics <span class=\"post-counts\">3,234,356</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Sport <span class=\"post-counts\">874,355</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Entertainment <span class=\"post-counts\">11,234,987</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Technology <span class=\"post-counts\">9,937,397</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Lifestyle <span class=\"post-counts\">345,385</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> Finance <span class=\"post-counts\">593,945</span></a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Tags -->
-                                    <div class=\"tab-pane fade\" id=\"tags\">
-                                        <ul class=\"tags clearfix\">
-                                            <li><a href=\"#\">morbi id</a></li>
-                                            <li><a href=\"#\">vulputate est</a></li>
-                                            <li><a href=\"#\">tiam quis </a></li>
-                                            <li><a href=\"#\">lectus</a></li>
-                                            <li><a href=\"#\">nunc</a></li>
-                                            <li><a href=\"#\">phasellus pharetra</a></li>
-                                            <li><a href=\"#\">velit quam</a></li>
-                                            <li><a href=\"#\">id laoreet</a></li>
-                                            <li><a href=\"#\">elit</a></li>
-                                            <li><a href=\"#\">porta</a></li>
-                                            <li><a href=\"#\">rhoncus</a></li>
-                                            <li><a href=\"#\">unc sit</a></li>
-                                            <li><a href=\"#\">amet nunc</a></li>
-                                            <li><a href=\"#\">velit tincidunt</a></li>
-                                            <li><a href=\"#\">nec fermentum</a></li>
-                                            <li><a href=\"#\">cursus</a></li>
-                                            <li><a href=\"#\">metus</a></li>
-                                            <li><a href=\"#\">estibulum</a></li>
-                                            <li><a href=\"#\">eleifend at ligula</a></li>
-                                            <li><a href=\"#\">vel aliquam</a></li>
-                                            <li><a href=\"#\">id velit</a></li>
-                                            <li><a href=\"#\">usce</a></li>
-                                            <li><a href=\"#\">hasellus</a></li>
-                                            <li><a href=\"#\">semper</a></li>
-                                            <li><a href=\"#\">dui ut</a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.news'|trans }} <span class=\"post-counts\">54,435,464</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.lifestyle'|trans }}  <span class=\"post-counts\">34,355,346</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.music'|trans }} <span class=\"post-counts\">3,234,356</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.sports'|trans }} <span class=\"post-counts\">874,355</span></a></li>
+                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.games'|trans }} <span class=\"post-counts\">11,234,987</span></a></li>
                                         </ul>
                                     </div>
                                 </div><!--.tab-content-->
                             </section>
 
                             <!-- ACCORDION -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
+                            <section class=\"hide col-sm-6 col-md-12 widget\">
                                 <!--Widget header-->
                                 <header class=\"clearfix\"><h4>Accordion</h4></header>
 
@@ -3451,7 +3609,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                 </div><!--.row-->
 
                 <!-- SLIDER TABS WIDGET: GALLERY -->
-                <section id=\"slider-tabs\" class=\"widget no-mobile\">
+                <section id=\"slider-tabs\" class=\"hide widget no-mobile\">
                     <!-- Widget header -->
                     <ul class=\"nav nav-tabs\">
                         <!--Title-->
@@ -3670,38 +3828,18 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             </ul>
                         </section>
 
-                        <!-- Popular Tags -->
+                        <!-- Categories -->
                         <section class=\"col-md-3 col-sm-6\">
                             <!--Title-->
-                            <div class=\"title\"><h4>Popular Tags</h4></div>
+                            <div class=\"title\"><h4>Categories</h4></div>
 
                             <!--Content-->
                             <ul class=\"tags clearfix\">
-                                <li><a href=\"#\">morbi id</a></li>
-                                <li><a href=\"#\">vulputate est</a></li>
-                                <li><a href=\"#\">tiam quis </a></li>
-                                <li><a href=\"#\">lectus</a></li>
-                                <li><a href=\"#\">nunc</a></li>
-                                <li><a href=\"#\">phasellus pharetra</a></li>
-                                <li><a href=\"#\">velit quam</a></li>
-                                <li><a href=\"#\">id laoreet</a></li>
-                                <li><a href=\"#\">elit</a></li>
-                                <li><a href=\"#\">porta</a></li>
-                                <li><a href=\"#\">rhoncus</a></li>
-                                <li><a href=\"#\">unc sit</a></li>
-                                <li><a href=\"#\">amet nunc</a></li>
-                                <li><a href=\"#\">velit tincidunt</a></li>
-                                <li><a href=\"#\">nec fermentum</a></li>
-                                <li><a href=\"#\">cursus</a></li>
-                                <li><a href=\"#\">metus</a></li>
-                                <li><a href=\"#\">estibulum</a></li>
-                                <li><a href=\"#\">eleifend at ligula</a></li>
-                                <li><a href=\"#\">vel aliquam</a></li>
-                                <li><a href=\"#\">id velit</a></li>
-                                <li><a href=\"#\">usce</a></li>
-                                <li><a href=\"#\">hasellus</a></li>
-                                <li><a href=\"#\">semper</a></li>
-                                <li><a href=\"#\">dui ut</a></li>
+                                <li><a href=\"#\">{{ 'navbar_link.news'|trans }}</a></li>
+                                <li><a href=\"#\">{{ 'navbar_link.lifestyle'|trans }}</a></li>
+                                <li><a href=\"#\">{{ 'navbar_link.music'|trans }} </a></li>
+                                <li><a href=\"#\">{{ 'navbar_link.sport'|trans }}</a></li>
+                                <li><a href=\"#\">{{ 'navbar_link.games'|trans }}</a></li>
                             </ul>
                         </section>
 

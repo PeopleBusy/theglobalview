@@ -1,0 +1,27 @@
+head:
+  title: Die globale Sicht
+
+toplink:
+  home: Zuhause
+  about: Über
+  contact: Kontakt
+
+navbar_link:
+  news: Nachrichten
+  lifestyle: Lebensstil
+  music: Musik
+  sports: Sport
+  games: Spiele
+
+navbar_sublink:
+  news: Unterkategorie
+  lifestyle:
+    beauty: Schönheit
+    health: Gesundheit
+    food: Lebensmittel
+    culture: Kultur
+    travel: Reise
+  music: Unterkategorie
+  sports: Unterkategorie
+  games: Unterkategorie
+  ads: Werbung

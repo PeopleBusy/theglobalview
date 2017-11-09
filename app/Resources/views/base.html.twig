@@ -2,7 +2,7 @@
 <html id="home-version-2" class="boxed-style">
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}The Global View{% endblock %}</title>
+        <title>{% block title %}{{ 'head.title'|trans }}{% endblock %}</title>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,9 @@
         <!-- Stylesheets -->
         <link href="{{ asset('/css/style.min.css') }}" rel="stylesheet">
         <link href="{{ asset('/css/custom.css') }}" rel="stylesheet">
+
+        <!-- Flags icons css -->
+        <link href="{{ asset('/css/flags/css/flag-icon.css') }}" rel="stylesheet">
 
         <!--Modernizr-->
         <script src="{{ asset('/js/modernizr.min.js') }}"></script>
@@ -52,9 +55,9 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="top-nav-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">{{ 'toplink.home'|trans }}</a></li>
+                            <li><a href="#">{{ 'toplink.about'|trans }}</a></li>
+                            <li><a href="#">{{ 'toplink.contact'|trans }}</a></li>
                         </ul>
 
                         <form class="navbar-form navbar-right" role="search">
@@ -88,7 +91,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo2.png') }}" alt="logo"></a>
+                        {% if (app.request.getLocale() == 'en') %}
+                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_en.png') }}" alt="logo"></a>
+                        {% endif %}
+
+                        {% if (app.request.getLocale() == 'fr') %}
+                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_fr.png') }}" alt="logo"></a>
+                        {% endif %}
+
+                        {% if (app.request.getLocale() == 'de') %}
+                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_de.png') }}" alt="logo"></a>
+                        {% endif %}
+
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,46 +110,75 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'navbar_link.news'|trans }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Sub categories</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.news'|trans }} </a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lifestyle <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'navbar_link.lifestyle'|trans }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Beauty</a></li>
-                                    <li><a href="#">Health</a></li>
-                                    <li><a href="#">Food</a></li>
-                                    <li><a href="#">Culture</a></li>
-                                    <li><a href="#">Travel</a></li>
-                                    <li><a href="#">Advertisement</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.lifestyle.beauty'|trans }}</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.lifestyle.health'|trans }}</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.lifestyle.food'|trans }}</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.lifestyle.culture'|trans }}</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.lifestyle.travel'|trans }}</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'navbar_link.music'|trans }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Sub categories</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.music'|trans }} </a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sports <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'navbar_link.sports'|trans }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Sub categories</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.sports'|trans }} </a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'navbar_link.games'|trans }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Sub categories</a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.games'|trans }} </a></li>
+                                    <li><a href="#">{{ 'navbar_sublink.ads'|trans }}</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Deutsch</a></li>
-                                    <li><a href="#">French</a></li>
+
+                                {% if (app.request.getLocale() == 'en') %}
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-us"></span> <b class="caret"></b></a>
+                                {% endif %}
+
+                                {% if (app.request.getLocale() == 'fr') %}
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-fr"></span> <b class="caret"></b></a>
+                                {% endif %}
+
+                                {% if (app.request.getLocale() == 'de') %}
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-de"></span> <b class="caret"></b></a>
+                                {% endif %}
+
+                                <ul class="dropdown-menu" style="min-width: 65px !important;">
+
+                                    {% if (app.request.getLocale() == 'en') %}
+                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'fr'})) }}"><span class="flag-icon flag-icon-fr"></span></a></li>
+                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'de'})) }}"><span class="flag-icon flag-icon-de"></span></a></li>
+                                    {% endif %}
+
+                                    {% if (app.request.getLocale() == 'fr') %}
+                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'en'})) }}"><span class="flag-icon flag-icon-us"></span></a></li>
+                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'de'})) }}"><span class="flag-icon flag-icon-de"></span></a></li>
+                                    {% endif %}
+
+                                    {% if (app.request.getLocale() == 'de') %}
+                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'en'})) }}"><span class="flag-icon flag-icon-us"></span></a></li>
+                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'fr'})) }}"><span class="flag-icon flag-icon-fr"></span></a></li>
+                                    {% endif %}
+
                                 </ul>
                             </li>
                         </ul>
@@ -243,7 +286,7 @@
                         </section>
 
                         <!-- ARTICLES V1 WIDGET -->
-                        <section class="widget articles-v1">
+                        <section class="hide widget articles-v1">
                             <!-- Widget Header -->
                             <header class="clearfix">
                                 <h4>Headline</h4>
@@ -393,7 +436,7 @@
                         </section>
 
                         <!-- ADS -->
-                        <section class="widget">
+                        <section class="hide widget">
                             <!-- Widget Header -->
                             <header class="clearfix"><h4>Advertisement</h4></header>
 
@@ -408,7 +451,7 @@
 
 
                         <!-- ARTICLES V2 WIDGET -->
-                        <section class="widget articles-v2">
+                        <section class="hide widget articles-v2">
                             <!-- Widget Header -->
                             <header class="clearfix">
                                 <h4>Politics</h4>
@@ -509,7 +552,7 @@
                         </section><!--.widget-->
 
 
-                        <div class="row">
+                        <div class="hide row">
                             <!-- ARTICLES V3 WIDGET -->
                             <section class="widget articles-v3 col-sm-6">
                                 <!-- Widget header -->
@@ -708,7 +751,7 @@
                         </div>
 
                         <!-- ADS -->
-                        <section class="widget">
+                        <section class="hide widget">
                             <!-- Widget Header -->
                             <header class="clearfix"><h4>Advertisement</h4></header>
 
@@ -721,7 +764,7 @@
                             <img src="img/shadow.png" alt="shadow" class="shadow">
                         </section>
 
-                        <div class="row">
+                        <div class="hide row">
                             <!-- ARTICLES V4 WIDGET -->
                             <section class="widget articles-v4 col-sm-3 col-xs-6">
                                 <!-- Widget Header -->
@@ -952,7 +995,7 @@
                             <!-- SEARCH WIDGET -->
                             <section class="col-sm-6 col-md-12 widget">
                                 <!-- Widget header -->
-                                <header class="clearfix"><h4>Search Widget</h4></header>
+                                <header class="clearfix"><h4>Search </h4></header>
 
                                 <!-- Widget content -->
                                 <form method="get" action="home-version-1.html">
@@ -1061,7 +1104,7 @@
                             </section>
 
                             <!-- FEEDBURNER WIDGET -->
-                            <section class="col-sm-6 col-md-12 widget feedburner">
+                            <section class="hide col-sm-6 col-md-12 widget feedburner">
                                 <!-- Widget Header -->
                                 <header class="clearfix"><h4>Feedburner</h4></header>
 
@@ -1086,7 +1129,7 @@
                             </section>
 
                             <!-- YOUTUBE WIDGET -->
-                            <section class="col-sm-6 col-md-12 widget">
+                            <section class="hide col-sm-6 col-md-12 widget">
                                 <!-- Widget Header -->
                                 <header class="clearfix"><h4>Youtube Video</h4></header>
 
@@ -1333,7 +1376,7 @@
                             </section>
 
                             <!-- VIMEO WIDGET -->
-                            <section class="col-sm-6 col-md-12 widget">
+                            <section class="hide col-sm-6 col-md-12 widget">
                                 <!-- Widget header -->
                                 <header class="clearfix"><h4>Vimeo Video</h4></header>
 
@@ -1346,7 +1389,6 @@
                                 <!-- Widget header: tab menu -->
                                 <ul class="nav nav-tabs">
                                     <li class="active"><a href="#categories" data-toggle="tab">Categories</a></li>
-                                    <li><a href="#tags" data-toggle="tab">Tags</a></li>
                                 </ul><!--.nav-tabs-->
 
                                 <!-- Tab contents -->
@@ -1354,52 +1396,18 @@
                                     <!-- Categories-->
                                     <div class="tab-pane active fade in" id="categories">
                                         <ul class="categories">
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> National <span class="post-counts">54,435,464</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> World  <span class="post-counts">34,355,346</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> Politics <span class="post-counts">3,234,356</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> Sport <span class="post-counts">874,355</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> Entertainment <span class="post-counts">11,234,987</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> Technology <span class="post-counts">9,937,397</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> Lifestyle <span class="post-counts">345,385</span></a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i> Finance <span class="post-counts">593,945</span></a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Tags -->
-                                    <div class="tab-pane fade" id="tags">
-                                        <ul class="tags clearfix">
-                                            <li><a href="#">morbi id</a></li>
-                                            <li><a href="#">vulputate est</a></li>
-                                            <li><a href="#">tiam quis </a></li>
-                                            <li><a href="#">lectus</a></li>
-                                            <li><a href="#">nunc</a></li>
-                                            <li><a href="#">phasellus pharetra</a></li>
-                                            <li><a href="#">velit quam</a></li>
-                                            <li><a href="#">id laoreet</a></li>
-                                            <li><a href="#">elit</a></li>
-                                            <li><a href="#">porta</a></li>
-                                            <li><a href="#">rhoncus</a></li>
-                                            <li><a href="#">unc sit</a></li>
-                                            <li><a href="#">amet nunc</a></li>
-                                            <li><a href="#">velit tincidunt</a></li>
-                                            <li><a href="#">nec fermentum</a></li>
-                                            <li><a href="#">cursus</a></li>
-                                            <li><a href="#">metus</a></li>
-                                            <li><a href="#">estibulum</a></li>
-                                            <li><a href="#">eleifend at ligula</a></li>
-                                            <li><a href="#">vel aliquam</a></li>
-                                            <li><a href="#">id velit</a></li>
-                                            <li><a href="#">usce</a></li>
-                                            <li><a href="#">hasellus</a></li>
-                                            <li><a href="#">semper</a></li>
-                                            <li><a href="#">dui ut</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> {{ 'navbar_link.news'|trans }} <span class="post-counts">54,435,464</span></a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> {{ 'navbar_link.lifestyle'|trans }}  <span class="post-counts">34,355,346</span></a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> {{ 'navbar_link.music'|trans }} <span class="post-counts">3,234,356</span></a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> {{ 'navbar_link.sports'|trans }} <span class="post-counts">874,355</span></a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> {{ 'navbar_link.games'|trans }} <span class="post-counts">11,234,987</span></a></li>
                                         </ul>
                                     </div>
                                 </div><!--.tab-content-->
                             </section>
 
                             <!-- ACCORDION -->
-                            <section class="col-sm-6 col-md-12 widget">
+                            <section class="hide col-sm-6 col-md-12 widget">
                                 <!--Widget header-->
                                 <header class="clearfix"><h4>Accordion</h4></header>
 
@@ -1451,7 +1459,7 @@
                 </div><!--.row-->
 
                 <!-- SLIDER TABS WIDGET: GALLERY -->
-                <section id="slider-tabs" class="widget no-mobile">
+                <section id="slider-tabs" class="hide widget no-mobile">
                     <!-- Widget header -->
                     <ul class="nav nav-tabs">
                         <!--Title-->
@@ -1670,38 +1678,18 @@
                             </ul>
                         </section>
 
-                        <!-- Popular Tags -->
+                        <!-- Categories -->
                         <section class="col-md-3 col-sm-6">
                             <!--Title-->
-                            <div class="title"><h4>Popular Tags</h4></div>
+                            <div class="title"><h4>Categories</h4></div>
 
                             <!--Content-->
                             <ul class="tags clearfix">
-                                <li><a href="#">morbi id</a></li>
-                                <li><a href="#">vulputate est</a></li>
-                                <li><a href="#">tiam quis </a></li>
-                                <li><a href="#">lectus</a></li>
-                                <li><a href="#">nunc</a></li>
-                                <li><a href="#">phasellus pharetra</a></li>
-                                <li><a href="#">velit quam</a></li>
-                                <li><a href="#">id laoreet</a></li>
-                                <li><a href="#">elit</a></li>
-                                <li><a href="#">porta</a></li>
-                                <li><a href="#">rhoncus</a></li>
-                                <li><a href="#">unc sit</a></li>
-                                <li><a href="#">amet nunc</a></li>
-                                <li><a href="#">velit tincidunt</a></li>
-                                <li><a href="#">nec fermentum</a></li>
-                                <li><a href="#">cursus</a></li>
-                                <li><a href="#">metus</a></li>
-                                <li><a href="#">estibulum</a></li>
-                                <li><a href="#">eleifend at ligula</a></li>
-                                <li><a href="#">vel aliquam</a></li>
-                                <li><a href="#">id velit</a></li>
-                                <li><a href="#">usce</a></li>
-                                <li><a href="#">hasellus</a></li>
-                                <li><a href="#">semper</a></li>
-                                <li><a href="#">dui ut</a></li>
+                                <li><a href="#">{{ 'navbar_link.news'|trans }}</a></li>
+                                <li><a href="#">{{ 'navbar_link.lifestyle'|trans }}</a></li>
+                                <li><a href="#">{{ 'navbar_link.music'|trans }} </a></li>
+                                <li><a href="#">{{ 'navbar_link.sport'|trans }}</a></li>
+                                <li><a href="#">{{ 'navbar_link.games'|trans }}</a></li>
                             </ul>
                         </section>
 

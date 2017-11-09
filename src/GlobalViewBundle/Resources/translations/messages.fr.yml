@@ -1,0 +1,27 @@
+head:
+  title: La vue globale
+
+toplink:
+  home: Accueil
+  about: A propos
+  contact: Contact
+
+navbar_link:
+  news: News
+  lifestyle: Style de vie
+  music: Musique
+  sports: Sports
+  games: Jeux
+
+navbar_sublink:
+  news: Sous catégorie
+  lifestyle:
+    beauty: Beauté
+    health: Santé
+    food: Nourriture
+    culture: Culture
+    travel: Voyage
+  music: Sous catégorie
+  sports: Sous catégorie
+  games: Sous catégorie
+  ads: Publicité

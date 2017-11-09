@@ -1,0 +1,27 @@
+head:
+  title: The global view
+
+toplink:
+  home: Home
+  about: About
+  contact: Contact
+
+navbar_link:
+  news: News
+  lifestyle: Lifestyle
+  music: Music
+  sports: Sports
+  games: Games
+
+navbar_sublink:
+  news: Subcategory
+  lifestyle:
+    beauty: Beauty
+    health: Health
+    food: Food
+    culture: Culture
+    travel: Travel
+  music: Subcategory
+  sports: Subcategory
+  games: Subcategory
+  ads: Advertisement
