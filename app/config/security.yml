@@ -1,11 +1,20 @@
 # To get started with security, check out the documentation:
-# http://symfony.com/doc/current/security.html
+# https://symfony.com/doc/current/security.html
 security:
+    encoders:
+        GlobalViewBundle\Entity\User:
+            algorithm: bcrypt
 
-    # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory: ~
+        our_db_provider:
+            entity:
+                class: GlobalViewBundle\Entity\User
+                property: username
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -14,11 +23,18 @@ security:
             security: false
 
         main:
+            pattern: ^/
+            http_basic: ~
+            provider: our_db_provider
+            form_login:
+                login_path: global_login
+                check_path: global_login
+
+            logout:
+                path: /logout
+                target: /login
             anonymous: ~
-            # activate different ways to authenticate
 
-            # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
-
-            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
-            #form_login: ~
+    access_control:
+            - { path: ^/, role: IS_AUTHENTICATED_ANONYMOUSLY }
+            - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }

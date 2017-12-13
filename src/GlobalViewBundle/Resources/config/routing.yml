@@ -3,3 +3,82 @@ global_view_homepage:
     defaults: { _controller: GlobalViewBundle:Default:index, _locale: en }
     requirements:
         _locale: en|fr|de
+
+global_view_posts_by_subcategory:
+    path:     /posts/subcategory/{id}/{_locale}
+    defaults: { _controller: GlobalViewBundle:Default:subcategoryposts, _locale: en }
+    requirements:
+        _locale: en|fr|de
+
+global_login:
+    path:     /login
+    defaults: { _controller: GlobalViewBundle:Login:login }
+
+global_logout:
+    path:     /logout
+    defaults: { _controller: GlobalViewBundle:Login:logout }
+
+global_admin:
+    path:     /admin/home
+    defaults: { _controller: GlobalViewBundle:Admin:index }
+
+
+
+
+global_admin_category:
+    path:     /admin/category
+    defaults: { _controller: GlobalViewBundle:Category:index }
+
+global_admin_category_create:
+    path:     /admin/category/create
+    defaults: { _controller: GlobalViewBundle:Category:create }
+
+global_admin_category_update:
+    path:     /admin/category/update/{id}
+    defaults: { _controller: GlobalViewBundle:Category:update }
+
+global_admin_category_delete:
+    path:     /admin/category/delete/{id}
+    defaults: { _controller: GlobalViewBundle:Category:delete }
+
+
+
+
+global_admin_subcategory:
+    path:     /admin/subcategory
+    defaults: { _controller: GlobalViewBundle:SubCategory:index }
+
+global_admin_subcategory_create:
+    path:     /admin/subcategory/create
+    defaults: { _controller: GlobalViewBundle:SubCategory:create }
+
+global_admin_subcategory_update:
+    path:     /admin/subcategory/update/{id}
+    defaults: { _controller: GlobalViewBundle:SubCategory:update }
+
+global_admin_subcategory_delete:
+    path:     /admin/subcategory/delete/{id}
+    defaults: { _controller: GlobalViewBundle:SubCategory:delete }
+
+
+
+
+global_admin_post:
+    path:     /admin/post
+    defaults: { _controller: GlobalViewBundle:Post:index }
+
+global_admin_post_create:
+    path:     /admin/post/create
+    defaults: { _controller: GlobalViewBundle:Post:create }
+
+global_admin_post_update:
+    path:     /admin/post/update/{id}
+    defaults: { _controller: GlobalViewBundle:Post:update }
+
+global_admin_post_delete:
+    path:     /admin/post/delete/{id}
+    defaults: { _controller: GlobalViewBundle:Post:delete }
+
+global_admin_post_details:
+    path:     /admin/post/details/{id}
+    defaults: { _controller: GlobalViewBundle:Post:details }

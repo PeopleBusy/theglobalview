@@ -1,0 +1,111 @@
+{% extends "::admin_base.html.twig" %}
+
+{% block title %} Sous categories {% endblock %}
+
+{% block admin_title %}Page sous-catégories{% endblock %}
+
+{% block admin_content %}
+    {% if erreurMsg %}
+            <div class="alert alert-danger">
+                    <strong>Erreur!</strong> {{ erreurMsg }}
+            </div>
+    {% endif %}
+
+    {% if successMsg %}
+            <div class="alert alert-success">
+                    <strong>Réussi!</strong> {{ successMsg }}
+            </div>
+    {% endif %}
+
+
+    {% if mode == 'new' %}
+            <form method="post" action="{{ path('global_admin_subcategory_create') }}">
+    {% endif %}
+
+    {% if mode == 'edit' %}
+        <form method="post" action="{{ path('global_admin_subcategory_update', {'id': subcategory.id}) }}">
+    {% endif %}
+
+    {% if mode == 'delete' %}
+        <form method="post" action="{{ path('global_admin_subcategory_delete', {'id': subcategory.id}) }}">
+    {% endif %}
+
+                <div class="row">
+                        <div class="form-group col-md-4">
+                                <label>Catégories:</label>
+                                <select class="form-control" required name="category_id">
+                                        <option value="">Choisir une catégorie</option>
+                                    {% if mode == 'new'  %}
+
+                                        {% for ca in categories %}
+
+                                            <option value="{{ ca.id }}">{{ ca.libelleFr }} / {{ ca.libelleEn }} / {{ ca.libelleDe }}</option>
+
+                                        {% endfor %}
+
+                                    {% else %}
+                                        {% for ca in categories %}
+
+                                            {% if subcategory.category.id == ca.id %}
+                                                <option selected value="{{ ca.id }}">{{ ca.libelleFr }} / {{ ca.libelleEn }} / {{ ca.libelleDe }}</option>
+                                            {% else %}
+                                                <option value="{{ ca.id }}">{{ ca.libelleFr }} / {{ ca.libelleEn }} / {{ ca.libelleDe }}</option>
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    {% endif %}
+
+                                </select>
+                        </div>
+                </div>
+
+
+                <div class="input-group">
+                        <i class="fa fa-list"></i>
+                        <input type="text" name="nom_fr" placeholder="Nom de la sous-catégorie" value="{{ subcategory.nomFr }}"  required>
+                </div>
+                <div class="input-group">
+                        <i class="fa fa-list"></i>
+                        <input type="text" name="nom_en" placeholder="Subcategory name" value="{{ subcategory.nomEn }}" required>
+                </div>
+                <div class="input-group">
+                        <i class="fa fa-list"></i>
+                        <input type="text" name="nom_de" placeholder="Unterkategoriename" value="{{ subcategory.nomDe }}"  required>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Enregistrer / Modifier</button>
+        </form>
+
+        <br>
+
+        <!--Bordered Table-->
+        <table class="table table-hover table-striped table-bordered">
+                <thead>
+                <tr>
+                        <th>Catégorie</th>
+                        <th>Nom/Francais</th>
+                        <th>Name/Anglais</th>
+                        <th>Name/Allemand</th>
+                        <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for ca in categories %}
+                    {% for s in ca.subcategories %}
+                        <tr>
+                            <td>{{ ca.libelleFr }} / {{ ca.libelleEn }} / {{ ca.libelleDe }}</td>
+                            <td>{{ s.nomFr }}</td>
+                            <td>{{ s.nomEn }}</td>
+                            <td>{{ s.nomDe }}</td>
+                            <td>
+                                <a href="{{ path('global_admin_subcategory_update', {'id' : s.id}) }}" class="btn btn-xs btn-success">Modifier</a>
+                                <a href="{{ path('global_admin_subcategory_delete', {'id' : s.id}) }}" class="hide btn btn-xs btn-primary">Supprimer</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                {% endfor %}
+                </tbody>
+        </table>
+
+{% endblock %}

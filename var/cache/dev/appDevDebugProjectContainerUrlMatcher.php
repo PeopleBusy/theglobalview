@@ -118,6 +118,103 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_homepage')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::indexAction',  '_locale' => 'en',));
         }
 
+        // global_view_posts_by_subcategory
+        if (0 === strpos($pathinfo, '/posts/subcategory') && preg_match('#^/posts/subcategory/(?P<id>[^/]++)(?:/(?P<_locale>en|fr|de))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_posts_by_subcategory')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::subcategorypostsAction',  '_locale' => 'en',));
+        }
+
+        // global_login
+        if ('/login' === $pathinfo) {
+            return array (  '_controller' => 'GlobalViewBundle\\Controller\\LoginController::loginAction',  '_route' => 'global_login',);
+        }
+
+        // global_logout
+        if ('/logout' === $pathinfo) {
+            return array (  '_controller' => 'GlobalViewBundle\\Controller\\LoginController::logoutAction',  '_route' => 'global_logout',);
+        }
+
+        if (0 === strpos($pathinfo, '/admin')) {
+            // global_admin
+            if ('/admin/home' === $pathinfo) {
+                return array (  '_controller' => 'GlobalViewBundle\\Controller\\AdminController::indexAction',  '_route' => 'global_admin',);
+            }
+
+            if (0 === strpos($pathinfo, '/admin/category')) {
+                // global_admin_category
+                if ('/admin/category' === $pathinfo) {
+                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\CategoryController::indexAction',  '_route' => 'global_admin_category',);
+                }
+
+                // global_admin_category_create
+                if ('/admin/category/create' === $pathinfo) {
+                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\CategoryController::createAction',  '_route' => 'global_admin_category_create',);
+                }
+
+                // global_admin_category_update
+                if (0 === strpos($pathinfo, '/admin/category/update') && preg_match('#^/admin/category/update/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_category_update')), array (  '_controller' => 'GlobalViewBundle\\Controller\\CategoryController::updateAction',));
+                }
+
+                // global_admin_category_delete
+                if (0 === strpos($pathinfo, '/admin/category/delete') && preg_match('#^/admin/category/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_category_delete')), array (  '_controller' => 'GlobalViewBundle\\Controller\\CategoryController::deleteAction',));
+                }
+
+            }
+
+            elseif (0 === strpos($pathinfo, '/admin/subcategory')) {
+                // global_admin_subcategory
+                if ('/admin/subcategory' === $pathinfo) {
+                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\SubCategoryController::indexAction',  '_route' => 'global_admin_subcategory',);
+                }
+
+                // global_admin_subcategory_create
+                if ('/admin/subcategory/create' === $pathinfo) {
+                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\SubCategoryController::createAction',  '_route' => 'global_admin_subcategory_create',);
+                }
+
+                // global_admin_subcategory_update
+                if (0 === strpos($pathinfo, '/admin/subcategory/update') && preg_match('#^/admin/subcategory/update/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_subcategory_update')), array (  '_controller' => 'GlobalViewBundle\\Controller\\SubCategoryController::updateAction',));
+                }
+
+                // global_admin_subcategory_delete
+                if (0 === strpos($pathinfo, '/admin/subcategory/delete') && preg_match('#^/admin/subcategory/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_subcategory_delete')), array (  '_controller' => 'GlobalViewBundle\\Controller\\SubCategoryController::deleteAction',));
+                }
+
+            }
+
+            elseif (0 === strpos($pathinfo, '/admin/post')) {
+                // global_admin_post
+                if ('/admin/post' === $pathinfo) {
+                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::indexAction',  '_route' => 'global_admin_post',);
+                }
+
+                // global_admin_post_create
+                if ('/admin/post/create' === $pathinfo) {
+                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::createAction',  '_route' => 'global_admin_post_create',);
+                }
+
+                // global_admin_post_update
+                if (0 === strpos($pathinfo, '/admin/post/update') && preg_match('#^/admin/post/update/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_update')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::updateAction',));
+                }
+
+                // global_admin_post_delete
+                if (0 === strpos($pathinfo, '/admin/post/delete') && preg_match('#^/admin/post/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_delete')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::deleteAction',));
+                }
+
+                // global_admin_post_details
+                if (0 === strpos($pathinfo, '/admin/post/details') && preg_match('#^/admin/post/details/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_details')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::detailsAction',));
+                }
+
+            }
+
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             if (substr($pathinfo, -1) !== '/') {

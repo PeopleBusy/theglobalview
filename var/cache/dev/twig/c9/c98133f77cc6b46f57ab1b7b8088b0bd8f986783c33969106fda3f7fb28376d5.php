@@ -1,7 +1,7 @@
 <?php
 
-/* ::base.html.twig */
-class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a450647f extends Twig_Template
+/* ::base_fr.html.twig */
+class __TwigTemplate_0f34404ee9b04505d70f1d2e64c3adab78e6003121f656fd236b442c3f4b7bc8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -13,17 +13,18 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
+            'article_content' => array($this, 'block_article_content'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f0a81972a34271662a40c9eccad1d97f5cb0697b3b9506ce85eae8ea4e7f12ef = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f0a81972a34271662a40c9eccad1d97f5cb0697b3b9506ce85eae8ea4e7f12ef->enter($__internal_f0a81972a34271662a40c9eccad1d97f5cb0697b3b9506ce85eae8ea4e7f12ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
+        $__internal_74d7c3118e57540d9bf76249c7f1ebbac684a9a238a5ece09c9502e29c7a8ca4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_74d7c3118e57540d9bf76249c7f1ebbac684a9a238a5ece09c9502e29c7a8ca4->enter($__internal_74d7c3118e57540d9bf76249c7f1ebbac684a9a238a5ece09c9502e29c7a8ca4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base_fr.html.twig"));
 
-        $__internal_e953a4d6291440ca1f0fdfeba46004cb4b2dd6f85eb746915fb814b2af855bac = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e953a4d6291440ca1f0fdfeba46004cb4b2dd6f85eb746915fb814b2af855bac->enter($__internal_e953a4d6291440ca1f0fdfeba46004cb4b2dd6f85eb746915fb814b2af855bac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base.html.twig"));
+        $__internal_de194fbcdf47bf1d6662d5daedf2fa83c40693f96c9804053002115c938fab7e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_de194fbcdf47bf1d6662d5daedf2fa83c40693f96c9804053002115c938fab7e->enter($__internal_de194fbcdf47bf1d6662d5daedf2fa83c40693f96c9804053002115c938fab7e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::base_fr.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -128,7 +129,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
                         <form class=\"navbar-form navbar-right\" role=\"search\">
                             <label class=\"sr-only\" for=\"top_search_form\">Search for</label>
-                            <input id=\"top_search_form\" type=\"search\" placeholder=\"Search\">
+                            <input id=\"top_search_form\" type=\"search\" placeholder=\"Rechercher\">
                             <button type=\"submit\" >
                                 <span class=\"fa fa-search\"></span>
                                 <span class=\"sr-only\">Search/submit</span>
@@ -196,177 +197,128 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                     <div class=\"collapse navbar-collapse\" id=\"main-nav-collapse\">
                         <ul class=\"nav navbar-nav navbar-right\">
                             <li class=\"active\"><a href=\"#\"><i class=\"fa fa-home\"></i></a></li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+
+                            ";
         // line 113
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.news"), "html", null, true);
-        echo " <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">";
-        // line 115
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.news"), "html", null, true);
-        echo " </a></li>
-                                    <li><a href=\"#\">";
-        // line 116
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
-        echo "</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
-        // line 120
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.lifestyle"), "html", null, true);
-        echo " <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">";
-        // line 122
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.beauty"), "html", null, true);
-        echo "</a></li>
-                                    <li><a href=\"#\">";
-        // line 123
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.health"), "html", null, true);
-        echo "</a></li>
-                                    <li><a href=\"#\">";
-        // line 124
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.food"), "html", null, true);
-        echo "</a></li>
-                                    <li><a href=\"#\">";
-        // line 125
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.culture"), "html", null, true);
-        echo "</a></li>
-                                    <li><a href=\"#\">";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["categories"] ?? $this->getContext($context, "categories")));
+        foreach ($context['_seq'] as $context["_key"] => $context["ca"]) {
+            // line 114
+            echo "                                    <li class=\"dropdown\">
+                                        <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
+            // line 115
+            echo twig_escape_filter($this->env, $this->getAttribute($context["ca"], "libelleFr", array()), "html", null, true);
+            echo " <b class=\"caret\"></b></a>
+                                        ";
+            // line 116
+            if ( !twig_test_empty($this->getAttribute($context["ca"], "subcategories", array()))) {
+                // line 117
+                echo "                                            <ul class=\"dropdown-menu\">
+                                                ";
+                // line 118
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["ca"], "subcategories", array()));
+                foreach ($context['_seq'] as $context["_key"] => $context["s"]) {
+                    // line 119
+                    echo "                                                    <li><a href=\"";
+                    echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_view_posts_by_subcategory", array("id" => $this->getAttribute($context["s"], "id", array()), "_locale" => "fr")), "html", null, true);
+                    echo "\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["s"], "nomFr", array()), "html", null, true);
+                    echo " </a></li>
+                                                ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['s'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 121
+                echo "                                            </ul>
+                                        ";
+            }
+            // line 123
+            echo "                                    </li>
+
+                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ca'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         // line 126
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.lifestyle.travel"), "html", null, true);
-        echo "</a></li>
-                                    <li><a href=\"#\">";
-        // line 127
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
-        echo "</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
-        // line 131
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.music"), "html", null, true);
-        echo " <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">";
-        // line 133
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.music"), "html", null, true);
-        echo " </a></li>
-                                    <li><a href=\"#\">";
-        // line 134
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
-        echo "</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
-        // line 138
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.sports"), "html", null, true);
-        echo " <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">";
-        // line 140
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.sports"), "html", null, true);
-        echo " </a></li>
-                                    <li><a href=\"#\">";
-        // line 141
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
-        echo "</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">";
-        // line 145
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.games"), "html", null, true);
-        echo " <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">";
-        // line 147
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.games"), "html", null, true);
-        echo " </a></li>
-                                    <li><a href=\"#\">";
-        // line 148
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_sublink.ads"), "html", null, true);
-        echo "</a></li>
-                                </ul>
-                            </li>
+        echo "
                             <li class=\"dropdown\">
 
                                 ";
-        // line 153
+        // line 129
         if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "en")) {
-            // line 154
+            // line 130
             echo "                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-us\"></span> <b class=\"caret\"></b></a>
                                 ";
         }
-        // line 156
+        // line 132
         echo "
                                 ";
-        // line 157
+        // line 133
         if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "fr")) {
-            // line 158
+            // line 134
             echo "                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-fr\"></span> <b class=\"caret\"></b></a>
                                 ";
         }
-        // line 160
+        // line 136
         echo "
                                 ";
-        // line 161
+        // line 137
         if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "de")) {
-            // line 162
+            // line 138
             echo "                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"flag-icon flag-icon-de\"></span> <b class=\"caret\"></b></a>
                                 ";
         }
-        // line 164
+        // line 140
         echo "
                                 <ul class=\"dropdown-menu\" style=\"min-width: 65px !important;\">
 
                                     ";
-        // line 167
+        // line 143
         if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "en")) {
-            // line 168
+            // line 144
             echo "                                        <li><a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "fr"))), "html", null, true);
             echo "\"><span class=\"flag-icon flag-icon-fr\"></span></a></li>
                                         <li><a href=\"";
-            // line 169
+            // line 145
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "de"))), "html", null, true);
             echo "\"><span class=\"flag-icon flag-icon-de\"></span></a></li>
                                     ";
         }
-        // line 171
+        // line 147
         echo "
                                     ";
-        // line 172
+        // line 148
         if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "fr")) {
-            // line 173
+            // line 149
             echo "                                        <li><a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "en"))), "html", null, true);
             echo "\"><span class=\"flag-icon flag-icon-us\"></span></a></li>
                                         <li><a href=\"";
-            // line 174
+            // line 150
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "de"))), "html", null, true);
             echo "\"><span class=\"flag-icon flag-icon-de\"></span></a></li>
                                     ";
         }
-        // line 176
+        // line 152
         echo "
                                     ";
-        // line 177
+        // line 153
         if (($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "getLocale", array(), "method") == "de")) {
-            // line 178
+            // line 154
             echo "                                        <li><a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "en"))), "html", null, true);
             echo "\"><span class=\"flag-icon flag-icon-us\"></span></a></li>
                                         <li><a href=\"";
-            // line 179
+            // line 155
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), twig_array_merge($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route_params"), "method"), array("_locale" => "fr"))), "html", null, true);
             echo "\"><span class=\"flag-icon flag-icon-fr\"></span></a></li>
                                     ";
         }
-        // line 181
+        // line 157
         echo "
                                 </ul>
                             </li>
@@ -379,7 +331,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
             <div id=\"title\">
                 <div class=\"image-light\"></div>
                 <div class=\"container\">
-                    <div class=\"title-container\">
+                    <div class=\"title-container hide\">
                         <h1 class=\"primary\">Just another news/magazine website template</h1>
                         <p class=\"secondary\">It's simple yet beautiful</p>
                     </div>
@@ -398,16 +350,27 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         <!-- BREAKING NEWS -->
                         <section class=\"breaking-news\">
                             <header>
-                                <h4>Breaking News</h4>
+                                <h4>Dernières nouvelles</h4>
                                 <i class=\"triangle\"></i>
                             </header>
                             <div class=\"content\">
                                 <ul>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Donec nec mi non metus ullamcorper suscipit</a></li>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Morbi auctor massa mi, tempus placerat orci tempor molestie</a></li>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Praesent et dolor velit</a></li>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Aenean porta diam non elit iaculis, a tristique ligula laoreet</a></li>
-                                </ul>
+                                    ";
+        // line 193
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["popularPosts"] ?? $this->getContext($context, "popularPosts")));
+        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+            // line 194
+            echo "                                        <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> ";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "titleFr", array()), "html", null, true);
+            echo "</a></li>
+                                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 196
+        echo "                                </ul>
                             </div>
                         </section>
 
@@ -420,7 +383,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                         <div class=\"item active\">
                                             <div class=\"item-inner\">
                                                 <div data-src=\"http://placehold.it/730x370\" data-alt=\"Doctype Pellentesque pellentesque faucibus urna ac feugiat\"></div>
-                                                <div class=\"carousel-caption\">
+                                                <div class=\"carousel-caption hide\">
                                                     <div><a href=\"#\"><h3>Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat</h3></a></div>
                                                     <div class=\"hidden-xs\">
                                                         <p>
@@ -435,7 +398,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                         <div class=\"item\">
                                             <div class=\"item-inner\">
                                                 <div data-src=\"http://placehold.it/730x370\" data-alt=\"Mauris lacus nisl, suscipit ut orci ut, gravida dapibus neque Interdum et malesuada\"></div>
-                                                <div class=\"carousel-caption\">
+                                                <div class=\"carousel-caption hide\">
                                                     <div><a href=\"#\"><h1>Mauris Lacus Nisl Suscipit Ut Orci Ut Gravida Dapibus Neque</h1></a></div>
                                                     <div class=\"hidden-xs\">
                                                         <p>
@@ -450,7 +413,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                         <div class=\"item\">
                                             <div class=\"item-inner\">
                                                 <div data-src=\"http://placehold.it/730x370\" data-alt=\"Stones turpis egestas Curabitur scelerisque sagittis lectus ac consequat Mauris dictum sollicitudin tincidunt\"></div>
-                                                <div class=\"carousel-caption\">
+                                                <div class=\"carousel-caption hide\">
                                                     <div><a href=\"#\"><h1>Stones Turpis Egestas Curabitur Scelerisque Sagittis Lectus Ac</h1></a></div>
                                                     <div class=\"hidden-xs\">
                                                         <p>
@@ -471,732 +434,31 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     <a class=\"right carousel-control\" href=\"#carousel-medium\" data-slide=\"next\"><span class=\"fa fa-chevron-right\"></span></a>
                                 </div>
                             </div>
-                            <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
+                            <img src=\"";
+        // line 260
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/shadow.png"), "html", null, true);
+        echo "\" class=\"shadow\" alt=\"shadow\">
                         </section>
 
-                        <!-- ARTICLES V1 WIDGET -->
-                        <section class=\"hide widget articles-v1\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\">
-                                <h4>Headline</h4>
-                                <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                            </header>
+                        <div class=\"articles\">
+                            ";
+        // line 264
+        $this->displayBlock('article_content', $context, $blocks);
+        // line 265
+        echo "                        </div>
 
-                            <!-- Widget Contents: Articles-->
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"Pub qui dolorem ipsum quia dol consectetur amet adipisci velit sed\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-audio\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
 
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Bussiness</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure
-                                            reprehenderit...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"Coffee eros non risus suscipit faucibus Sed quis\">
-                                                </figure><div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-chat\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Coffee Eros Non Risus Suscipit Faucibus Sed Quis</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Bussiness</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Proin bibendum, libero in dictum pellentesque, lorem enim varius tellus, nec aliquet
-                                            dolor risus non sem. Curabitur placerat, quam vel bibendum pretium, arcu dui c
-                                            onsectetur tellus, et tincidunt turpis...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"branches eros quam ultricies et condimentum a porta quis neque\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-gallery\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Branches Eros Quam Ultricies Et Condimentum A Porta Quis Neque</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Weather</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Vivamus fermentum, mi nec convallis congue Sed do eiusmod tempor incididunt ut labore et,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute
-                                            Mauris ac nisl nunc...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"boat dui accumsan velit vel tincidunt dui leo et dui\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-image\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Boat Dui Accumsan Velit Vel Dincidunt Dui Leo Et Dui</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Traffic</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Vivamus fermentum, mi nec convallis congue Sed do eiusmod tempor incididunt ut labore et,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute
-                                            Mauris ac nisl nunc...
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <hr>
-                        </section>
-
-                        <!-- ADS -->
-                        <section class=\"hide widget\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\"><h4>Advertisement</h4></header>
-
-                            <!-- Widget Content -->
-                            <div class=\"frame thick\">
-                                <a href=\"http://themeforest.net/user/friskamax/portfolio?ref=friskamax\" target=\"_blank\">
-                                    <img src=\"http://placehold.it/728x90/f0f0f9\" alt=\"ads\">
-                                </a>
-                            </div>
-                            <img src=\"img/shadow.png\" alt=\"shadow\" class=\"shadow\">
-                        </section>
-
-
-                        <!-- ARTICLES V2 WIDGET -->
-                        <section class=\"hide widget articles-v2\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\">
-                                <h4>Politics</h4>
-                                <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                            </header>
-
-                            <!-- Widget Contents -->
-                            <div class=\"content row\">
-                                <div class=\"col-sm-6 article-medium\">
-                                    <!--frame-->
-                                    <div class=\"frame\">
-                                        <!--image-->
-                                        <a class=\"image\" href=\"#\">
-                                            <figure class=\"image-holder\">
-                                                <img src=\"http://placehold.it/350x185\" alt=\"ulm town home cathedral square quantitative mass\">
-                                            </figure>
-                                            <div class=\"image-light\"></div>
-                                            <span class=\"dashicons dashicons-format-quote\"></span>
-                                        </a>
-                                    </div>
-                                    <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-
-                                    <h4><a href=\"#\">Ulm Town Home Cathedral Square Quantitative Mass</a></h4>
-
-                                    <!--content-->
-                                    <p>
-                                        Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...
-                                    </p>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> December 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324 comments</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448 views</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"col-sm-6 article-tiny\">
-                                    <!-- image -->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"morocco africa rally desert marroc sand dunes morocco africa rally  \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-links\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Morocco Africa Rally Desert Marroc Sand Dunes Morocco Africa Rally</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"col-sm-6 article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Mauris mattis ullamcorper euismod Nulla convallis \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-aside\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Mauris Mattis Ullamcorper Euismod Nulla Convallis</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"col-sm-6 article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Nepal Kathmandu Road Center Chaotic\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-audio\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Nepal Kathmandu Road Center Chaotic </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                            </div><!--.content-->
-                        </section><!--.widget-->
-
-
-                        <div class=\"hide row\">
-                            <!-- ARTICLES V3 WIDGET -->
-                            <section class=\"widget articles-v3 col-sm-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Science</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget contents -->
-                                <div class=\"article-medium\">
-                                    <!--image-->
-                                    <div class=\"frame\">
-                                        <a class=\"image\" href=\"#\">
-                                            <figure class=\"image-holder\">
-                                                <img src=\"http://placehold.it/350x185\" alt=\"Phasellus eu diam at arcu laoreet elementum at id augue\">
-                                            </figure>
-                                            <div class=\"image-light\"></div>
-                                            <span class=\"dashicons dashicons-format-gallery\"></span>
-                                        </a>
-                                    </div>
-                                    <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-
-                                    <h4><a href=\"#\">Phasellus Eu Diam At Arcu Laoreet Elementum At Id Augue</a></h4>
-
-                                    <!--content-->
-                                    <p>
-                                        Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...
-                                    </p>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> December 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324 comments</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448 views</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"douglas x3 stiletto tellus quis urna porttitor tempor In eu egestas dui\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-image\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Douglas X3 Stiletto Tellus Quis Urna Porttitor Tempor In Eu Egestas Dui</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-links\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Vestibulum Ante Ipsum Primis In Faucibus Orci Luctus Et Ultrices</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Nulla vitae velit ac velit luctus facilisis\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-quote\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Nulla Vitae Velit Ac Velit Luctus Facilisis </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                            </section><!--.widget-->
-
-                            <!-- ARTICLES V3 WIDGET -->
-                            <section class=\"widget articles-v3 col-sm-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Entertainment</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget contents -->
-                                <div class=\"article-medium\">
-                                    <!--image-->
-                                    <div class=\"frame\">
-                                        <a class=\"image\" href=\"#\">
-                                            <figure class=\"image-holder\">
-                                                <img src=\"http://placehold.it/350x185\" alt=\"wii diam iaculis dolor eget euismod odio felis faucibus nisi\">
-                                            </figure>
-                                            <div class=\"image-light\"></div>
-                                            <span class=\"dashicons dashicons-format-standard\"></span>
-                                        </a>
-                                    </div>
-                                    <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-
-                                    <h4><a href=\"#\">Wii Diam Iaculis Dolor Eget Euismod Odio Felis Faucibus Nisi</a></h4>
-
-                                    <!--content-->
-                                    <p>
-                                        Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...
-                                    </p>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> December 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324 comments</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448 views</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Band curabitur euismod interdum orci ac porttitor  \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-status\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Band Curabitur Euismod Interdum Orci Ac Porttitor </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Nulla id eros ut nibh hendrerit sollicitudin \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-video\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Nulla Id Eros Ut Nibh Hendrerit Sollicitudin</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Day of the dead Sed nec auctor Nunc quis cursus libero\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-aside\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Day of the Dead Sed Nec Auctor Nunc Quis Cursus Libero</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                            </section><!--.widget-->
-                        </div>
-
-                        <!-- ADS -->
-                        <section class=\"hide widget\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\"><h4>Advertisement</h4></header>
-
-                            <!-- Widget Content -->
-                            <div class=\"frame thick\">
-                                <a href=\"http://themeforest.net/user/friskamax/portfolio?ref=friskamax\" target=\"_blank\">
-                                    <img src=\"http://placehold.it/728x90/f0f0f9\" alt=\"ads\">
-                                </a>
-                            </div>
-                            <img src=\"img/shadow.png\" alt=\"shadow\" class=\"shadow\">
-                        </section>
-
-                        <div class=\"hide row\">
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget Header -->
-                                <header class=\"clearfix\">
-                                    <h4>World</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget contents -->
-                                <div class=\"article-small\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"Vestibulum a lacus suscipit sodales augue\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-audio\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Vestibulum a Lacus Suscipit Sodales Augue</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Integer Ut Egestas Lectus Sed Ut Elementum Justo</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Nam lacinia nulla et ipsum gravida egestas</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Nulla Laoreet Lectus Condimentum</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                            </section><!--.widget-->
-
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Health</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget content -->
-                                <div class=\"article-small\">
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"Drugs suscipit neque eu viverra justo \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-chat\"></span>
-                                    </a>
-                                    <h5><a href=\"#\">Drugs Suscipit Neque Eu Viverra Justo </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Vestibulum Tincidunt Aliquet Massa</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Eu Cursus Urna Lacinia Nec Maecenas Tincidunt</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Mi Ac Porttitor Sodales Nisi Est Convallis Arcu Sit Amet</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </section><!--.widget-->
-
-                            <div class=\"clearfix visible-xs\"></div>
-
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Sport</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget content -->
-                                <div class=\"article-small\">
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"uss constitution boston massachusetts \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-gallery\"></span>
-                                    </a>
-                                    <h5><a href=\"#\">Climb Ultrices Tellus Massa Quis Vestibulum Ante Ipsum</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Primis In Faucibus Orci Luctus Et Ultrices </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Posuere Cubilia Curae Nulla Congue Cursus </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">In Euismod Fusce Ultrices Lectus Non</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </section><!--.widget-->
-
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Tech</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget Contents -->
-                                <div class=\"article-small\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"vitae accumsan quam auctor Praesent dignissim \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-image\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Vitae Accumsan Quam Auctor Praesent Dignissim </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Erat At Eleifend Feugiat Turpis Lacus</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Ultrices Est Quis Blandit Arcu Est A Ante</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Phasellus Quis Mollis Mauris at Dignissim Sem</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </section><!--.widget-->
-                        </div>
                     </main><!--#main-content-->
 
                     <!-- SIDEBAR
                     ============ -->
                     <aside class=\"col-md-4\">
                         <div class=\"row\">
-                            <!-- SEARCH WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\"><h4>Search </h4></header>
-
-                                <!-- Widget content -->
-                                <form method=\"get\" action=\"home-version-1.html\">
-                                    <input type=\"search\" placeholder=\"Enter keywords\">
-                                    <button type=\"submit\" class=\"btn btn-primary\">Search</button>
-                                </form>
-                            </section>
 
                             <!-- SOCIALS WIDGET -->
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Widget header -->
-                                <header class=\"clearfix\"><h4>Socials Media</h4></header>
+                                <header class=\"clearfix\"><h4>Réseaux sociaux</h4></header>
 
                                 <!-- Widget content -->
                                 <ul class=\"social clearfix\">
@@ -1225,7 +487,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <section class=\"col-sm-6 col-md-12 widget no-mobile\">
                                 <!-- Widget Header -->
                                 <header class=\"clearfix\">
-                                    <h4>Gallery</h4>
+                                    <h4>Galerie</h4>
                                     <a href=\"#carousel-small\" class=\"control\" data-slide=\"next\">
                                         <i class=\"fa fa-chevron-right\"></i>
                                     </a>
@@ -1289,7 +551,10 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                 </div><!--.carousel-->
 
                                 <!--Shadow-->
-                                <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
+                                <img src=\"";
+        // line 371
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/shadow.png"), "html", null, true);
+        echo "\" class=\"shadow\" alt=\"shadow\">
                             </section>
 
                             <!-- FEEDBURNER WIDGET -->
@@ -1330,82 +595,58 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Tab menus -->
                                 <ul class=\"nav nav-tabs\">
-                                    <li class=\"active\"><a href=\"#popular-aside\" data-toggle=\"tab\">Popular</a></li>
-                                    <li><a href=\"#recent-aside\" data-toggle=\"tab\">Recent</a></li>
-                                    <li><a href=\"#comments-aside\" data-toggle=\"tab\">Comments</a></li>
+                                    <li class=\"active\"><a href=\"#popular-aside\" data-toggle=\"tab\">Populaires</a></li>
+                                    <li class=\"hide\"><a href=\"#recent-aside\" data-toggle=\"tab\">Récents</a></li>
+                                    <li class=\"hide\"><a href=\"#comments-aside\" data-toggle=\"tab\">Comments</a></li>
                                 </ul>
 
                                 <!-- Tab contents -->
                                 <div class=\"tab-content\">
                                     <!--Popular-->
                                     <div class=\"tab-pane active fade in\" id=\"popular-aside\">
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"Mauris mattis ullamcorper euismod Nulla convallis \">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-gallery\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">Mauris mattis ullamcorper euismod Nulla convallis</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> Travel</a>
-                                            </p>
-                                        </div>
-                                        <hr>
 
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-audio\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> Science</a>
-                                            </p>
-                                        </div>
-                                        <hr>
+                                        ";
+        // line 422
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["popularPosts"] ?? $this->getContext($context, "popularPosts")));
+        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+            // line 423
+            echo "                                            <div class=\"article-tiny\">
+                                                <a href=\"#\" class=\"image\">
+                                                    <figure class=\"image-holder\">
+                                                        <img src=\"http://placehold.it/95x75\" alt=\"Mauris mattis ullamcorper euismod Nulla convallis \">
+                                                    </figure>
+                                                    <div class=\"image-light\"></div>
+                                                    <span class=\"dashicons dashicons-format-gallery\"></span>
+                                                </a>
+                                                <h5><a href=\"#\">";
+            // line 431
+            echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "titleFr", array()), "html", null, true);
+            echo "</a></h5>
+                                                <p class=\"post-meta\">
+                                                    <a href=\"#\"><span class=\"fa fa-clock-o\"></span> ";
+            // line 433
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["p"], "dateCreation", array()), "d/m/Y H:i:s"), "html", null, true);
+            echo "</a> &nbsp;
+                                                    <a href=\"#\"><span class=\"fa fa-folder\"></span> ";
+            // line 434
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "subcategory", array()), "nomFr", array()), "html", null, true);
+            echo "</a>
+                                                </p>
+                                            </div>
+                                            <hr>
 
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"Nulla id eros ut nibh hendrerit sollicitudin \">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-links\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">Nulla id eros ut nibh hendrerit sollicitudin</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> National</a>
-                                            </p>
-                                        </div>
-                                        <hr>
-
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"ornare nibh Nunc semper dolor quis augue venenatis \">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-links\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">ornare nibh Nunc semper dolor quis augue venenatis</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> Health</a>
-                                            </p>
-                                        </div>
-                                        <hr>
+                                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 440
+        echo "
                                     </div>
 
                                     <!--Recent-->
-                                    <div class=\"tab-pane fade\" id=\"recent-aside\">
+                                    <div class=\"tab-pane fade hide\" id=\"recent-aside\">
                                         <div class=\"article-tiny\">
                                             <a href=\"#\" class=\"image\">
                                                 <figure class=\"image-holder\">
@@ -1472,7 +713,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     </div>
 
                                     <!--Comments-->
-                                    <div class=\"tab-pane fade\" id=\"comments-aside\">
+                                    <div class=\"hide tab-pane fade\" id=\"comments-aside\">
                                         <ul class=\"recent-comments clearfix\">
                                             <li>
                                                 <div class=\"avatar\">
@@ -1555,13 +796,16 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <!-- ADS WIDGET -->
                             <section class=\"widget col-sm-6 col-md-12 no-mobile\">
                                 <!-- Widget Header -->
-                                <header class=\"clearfix\"><h4>Advertisement</h4></header>
+                                <header class=\"clearfix\"><h4>Publicités</h4></header>
 
                                 <!-- Widget Content -->
                                 <div class=\"frame thick\">
                                     <a href=\"#\"><div data-src=\"http://placehold.it/300x250/f0f0f9\" data-alt=\"Banner image\"></div></a>
                                 </div>
-                                <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
+                                <img src=\"";
+        // line 600
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/shadow.png"), "html", null, true);
+        echo "\" class=\"shadow\" alt=\"shadow\">
                             </section>
 
                             <!-- VIMEO WIDGET -->
@@ -1577,7 +821,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Widget header: tab menu -->
                                 <ul class=\"nav nav-tabs\">
-                                    <li class=\"active\"><a href=\"#categories\" data-toggle=\"tab\">Categories</a></li>
+                                    <li class=\"active\"><a href=\"#categories\" data-toggle=\"tab\">Catégories</a></li>
                                 </ul><!--.nav-tabs-->
 
                                 <!-- Tab contents -->
@@ -1585,27 +829,24 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     <!-- Categories-->
                                     <div class=\"tab-pane active fade in\" id=\"categories\">
                                         <ul class=\"categories\">
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
-        // line 1399
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.news"), "html", null, true);
-        echo " <span class=\"post-counts\">54,435,464</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
-        // line 1400
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.lifestyle"), "html", null, true);
-        echo "  <span class=\"post-counts\">34,355,346</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
-        // line 1401
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.music"), "html", null, true);
-        echo " <span class=\"post-counts\">3,234,356</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
-        // line 1402
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.sports"), "html", null, true);
-        echo " <span class=\"post-counts\">874,355</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
-        // line 1403
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.games"), "html", null, true);
-        echo " <span class=\"post-counts\">11,234,987</span></a></li>
-                                        </ul>
+                                            ";
+        // line 624
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["categories"] ?? $this->getContext($context, "categories")));
+        foreach ($context['_seq'] as $context["_key"] => $context["ca"]) {
+            // line 625
+            echo "                                                <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> ";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["ca"], "libelleFr", array()), "html", null, true);
+            echo " <span class=\"post-counts\">";
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute($context["ca"], "subcategories", array())), "html", null, true);
+            echo "</span></a></li>
+                                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ca'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 627
+        echo "                                        </ul>
                                     </div>
                                 </div><!--.tab-content-->
                             </section>
@@ -1889,36 +1130,31 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
                             <!--Content-->
                             <ul class=\"tags clearfix\">
-                                <li><a href=\"#\">";
-        // line 1688
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.news"), "html", null, true);
-        echo "</a></li>
-                                <li><a href=\"#\">";
-        // line 1689
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.lifestyle"), "html", null, true);
-        echo "</a></li>
-                                <li><a href=\"#\">";
-        // line 1690
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.music"), "html", null, true);
-        echo " </a></li>
-                                <li><a href=\"#\">";
-        // line 1691
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.sports"), "html", null, true);
-        echo "</a></li>
-                                <li><a href=\"#\">";
-        // line 1692
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("navbar_link.games"), "html", null, true);
-        echo "</a></li>
-                            </ul>
+                                ";
+        // line 911
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["categories"] ?? $this->getContext($context, "categories")));
+        foreach ($context['_seq'] as $context["_key"] => $context["ca"]) {
+            // line 912
+            echo "                                    <li><a href=\"#\">";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["ca"], "libelleFr", array()), "html", null, true);
+            echo "</a></li>
+                                ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ca'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 914
+        echo "                            </ul>
                         </section>
 
                         <!-- Recent Comments -->
                         <section class=\"col-md-3 col-sm-6\">
                             <!--Title-->
-                            <div class=\"title\"><h4>Recent Comments</h4></div>
+                            <div class=\"title\"><h4>Videos</h4></div>
 
                             <!--Content-->
-                            <ul class=\"recent-comments clearfix\">
+                            <ul class=\"recent-comments clearfix hide\">
                                 <li>
                                     <div class=\"avatar\">
                                         <a href=\"#\" class=\"dark\">
@@ -1975,25 +1211,25 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
                         <!-- Contact Form -->
                         <section class=\"col-md-3 col-sm-6\">
-                            <div class=\"title\"><h4>Send Us a Message</h4></div>
+                            <div class=\"title\"><h4>Nous contacter</h4></div>
                             <form class=\"contact-form\">
                                 <p class=\"input-group\">
                                     <i class=\"fa fa-user\"></i>
-                                    <input type=\"text\" placeholder=\"Full name *\">
+                                    <input type=\"text\" placeholder=\"Nom complet*\" required>
                                 </p>
                                 <p class=\"input-group\">
                                     <i class=\"fa fa-envelope\"></i>
-                                    <input type=\"text\" placeholder=\"Email address *\">
+                                    <input type=\"text\" placeholder=\"Email  *\" required>
                                 </p>
                                 <p class=\"input-group\">
                                     <i class=\"fa fa-link\"></i>
-                                    <input type=\"text\" placeholder=\"Website\">
+                                    <input type=\"text\" placeholder=\"Site web\">
                                 </p>
                                 <p>
                                     <textarea placeholder=\"Message *\" rows=\"6\"></textarea>
                                 </p>
                                 <p>
-                                    <input type=\"submit\" value=\"Send\" class=\"btn btn-dark\">
+                                    <input type=\"submit\" value=\"Envoyer\" class=\"btn btn-dark\">
                                 </p>
                             </form>
                         </section>
@@ -2006,14 +1242,6 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
             <div id=\"footer-bottom\">
                 <div class=\"container\">
                     <p>Copyright &copy; 2017 - <strong>TheGlobalView</strong></p>
-                    <ul>
-                        <li><a href=\"#\">About</a></li>
-                        <li><a href=\"#\">Terms</a></li>
-                        <li><a href=\"#\">Privacy</a></li>
-                        <li><a href=\"#\">Policy</a></li>
-                        <li><a href=\"#\">Advertising</a></li>
-                        <li><a href=\"#\">Contact</a></li>
-                    </ul>
                 </div>
             </div><!--#footer-bottom-->
         </footer><!--footer-->
@@ -2021,111 +1249,128 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
         <!-- jQuery  -->
         <script src=\"";
-        // line 1804
+        // line 1017
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 1805
+        // line 1018
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/jquery-ui.custom.min.js"), "html", null, true);
         echo "\"></script>
 
         <!-- Warta scripts -->
         <script src=\"";
-        // line 1808
+        // line 1021
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/script.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 1809
+        // line 1022
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/js/initialize.js"), "html", null, true);
         echo "\"></script>
 
         ";
-        // line 1811
+        // line 1024
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 1812
+        // line 1025
         echo "    </body>
 </html>
 ";
         
-        $__internal_f0a81972a34271662a40c9eccad1d97f5cb0697b3b9506ce85eae8ea4e7f12ef->leave($__internal_f0a81972a34271662a40c9eccad1d97f5cb0697b3b9506ce85eae8ea4e7f12ef_prof);
+        $__internal_74d7c3118e57540d9bf76249c7f1ebbac684a9a238a5ece09c9502e29c7a8ca4->leave($__internal_74d7c3118e57540d9bf76249c7f1ebbac684a9a238a5ece09c9502e29c7a8ca4_prof);
 
         
-        $__internal_e953a4d6291440ca1f0fdfeba46004cb4b2dd6f85eb746915fb814b2af855bac->leave($__internal_e953a4d6291440ca1f0fdfeba46004cb4b2dd6f85eb746915fb814b2af855bac_prof);
+        $__internal_de194fbcdf47bf1d6662d5daedf2fa83c40693f96c9804053002115c938fab7e->leave($__internal_de194fbcdf47bf1d6662d5daedf2fa83c40693f96c9804053002115c938fab7e_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_ec5a59ad864c4cc376fce4969d0f7dbb2b48c82f8339364f067c0480971e0faa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ec5a59ad864c4cc376fce4969d0f7dbb2b48c82f8339364f067c0480971e0faa->enter($__internal_ec5a59ad864c4cc376fce4969d0f7dbb2b48c82f8339364f067c0480971e0faa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_83ed092e3fdfaf9318c7d914440370f44131c5ae8276c97acca5d85e32686520 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_83ed092e3fdfaf9318c7d914440370f44131c5ae8276c97acca5d85e32686520->enter($__internal_83ed092e3fdfaf9318c7d914440370f44131c5ae8276c97acca5d85e32686520_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_2bd807829aac00f1fdaada8b9179cea3de4cc9f195e0884c9f1644610c2dd2cb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2bd807829aac00f1fdaada8b9179cea3de4cc9f195e0884c9f1644610c2dd2cb->enter($__internal_2bd807829aac00f1fdaada8b9179cea3de4cc9f195e0884c9f1644610c2dd2cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_87300cc8634debd90e157c28cc5f71c729017dfbb0ca54a2ed5112c823d07c3a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_87300cc8634debd90e157c28cc5f71c729017dfbb0ca54a2ed5112c823d07c3a->enter($__internal_87300cc8634debd90e157c28cc5f71c729017dfbb0ca54a2ed5112c823d07c3a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("head.title"), "html", null, true);
         
-        $__internal_2bd807829aac00f1fdaada8b9179cea3de4cc9f195e0884c9f1644610c2dd2cb->leave($__internal_2bd807829aac00f1fdaada8b9179cea3de4cc9f195e0884c9f1644610c2dd2cb_prof);
+        $__internal_87300cc8634debd90e157c28cc5f71c729017dfbb0ca54a2ed5112c823d07c3a->leave($__internal_87300cc8634debd90e157c28cc5f71c729017dfbb0ca54a2ed5112c823d07c3a_prof);
 
         
-        $__internal_ec5a59ad864c4cc376fce4969d0f7dbb2b48c82f8339364f067c0480971e0faa->leave($__internal_ec5a59ad864c4cc376fce4969d0f7dbb2b48c82f8339364f067c0480971e0faa_prof);
+        $__internal_83ed092e3fdfaf9318c7d914440370f44131c5ae8276c97acca5d85e32686520->leave($__internal_83ed092e3fdfaf9318c7d914440370f44131c5ae8276c97acca5d85e32686520_prof);
 
     }
 
     // line 32
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_e79df353b74c94c9677112adb12c197583dafb4c0bbaea2174f9fa8334de9eac = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e79df353b74c94c9677112adb12c197583dafb4c0bbaea2174f9fa8334de9eac->enter($__internal_e79df353b74c94c9677112adb12c197583dafb4c0bbaea2174f9fa8334de9eac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_a5236f77023f0132afd2ea862de4fd52f3cce51907540d3fabf726402da777d6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a5236f77023f0132afd2ea862de4fd52f3cce51907540d3fabf726402da777d6->enter($__internal_a5236f77023f0132afd2ea862de4fd52f3cce51907540d3fabf726402da777d6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_4fd4bca3966d0999d7d502e3cb229cd62454507a21021e093060c439f2b98f38 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4fd4bca3966d0999d7d502e3cb229cd62454507a21021e093060c439f2b98f38->enter($__internal_4fd4bca3966d0999d7d502e3cb229cd62454507a21021e093060c439f2b98f38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        
-        $__internal_4fd4bca3966d0999d7d502e3cb229cd62454507a21021e093060c439f2b98f38->leave($__internal_4fd4bca3966d0999d7d502e3cb229cd62454507a21021e093060c439f2b98f38_prof);
+        $__internal_b4fc015d89f2e48ff6989c53f5dc70e4b5213c451fdd473ec6782844e7bc972f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b4fc015d89f2e48ff6989c53f5dc70e4b5213c451fdd473ec6782844e7bc972f->enter($__internal_b4fc015d89f2e48ff6989c53f5dc70e4b5213c451fdd473ec6782844e7bc972f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_e79df353b74c94c9677112adb12c197583dafb4c0bbaea2174f9fa8334de9eac->leave($__internal_e79df353b74c94c9677112adb12c197583dafb4c0bbaea2174f9fa8334de9eac_prof);
+        $__internal_b4fc015d89f2e48ff6989c53f5dc70e4b5213c451fdd473ec6782844e7bc972f->leave($__internal_b4fc015d89f2e48ff6989c53f5dc70e4b5213c451fdd473ec6782844e7bc972f_prof);
+
+        
+        $__internal_a5236f77023f0132afd2ea862de4fd52f3cce51907540d3fabf726402da777d6->leave($__internal_a5236f77023f0132afd2ea862de4fd52f3cce51907540d3fabf726402da777d6_prof);
 
     }
 
     // line 36
     public function block_body($context, array $blocks = array())
     {
-        $__internal_f66931e197da32661c95c0c87b2e652b7885b79fb660f0116f4346ce26653fad = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f66931e197da32661c95c0c87b2e652b7885b79fb660f0116f4346ce26653fad->enter($__internal_f66931e197da32661c95c0c87b2e652b7885b79fb660f0116f4346ce26653fad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_75dc497de487ec3b3057fac842870af721b00c8458203873cc24fcc75331f1c4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_75dc497de487ec3b3057fac842870af721b00c8458203873cc24fcc75331f1c4->enter($__internal_75dc497de487ec3b3057fac842870af721b00c8458203873cc24fcc75331f1c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_99537a689eb08f30de7da973408e804e17762c1d2b1cd6f795121b4d528abee8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_99537a689eb08f30de7da973408e804e17762c1d2b1cd6f795121b4d528abee8->enter($__internal_99537a689eb08f30de7da973408e804e17762c1d2b1cd6f795121b4d528abee8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_99537a689eb08f30de7da973408e804e17762c1d2b1cd6f795121b4d528abee8->leave($__internal_99537a689eb08f30de7da973408e804e17762c1d2b1cd6f795121b4d528abee8_prof);
+        $__internal_c83fc7638b55ff85d22ef5a4fe3a1b5f2fb016c08674fab4a44ff9bdf2c5302d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c83fc7638b55ff85d22ef5a4fe3a1b5f2fb016c08674fab4a44ff9bdf2c5302d->enter($__internal_c83fc7638b55ff85d22ef5a4fe3a1b5f2fb016c08674fab4a44ff9bdf2c5302d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_f66931e197da32661c95c0c87b2e652b7885b79fb660f0116f4346ce26653fad->leave($__internal_f66931e197da32661c95c0c87b2e652b7885b79fb660f0116f4346ce26653fad_prof);
+        $__internal_c83fc7638b55ff85d22ef5a4fe3a1b5f2fb016c08674fab4a44ff9bdf2c5302d->leave($__internal_c83fc7638b55ff85d22ef5a4fe3a1b5f2fb016c08674fab4a44ff9bdf2c5302d_prof);
+
+        
+        $__internal_75dc497de487ec3b3057fac842870af721b00c8458203873cc24fcc75331f1c4->leave($__internal_75dc497de487ec3b3057fac842870af721b00c8458203873cc24fcc75331f1c4_prof);
 
     }
 
-    // line 1811
+    // line 264
+    public function block_article_content($context, array $blocks = array())
+    {
+        $__internal_89a4b72cef7133c1940adb600c04c31d06b37c9035c33c2e2e53f52510eee9d0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_89a4b72cef7133c1940adb600c04c31d06b37c9035c33c2e2e53f52510eee9d0->enter($__internal_89a4b72cef7133c1940adb600c04c31d06b37c9035c33c2e2e53f52510eee9d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_content"));
+
+        $__internal_52049b5864fdddb4984f2a0cf0cb0073f5cafbf3488f400758a2cba8a716c935 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_52049b5864fdddb4984f2a0cf0cb0073f5cafbf3488f400758a2cba8a716c935->enter($__internal_52049b5864fdddb4984f2a0cf0cb0073f5cafbf3488f400758a2cba8a716c935_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_content"));
+
+        
+        $__internal_52049b5864fdddb4984f2a0cf0cb0073f5cafbf3488f400758a2cba8a716c935->leave($__internal_52049b5864fdddb4984f2a0cf0cb0073f5cafbf3488f400758a2cba8a716c935_prof);
+
+        
+        $__internal_89a4b72cef7133c1940adb600c04c31d06b37c9035c33c2e2e53f52510eee9d0->leave($__internal_89a4b72cef7133c1940adb600c04c31d06b37c9035c33c2e2e53f52510eee9d0_prof);
+
+    }
+
+    // line 1024
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_fe9420564a2d3f3f5ca84097a5f4c04d32e030b08ec62298bb2650e70acfe41a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fe9420564a2d3f3f5ca84097a5f4c04d32e030b08ec62298bb2650e70acfe41a->enter($__internal_fe9420564a2d3f3f5ca84097a5f4c04d32e030b08ec62298bb2650e70acfe41a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_0cec1351c509cf04adbc1d5844c15ee99534157ec900c7ba0ffbc24ae578ee0e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0cec1351c509cf04adbc1d5844c15ee99534157ec900c7ba0ffbc24ae578ee0e->enter($__internal_0cec1351c509cf04adbc1d5844c15ee99534157ec900c7ba0ffbc24ae578ee0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_f62c38bb562860de451d995bbcde91f89b8554e0b5732c5abb2e56735a2e005d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f62c38bb562860de451d995bbcde91f89b8554e0b5732c5abb2e56735a2e005d->enter($__internal_f62c38bb562860de451d995bbcde91f89b8554e0b5732c5abb2e56735a2e005d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
-
-        
-        $__internal_f62c38bb562860de451d995bbcde91f89b8554e0b5732c5abb2e56735a2e005d->leave($__internal_f62c38bb562860de451d995bbcde91f89b8554e0b5732c5abb2e56735a2e005d_prof);
+        $__internal_e52de87e5e037171ec00e8e9a6df77bfaecc3922d7ecf4840b3c58e5185b2c12 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e52de87e5e037171ec00e8e9a6df77bfaecc3922d7ecf4840b3c58e5185b2c12->enter($__internal_e52de87e5e037171ec00e8e9a6df77bfaecc3922d7ecf4840b3c58e5185b2c12_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_fe9420564a2d3f3f5ca84097a5f4c04d32e030b08ec62298bb2650e70acfe41a->leave($__internal_fe9420564a2d3f3f5ca84097a5f4c04d32e030b08ec62298bb2650e70acfe41a_prof);
+        $__internal_e52de87e5e037171ec00e8e9a6df77bfaecc3922d7ecf4840b3c58e5185b2c12->leave($__internal_e52de87e5e037171ec00e8e9a6df77bfaecc3922d7ecf4840b3c58e5185b2c12_prof);
+
+        
+        $__internal_0cec1351c509cf04adbc1d5844c15ee99534157ec900c7ba0ffbc24ae578ee0e->leave($__internal_0cec1351c509cf04adbc1d5844c15ee99534157ec900c7ba0ffbc24ae578ee0e_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "::base.html.twig";
+        return "::base_fr.html.twig";
     }
 
     public function isTraitable()
@@ -2135,7 +1380,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
     public function getDebugInfo()
     {
-        return array (  2110 => 1811,  2093 => 36,  2076 => 32,  2058 => 5,  2046 => 1812,  2044 => 1811,  2039 => 1809,  2035 => 1808,  2029 => 1805,  2025 => 1804,  1910 => 1692,  1906 => 1691,  1902 => 1690,  1898 => 1689,  1894 => 1688,  1606 => 1403,  1602 => 1402,  1598 => 1401,  1594 => 1400,  1590 => 1399,  370 => 181,  365 => 179,  360 => 178,  358 => 177,  355 => 176,  350 => 174,  345 => 173,  343 => 172,  340 => 171,  335 => 169,  330 => 168,  328 => 167,  323 => 164,  319 => 162,  317 => 161,  314 => 160,  310 => 158,  308 => 157,  305 => 156,  301 => 154,  299 => 153,  291 => 148,  287 => 147,  282 => 145,  275 => 141,  271 => 140,  266 => 138,  259 => 134,  255 => 133,  250 => 131,  243 => 127,  239 => 126,  235 => 125,  231 => 124,  227 => 123,  223 => 122,  218 => 120,  211 => 116,  207 => 115,  202 => 113,  192 => 105,  186 => 103,  184 => 102,  181 => 101,  175 => 99,  173 => 98,  170 => 97,  164 => 95,  162 => 94,  125 => 60,  121 => 59,  117 => 58,  94 => 37,  92 => 36,  85 => 33,  83 => 32,  77 => 29,  71 => 26,  63 => 21,  57 => 18,  51 => 15,  47 => 14,  35 => 5,  29 => 1,);
+        return array (  1355 => 1024,  1338 => 264,  1321 => 36,  1304 => 32,  1286 => 5,  1274 => 1025,  1272 => 1024,  1267 => 1022,  1263 => 1021,  1257 => 1018,  1253 => 1017,  1148 => 914,  1139 => 912,  1135 => 911,  849 => 627,  838 => 625,  834 => 624,  807 => 600,  645 => 440,  633 => 434,  629 => 433,  624 => 431,  614 => 423,  610 => 422,  556 => 371,  448 => 265,  446 => 264,  439 => 260,  373 => 196,  364 => 194,  360 => 193,  322 => 157,  317 => 155,  312 => 154,  310 => 153,  307 => 152,  302 => 150,  297 => 149,  295 => 148,  292 => 147,  287 => 145,  282 => 144,  280 => 143,  275 => 140,  271 => 138,  269 => 137,  266 => 136,  262 => 134,  260 => 133,  257 => 132,  253 => 130,  251 => 129,  246 => 126,  238 => 123,  234 => 121,  223 => 119,  219 => 118,  216 => 117,  214 => 116,  210 => 115,  207 => 114,  203 => 113,  193 => 105,  187 => 103,  185 => 102,  182 => 101,  176 => 99,  174 => 98,  171 => 97,  165 => 95,  163 => 94,  126 => 60,  122 => 59,  118 => 58,  95 => 37,  93 => 36,  86 => 33,  84 => 32,  78 => 29,  72 => 26,  64 => 21,  58 => 18,  52 => 15,  48 => 14,  36 => 5,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -2212,7 +1457,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
                         <form class=\"navbar-form navbar-right\" role=\"search\">
                             <label class=\"sr-only\" for=\"top_search_form\">Search for</label>
-                            <input id=\"top_search_form\" type=\"search\" placeholder=\"Search\">
+                            <input id=\"top_search_form\" type=\"search\" placeholder=\"Rechercher\">
                             <button type=\"submit\" >
                                 <span class=\"fa fa-search\"></span>
                                 <span class=\"sr-only\">Search/submit</span>
@@ -2259,45 +1504,21 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                     <div class=\"collapse navbar-collapse\" id=\"main-nav-collapse\">
                         <ul class=\"nav navbar-nav navbar-right\">
                             <li class=\"active\"><a href=\"#\"><i class=\"fa fa-home\"></i></a></li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.news'|trans }} <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">{{ 'navbar_sublink.news'|trans }} </a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.lifestyle'|trans }} <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.beauty'|trans }}</a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.health'|trans }}</a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.food'|trans }}</a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.culture'|trans }}</a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.lifestyle.travel'|trans }}</a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.music'|trans }} <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">{{ 'navbar_sublink.music'|trans }} </a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.sports'|trans }} <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">{{ 'navbar_sublink.sports'|trans }} </a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ 'navbar_link.games'|trans }} <b class=\"caret\"></b></a>
-                                <ul class=\"dropdown-menu\">
-                                    <li><a href=\"#\">{{ 'navbar_sublink.games'|trans }} </a></li>
-                                    <li><a href=\"#\">{{ 'navbar_sublink.ads'|trans }}</a></li>
-                                </ul>
-                            </li>
+
+                            {% for ca in categories %}
+                                    <li class=\"dropdown\">
+                                        <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{{ ca.libelleFr }} <b class=\"caret\"></b></a>
+                                        {% if  ca.subcategories is not empty %}
+                                            <ul class=\"dropdown-menu\">
+                                                {% for s in ca.subcategories %}
+                                                    <li><a href=\"{{ path('global_view_posts_by_subcategory', {'id' : s.id, '_locale' : 'fr'}) }}\">{{ s.nomFr }} </a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </li>
+
+                            {% endfor %}
+
                             <li class=\"dropdown\">
 
                                 {% if (app.request.getLocale() == 'en') %}
@@ -2340,7 +1561,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
             <div id=\"title\">
                 <div class=\"image-light\"></div>
                 <div class=\"container\">
-                    <div class=\"title-container\">
+                    <div class=\"title-container hide\">
                         <h1 class=\"primary\">Just another news/magazine website template</h1>
                         <p class=\"secondary\">It's simple yet beautiful</p>
                     </div>
@@ -2359,15 +1580,14 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                         <!-- BREAKING NEWS -->
                         <section class=\"breaking-news\">
                             <header>
-                                <h4>Breaking News</h4>
+                                <h4>Dernières nouvelles</h4>
                                 <i class=\"triangle\"></i>
                             </header>
                             <div class=\"content\">
                                 <ul>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Donec nec mi non metus ullamcorper suscipit</a></li>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Morbi auctor massa mi, tempus placerat orci tempor molestie</a></li>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Praesent et dolor velit</a></li>
-                                    <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> Aenean porta diam non elit iaculis, a tristique ligula laoreet</a></li>
+                                    {% for p in popularPosts %}
+                                        <li><a href=\"#\"><i class=\"fa fa-angle-double-right\"></i> {{ p.titleFr }}</a></li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </section>
@@ -2381,7 +1601,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                         <div class=\"item active\">
                                             <div class=\"item-inner\">
                                                 <div data-src=\"http://placehold.it/730x370\" data-alt=\"Doctype Pellentesque pellentesque faucibus urna ac feugiat\"></div>
-                                                <div class=\"carousel-caption\">
+                                                <div class=\"carousel-caption hide\">
                                                     <div><a href=\"#\"><h3>Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat</h3></a></div>
                                                     <div class=\"hidden-xs\">
                                                         <p>
@@ -2396,7 +1616,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                         <div class=\"item\">
                                             <div class=\"item-inner\">
                                                 <div data-src=\"http://placehold.it/730x370\" data-alt=\"Mauris lacus nisl, suscipit ut orci ut, gravida dapibus neque Interdum et malesuada\"></div>
-                                                <div class=\"carousel-caption\">
+                                                <div class=\"carousel-caption hide\">
                                                     <div><a href=\"#\"><h1>Mauris Lacus Nisl Suscipit Ut Orci Ut Gravida Dapibus Neque</h1></a></div>
                                                     <div class=\"hidden-xs\">
                                                         <p>
@@ -2411,7 +1631,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                         <div class=\"item\">
                                             <div class=\"item-inner\">
                                                 <div data-src=\"http://placehold.it/730x370\" data-alt=\"Stones turpis egestas Curabitur scelerisque sagittis lectus ac consequat Mauris dictum sollicitudin tincidunt\"></div>
-                                                <div class=\"carousel-caption\">
+                                                <div class=\"carousel-caption hide\">
                                                     <div><a href=\"#\"><h1>Stones Turpis Egestas Curabitur Scelerisque Sagittis Lectus Ac</h1></a></div>
                                                     <div class=\"hidden-xs\">
                                                         <p>
@@ -2432,732 +1652,25 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     <a class=\"right carousel-control\" href=\"#carousel-medium\" data-slide=\"next\"><span class=\"fa fa-chevron-right\"></span></a>
                                 </div>
                             </div>
-                            <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
+                            <img src=\"{{ asset('/img/shadow.png') }}\" class=\"shadow\" alt=\"shadow\">
                         </section>
 
-                        <!-- ARTICLES V1 WIDGET -->
-                        <section class=\"hide widget articles-v1\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\">
-                                <h4>Headline</h4>
-                                <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                            </header>
-
-                            <!-- Widget Contents: Articles-->
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"Pub qui dolorem ipsum quia dol consectetur amet adipisci velit sed\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-audio\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Bussiness</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure
-                                            reprehenderit...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"Coffee eros non risus suscipit faucibus Sed quis\">
-                                                </figure><div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-chat\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Coffee Eros Non Risus Suscipit Faucibus Sed Quis</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Bussiness</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Proin bibendum, libero in dictum pellentesque, lorem enim varius tellus, nec aliquet
-                                            dolor risus non sem. Curabitur placerat, quam vel bibendum pretium, arcu dui c
-                                            onsectetur tellus, et tincidunt turpis...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"branches eros quam ultricies et condimentum a porta quis neque\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-gallery\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Branches Eros Quam Ultricies Et Condimentum A Porta Quis Neque</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Weather</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Vivamus fermentum, mi nec convallis congue Sed do eiusmod tempor incididunt ut labore et,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute
-                                            Mauris ac nisl nunc...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-
-                            <div class=\"article-medium\">
-                                <div class=\"row\">
-                                    <!--Image-->
-                                    <div class=\"col-sm-6\">
-                                        <div class=\"frame\">
-                                            <a class=\"image\" href=\"#\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/350x185\" alt=\"boat dui accumsan velit vel tincidunt dui leo et dui\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-image\"></span>
-                                            </a>
-                                        </div>
-                                        <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-                                    </div>
-
-                                    <!--Content-->
-                                    <div class=\"col-sm-6\">
-                                        <h4><a href=\"#\">Boat Dui Accumsan Velit Vel Dincidunt Dui Leo Et Dui</a></h4>
-                                        <p class=\"post-meta\">
-                                            <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-folder\"></span> Traffic</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                            <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                        </p>
-                                        <p>
-                                            Vivamus fermentum, mi nec convallis congue Sed do eiusmod tempor incididunt ut labore et,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute
-                                            Mauris ac nisl nunc...
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <hr>
-                        </section>
-
-                        <!-- ADS -->
-                        <section class=\"hide widget\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\"><h4>Advertisement</h4></header>
-
-                            <!-- Widget Content -->
-                            <div class=\"frame thick\">
-                                <a href=\"http://themeforest.net/user/friskamax/portfolio?ref=friskamax\" target=\"_blank\">
-                                    <img src=\"http://placehold.it/728x90/f0f0f9\" alt=\"ads\">
-                                </a>
-                            </div>
-                            <img src=\"img/shadow.png\" alt=\"shadow\" class=\"shadow\">
-                        </section>
-
-
-                        <!-- ARTICLES V2 WIDGET -->
-                        <section class=\"hide widget articles-v2\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\">
-                                <h4>Politics</h4>
-                                <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                            </header>
-
-                            <!-- Widget Contents -->
-                            <div class=\"content row\">
-                                <div class=\"col-sm-6 article-medium\">
-                                    <!--frame-->
-                                    <div class=\"frame\">
-                                        <!--image-->
-                                        <a class=\"image\" href=\"#\">
-                                            <figure class=\"image-holder\">
-                                                <img src=\"http://placehold.it/350x185\" alt=\"ulm town home cathedral square quantitative mass\">
-                                            </figure>
-                                            <div class=\"image-light\"></div>
-                                            <span class=\"dashicons dashicons-format-quote\"></span>
-                                        </a>
-                                    </div>
-                                    <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-
-                                    <h4><a href=\"#\">Ulm Town Home Cathedral Square Quantitative Mass</a></h4>
-
-                                    <!--content-->
-                                    <p>
-                                        Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...
-                                    </p>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> December 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324 comments</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448 views</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"col-sm-6 article-tiny\">
-                                    <!-- image -->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"morocco africa rally desert marroc sand dunes morocco africa rally  \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-links\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Morocco Africa Rally Desert Marroc Sand Dunes Morocco Africa Rally</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"col-sm-6 article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Mauris mattis ullamcorper euismod Nulla convallis \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-aside\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Mauris Mattis Ullamcorper Euismod Nulla Convallis</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"col-sm-6 article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Nepal Kathmandu Road Center Chaotic\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-audio\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Nepal Kathmandu Road Center Chaotic </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                            </div><!--.content-->
-                        </section><!--.widget-->
-
-
-                        <div class=\"hide row\">
-                            <!-- ARTICLES V3 WIDGET -->
-                            <section class=\"widget articles-v3 col-sm-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Science</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget contents -->
-                                <div class=\"article-medium\">
-                                    <!--image-->
-                                    <div class=\"frame\">
-                                        <a class=\"image\" href=\"#\">
-                                            <figure class=\"image-holder\">
-                                                <img src=\"http://placehold.it/350x185\" alt=\"Phasellus eu diam at arcu laoreet elementum at id augue\">
-                                            </figure>
-                                            <div class=\"image-light\"></div>
-                                            <span class=\"dashicons dashicons-format-gallery\"></span>
-                                        </a>
-                                    </div>
-                                    <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-
-                                    <h4><a href=\"#\">Phasellus Eu Diam At Arcu Laoreet Elementum At Id Augue</a></h4>
-
-                                    <!--content-->
-                                    <p>
-                                        Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...
-                                    </p>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> December 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324 comments</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448 views</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"douglas x3 stiletto tellus quis urna porttitor tempor In eu egestas dui\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-image\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Douglas X3 Stiletto Tellus Quis Urna Porttitor Tempor In Eu Egestas Dui</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-links\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Vestibulum Ante Ipsum Primis In Faucibus Orci Luctus Et Ultrices</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Nulla vitae velit ac velit luctus facilisis\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-quote\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Nulla Vitae Velit Ac Velit Luctus Facilisis </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                            </section><!--.widget-->
-
-                            <!-- ARTICLES V3 WIDGET -->
-                            <section class=\"widget articles-v3 col-sm-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Entertainment</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget contents -->
-                                <div class=\"article-medium\">
-                                    <!--image-->
-                                    <div class=\"frame\">
-                                        <a class=\"image\" href=\"#\">
-                                            <figure class=\"image-holder\">
-                                                <img src=\"http://placehold.it/350x185\" alt=\"wii diam iaculis dolor eget euismod odio felis faucibus nisi\">
-                                            </figure>
-                                            <div class=\"image-light\"></div>
-                                            <span class=\"dashicons dashicons-format-standard\"></span>
-                                        </a>
-                                    </div>
-                                    <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
-
-                                    <h4><a href=\"#\">Wii Diam Iaculis Dolor Eget Euismod Odio Felis Faucibus Nisi</a></h4>
-
-                                    <!--content-->
-                                    <p>
-                                        Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint...
-                                    </p>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> December 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324 comments</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448 views</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Band curabitur euismod interdum orci ac porttitor  \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-status\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Band Curabitur Euismod Interdum Orci Ac Porttitor </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Nulla id eros ut nibh hendrerit sollicitudin \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-video\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Nulla Id Eros Ut Nibh Hendrerit Sollicitudin</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-
-                                <div class=\"article-tiny\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/95x75\" alt=\"Day of the dead Sed nec auctor Nunc quis cursus libero\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-aside\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Day of the Dead Sed Nec Auctor Nunc Quis Cursus Libero</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-eye\"></span> 4,448</a>
-                                    </p>
-                                    <hr>
-                                </div>
-                            </section><!--.widget-->
+                        <div class=\"articles\">
+                            {% block article_content %}{% endblock %}
                         </div>
 
-                        <!-- ADS -->
-                        <section class=\"hide widget\">
-                            <!-- Widget Header -->
-                            <header class=\"clearfix\"><h4>Advertisement</h4></header>
 
-                            <!-- Widget Content -->
-                            <div class=\"frame thick\">
-                                <a href=\"http://themeforest.net/user/friskamax/portfolio?ref=friskamax\" target=\"_blank\">
-                                    <img src=\"http://placehold.it/728x90/f0f0f9\" alt=\"ads\">
-                                </a>
-                            </div>
-                            <img src=\"img/shadow.png\" alt=\"shadow\" class=\"shadow\">
-                        </section>
-
-                        <div class=\"hide row\">
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget Header -->
-                                <header class=\"clearfix\">
-                                    <h4>World</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget contents -->
-                                <div class=\"article-small\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"Vestibulum a lacus suscipit sodales augue\">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-audio\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Vestibulum a Lacus Suscipit Sodales Augue</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Integer Ut Egestas Lectus Sed Ut Elementum Justo</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Nam lacinia nulla et ipsum gravida egestas</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Nulla Laoreet Lectus Condimentum</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                            </section><!--.widget-->
-
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Health</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget content -->
-                                <div class=\"article-small\">
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"Drugs suscipit neque eu viverra justo \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-chat\"></span>
-                                    </a>
-                                    <h5><a href=\"#\">Drugs Suscipit Neque Eu Viverra Justo </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Vestibulum Tincidunt Aliquet Massa</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Eu Cursus Urna Lacinia Nec Maecenas Tincidunt</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Mi Ac Porttitor Sodales Nisi Est Convallis Arcu Sit Amet</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </section><!--.widget-->
-
-                            <div class=\"clearfix visible-xs\"></div>
-
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Sport</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget content -->
-                                <div class=\"article-small\">
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"uss constitution boston massachusetts \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-gallery\"></span>
-                                    </a>
-                                    <h5><a href=\"#\">Climb Ultrices Tellus Massa Quis Vestibulum Ante Ipsum</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Primis In Faucibus Orci Luctus Et Ultrices </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Posuere Cubilia Curae Nulla Congue Cursus </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">In Euismod Fusce Ultrices Lectus Non</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </section><!--.widget-->
-
-                            <!-- ARTICLES V4 WIDGET -->
-                            <section class=\"widget articles-v4 col-sm-3 col-xs-6\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\">
-                                    <h4>Tech</h4>
-                                    <a href=\"#\" class=\"control\"><i class=\"fa fa-plus\"></i></a>
-                                </header>
-
-                                <!-- Widget Contents -->
-                                <div class=\"article-small\">
-                                    <!--image-->
-                                    <a href=\"#\" class=\"image\">
-                                        <figure class=\"image-holder\">
-                                            <img src=\"http://placehold.it/165x90\" alt=\"vitae accumsan quam auctor Praesent dignissim \">
-                                        </figure>
-                                        <div class=\"image-light\"></div>
-                                        <span class=\"dashicons dashicons-format-image\"></span>
-                                    </a>
-
-                                    <!--content-->
-                                    <h5><a href=\"#\">Vitae Accumsan Quam Auctor Praesent Dignissim </a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Erat At Eleifend Feugiat Turpis Lacus</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Ultrices Est Quis Blandit Arcu Est A Ante</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div>
-                                    <h5><a href=\"#\">Phasellus Quis Mollis Mauris at Dignissim Sem</a></h5>
-                                    <p class=\"post-meta\">
-                                        <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Dec 4, 2013</a> &nbsp;
-                                        <a href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </section><!--.widget-->
-                        </div>
                     </main><!--#main-content-->
 
                     <!-- SIDEBAR
                     ============ -->
                     <aside class=\"col-md-4\">
                         <div class=\"row\">
-                            <!-- SEARCH WIDGET -->
-                            <section class=\"col-sm-6 col-md-12 widget\">
-                                <!-- Widget header -->
-                                <header class=\"clearfix\"><h4>Search </h4></header>
-
-                                <!-- Widget content -->
-                                <form method=\"get\" action=\"home-version-1.html\">
-                                    <input type=\"search\" placeholder=\"Enter keywords\">
-                                    <button type=\"submit\" class=\"btn btn-primary\">Search</button>
-                                </form>
-                            </section>
 
                             <!-- SOCIALS WIDGET -->
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Widget header -->
-                                <header class=\"clearfix\"><h4>Socials Media</h4></header>
+                                <header class=\"clearfix\"><h4>Réseaux sociaux</h4></header>
 
                                 <!-- Widget content -->
                                 <ul class=\"social clearfix\">
@@ -3186,7 +1699,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <section class=\"col-sm-6 col-md-12 widget no-mobile\">
                                 <!-- Widget Header -->
                                 <header class=\"clearfix\">
-                                    <h4>Gallery</h4>
+                                    <h4>Galerie</h4>
                                     <a href=\"#carousel-small\" class=\"control\" data-slide=\"next\">
                                         <i class=\"fa fa-chevron-right\"></i>
                                     </a>
@@ -3250,7 +1763,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                 </div><!--.carousel-->
 
                                 <!--Shadow-->
-                                <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
+                                <img src=\"{{ asset('/img/shadow.png') }}\" class=\"shadow\" alt=\"shadow\">
                             </section>
 
                             <!-- FEEDBURNER WIDGET -->
@@ -3291,82 +1804,39 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Tab menus -->
                                 <ul class=\"nav nav-tabs\">
-                                    <li class=\"active\"><a href=\"#popular-aside\" data-toggle=\"tab\">Popular</a></li>
-                                    <li><a href=\"#recent-aside\" data-toggle=\"tab\">Recent</a></li>
-                                    <li><a href=\"#comments-aside\" data-toggle=\"tab\">Comments</a></li>
+                                    <li class=\"active\"><a href=\"#popular-aside\" data-toggle=\"tab\">Populaires</a></li>
+                                    <li class=\"hide\"><a href=\"#recent-aside\" data-toggle=\"tab\">Récents</a></li>
+                                    <li class=\"hide\"><a href=\"#comments-aside\" data-toggle=\"tab\">Comments</a></li>
                                 </ul>
 
                                 <!-- Tab contents -->
                                 <div class=\"tab-content\">
                                     <!--Popular-->
                                     <div class=\"tab-pane active fade in\" id=\"popular-aside\">
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"Mauris mattis ullamcorper euismod Nulla convallis \">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-gallery\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">Mauris mattis ullamcorper euismod Nulla convallis</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> Travel</a>
-                                            </p>
-                                        </div>
-                                        <hr>
 
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum\">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-audio\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> Science</a>
-                                            </p>
-                                        </div>
-                                        <hr>
+                                        {% for p in popularPosts %}
+                                            <div class=\"article-tiny\">
+                                                <a href=\"#\" class=\"image\">
+                                                    <figure class=\"image-holder\">
+                                                        <img src=\"http://placehold.it/95x75\" alt=\"Mauris mattis ullamcorper euismod Nulla convallis \">
+                                                    </figure>
+                                                    <div class=\"image-light\"></div>
+                                                    <span class=\"dashicons dashicons-format-gallery\"></span>
+                                                </a>
+                                                <h5><a href=\"#\">{{ p.titleFr }}</a></h5>
+                                                <p class=\"post-meta\">
+                                                    <a href=\"#\"><span class=\"fa fa-clock-o\"></span> {{ p.dateCreation | date('d/m/Y H:i:s') }}</a> &nbsp;
+                                                    <a href=\"#\"><span class=\"fa fa-folder\"></span> {{ p.subcategory.nomFr }}</a>
+                                                </p>
+                                            </div>
+                                            <hr>
 
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"Nulla id eros ut nibh hendrerit sollicitudin \">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-links\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">Nulla id eros ut nibh hendrerit sollicitudin</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> National</a>
-                                            </p>
-                                        </div>
-                                        <hr>
+                                        {% endfor %}
 
-                                        <div class=\"article-tiny\">
-                                            <a href=\"#\" class=\"image\">
-                                                <figure class=\"image-holder\">
-                                                    <img src=\"http://placehold.it/95x75\" alt=\"ornare nibh Nunc semper dolor quis augue venenatis \">
-                                                </figure>
-                                                <div class=\"image-light\"></div>
-                                                <span class=\"dashicons dashicons-format-links\"></span>
-                                            </a>
-                                            <h5><a href=\"#\">ornare nibh Nunc semper dolor quis augue venenatis</a></h5>
-                                            <p class=\"post-meta\">
-                                                <a href=\"#\"><span class=\"fa fa-clock-o\"></span> Jan 4, 2014</a> &nbsp;
-                                                <a href=\"#\"><span class=\"fa fa-folder\"></span> Health</a>
-                                            </p>
-                                        </div>
-                                        <hr>
                                     </div>
 
                                     <!--Recent-->
-                                    <div class=\"tab-pane fade\" id=\"recent-aside\">
+                                    <div class=\"tab-pane fade hide\" id=\"recent-aside\">
                                         <div class=\"article-tiny\">
                                             <a href=\"#\" class=\"image\">
                                                 <figure class=\"image-holder\">
@@ -3433,7 +1903,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     </div>
 
                                     <!--Comments-->
-                                    <div class=\"tab-pane fade\" id=\"comments-aside\">
+                                    <div class=\"hide tab-pane fade\" id=\"comments-aside\">
                                         <ul class=\"recent-comments clearfix\">
                                             <li>
                                                 <div class=\"avatar\">
@@ -3516,13 +1986,13 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <!-- ADS WIDGET -->
                             <section class=\"widget col-sm-6 col-md-12 no-mobile\">
                                 <!-- Widget Header -->
-                                <header class=\"clearfix\"><h4>Advertisement</h4></header>
+                                <header class=\"clearfix\"><h4>Publicités</h4></header>
 
                                 <!-- Widget Content -->
                                 <div class=\"frame thick\">
                                     <a href=\"#\"><div data-src=\"http://placehold.it/300x250/f0f0f9\" data-alt=\"Banner image\"></div></a>
                                 </div>
-                                <img src=\"img/shadow.png\" class=\"shadow\" alt=\"shadow\">
+                                <img src=\"{{ asset('/img/shadow.png') }}\" class=\"shadow\" alt=\"shadow\">
                             </section>
 
                             <!-- VIMEO WIDGET -->
@@ -3538,7 +2008,7 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                             <section class=\"col-sm-6 col-md-12 widget\">
                                 <!-- Widget header: tab menu -->
                                 <ul class=\"nav nav-tabs\">
-                                    <li class=\"active\"><a href=\"#categories\" data-toggle=\"tab\">Categories</a></li>
+                                    <li class=\"active\"><a href=\"#categories\" data-toggle=\"tab\">Catégories</a></li>
                                 </ul><!--.nav-tabs-->
 
                                 <!-- Tab contents -->
@@ -3546,11 +2016,9 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
                                     <!-- Categories-->
                                     <div class=\"tab-pane active fade in\" id=\"categories\">
                                         <ul class=\"categories\">
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.news'|trans }} <span class=\"post-counts\">54,435,464</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.lifestyle'|trans }}  <span class=\"post-counts\">34,355,346</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.music'|trans }} <span class=\"post-counts\">3,234,356</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.sports'|trans }} <span class=\"post-counts\">874,355</span></a></li>
-                                            <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ 'navbar_link.games'|trans }} <span class=\"post-counts\">11,234,987</span></a></li>
+                                            {% for ca in categories %}
+                                                <li><a href=\"#\"><i class=\"fa fa-angle-right\"></i> {{ ca.libelleFr }} <span class=\"post-counts\">{{ ca.subcategories|length }}</span></a></li>
+                                            {% endfor %}
                                         </ul>
                                     </div>
                                 </div><!--.tab-content-->
@@ -3835,21 +2303,19 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
                             <!--Content-->
                             <ul class=\"tags clearfix\">
-                                <li><a href=\"#\">{{ 'navbar_link.news'|trans }}</a></li>
-                                <li><a href=\"#\">{{ 'navbar_link.lifestyle'|trans }}</a></li>
-                                <li><a href=\"#\">{{ 'navbar_link.music'|trans }} </a></li>
-                                <li><a href=\"#\">{{ 'navbar_link.sports'|trans }}</a></li>
-                                <li><a href=\"#\">{{ 'navbar_link.games'|trans }}</a></li>
+                                {% for ca in categories %}
+                                    <li><a href=\"#\">{{ ca.libelleFr }}</a></li>
+                                {% endfor %}
                             </ul>
                         </section>
 
                         <!-- Recent Comments -->
                         <section class=\"col-md-3 col-sm-6\">
                             <!--Title-->
-                            <div class=\"title\"><h4>Recent Comments</h4></div>
+                            <div class=\"title\"><h4>Videos</h4></div>
 
                             <!--Content-->
-                            <ul class=\"recent-comments clearfix\">
+                            <ul class=\"recent-comments clearfix hide\">
                                 <li>
                                     <div class=\"avatar\">
                                         <a href=\"#\" class=\"dark\">
@@ -3906,25 +2372,25 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
 
                         <!-- Contact Form -->
                         <section class=\"col-md-3 col-sm-6\">
-                            <div class=\"title\"><h4>Send Us a Message</h4></div>
+                            <div class=\"title\"><h4>Nous contacter</h4></div>
                             <form class=\"contact-form\">
                                 <p class=\"input-group\">
                                     <i class=\"fa fa-user\"></i>
-                                    <input type=\"text\" placeholder=\"Full name *\">
+                                    <input type=\"text\" placeholder=\"Nom complet*\" required>
                                 </p>
                                 <p class=\"input-group\">
                                     <i class=\"fa fa-envelope\"></i>
-                                    <input type=\"text\" placeholder=\"Email address *\">
+                                    <input type=\"text\" placeholder=\"Email  *\" required>
                                 </p>
                                 <p class=\"input-group\">
                                     <i class=\"fa fa-link\"></i>
-                                    <input type=\"text\" placeholder=\"Website\">
+                                    <input type=\"text\" placeholder=\"Site web\">
                                 </p>
                                 <p>
                                     <textarea placeholder=\"Message *\" rows=\"6\"></textarea>
                                 </p>
                                 <p>
-                                    <input type=\"submit\" value=\"Send\" class=\"btn btn-dark\">
+                                    <input type=\"submit\" value=\"Envoyer\" class=\"btn btn-dark\">
                                 </p>
                             </form>
                         </section>
@@ -3937,14 +2403,6 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
             <div id=\"footer-bottom\">
                 <div class=\"container\">
                     <p>Copyright &copy; 2017 - <strong>TheGlobalView</strong></p>
-                    <ul>
-                        <li><a href=\"#\">About</a></li>
-                        <li><a href=\"#\">Terms</a></li>
-                        <li><a href=\"#\">Privacy</a></li>
-                        <li><a href=\"#\">Policy</a></li>
-                        <li><a href=\"#\">Advertising</a></li>
-                        <li><a href=\"#\">Contact</a></li>
-                    </ul>
                 </div>
             </div><!--#footer-bottom-->
         </footer><!--footer-->
@@ -3961,6 +2419,6 @@ class __TwigTemplate_524c5946a7bb62aff8735d5aaf52aa46000a95963f1c29339118cca9a45
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "::base.html.twig", "/Users/rachid/Documents/Projet Client/theglobalview/app/Resources/views/base.html.twig");
+", "::base_fr.html.twig", "/Users/rachid/Documents/Projet Client/theglobalview/app/Resources/views/base_fr.html.twig");
     }
 }

@@ -1,0 +1,63 @@
+{% extends "::base_fr.html.twig" %}
+
+{% block article_content %}
+
+
+    <!-- ARTICLES V1 WIDGET -->
+    <section class="widget articles-v1">
+        <!-- Widget Header -->
+        <header class="clearfix">
+            <h4>Grands titres</h4>
+            <a href="#" class="control"><i class="fa fa-plus"></i></a>
+        </header>
+
+        <!-- Widget Contents: Articles-->
+        {% for p in posts %}
+            <div class="article-medium">
+                <div class="row">
+                    <!--Image-->
+                    <div class="col-sm-6">
+                        <div class="frame">
+                            <a class="image" href="#">
+                                <figure class="image-holder">
+                                    <img src="http://placehold.it/350x185" alt="Pub qui dolorem ipsum quia dol consectetur amet adipisci velit sed">
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-audio"></span>
+                            </a>
+                        </div>
+                        <img src="{{ asset('/img/shadow.png') }}" class="shadow" alt="shadow">
+                    </div>
+
+                    <!--Content-->
+                    <div class="col-sm-6">
+                        <h4><a href="#">{{ p.titleFr }}</a></h4>
+                        <p class="post-meta">
+                            <a href="#"><span class="fa fa-clock-o"></span> {{ p.dateCreation | date('d/m/Y H:i:s') }}</a> &nbsp;
+                            <a href="{{ path('global_view_posts_by_subcategory', {'id' : p.subcategory.id, '_locale' : 'fr'}) }}"><span class="fa fa-folder"></span> {{ p.subcategory.nomFr }}</a> &nbsp;
+                            <a class="hide" href="#"><span class="fa fa-comments"></span> 1,324</a> &nbsp;
+                            <a class="hide" href="#"><span class="fa fa-eye"></span> 0</a>
+                        </p>
+                        <p>{{ p.descriptionFr }}</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+    </section>
+
+    <!-- ADS -->
+    <section class="widget">
+        <!-- Widget Header -->
+        <header class="clearfix"><h4>Publicités</h4></header>
+
+        <!-- Widget Content -->
+        <div class="frame thick">
+            <a href="http://themeforest.net/user/friskamax/portfolio?ref=friskamax" target="_blank">
+                <img src="http://placehold.it/728x90/f0f0f9" alt="ads">
+            </a>
+        </div>
+        <img src="{{ asset('img/shadow.png') }}" alt="shadow" class="shadow">
+    </section>
+
+{% endblock %}

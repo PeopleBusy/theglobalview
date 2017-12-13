@@ -1,0 +1,83 @@
+{% extends "::admin_base.html.twig" %}
+
+{% block title %} Categories {% endblock %}
+
+{% block admin_title %}Page catégories{% endblock %}
+
+{% block admin_content %}
+
+        {% if erreurMsg %}
+                <div class="alert alert-danger">
+                        <strong>Erreur!</strong> {{ erreurMsg }}
+                </div>
+        {% endif %}
+
+        {% if successMsg %}
+                <div class="alert alert-success">
+                        <strong>Réussi!</strong> {{ successMsg }}
+                </div>
+        {% endif %}
+
+
+        {% if mode == 'new' %}
+                <form method="post" action="{{ path('global_admin_category_create') }}">
+        {% endif %}
+
+        {% if mode == 'edit' %}
+                <form method="post" action="{{ path('global_admin_category_update', {'id': category.id}) }}">
+        {% endif %}
+
+        {% if mode == 'delete' %}
+                <form method="post" action="{{ path('global_admin_category_delete', {'id': category.id}) }}">
+        {% endif %}
+
+
+
+                <div class="input-group">
+                        <i class="fa fa-list"></i>
+                        <input type="text" name="libelle_fr" placeholder="Nom de la catégorie" value="{{ category.libelleFr }}"  required>
+                </div>
+                <div class="input-group">
+                        <i class="fa fa-list"></i>
+                        <input type="text" name="libelle_en" placeholder="Category name" value="{{ category.libelleEn }}"   required>
+                </div>
+                <div class="input-group">
+                        <i class="fa fa-list"></i>
+                        <input type="text" name="libelle_de" placeholder="Kategoriename" value="{{ category.libelleDe }}"   required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enregistrer / Modifier</button>
+        </form>
+
+        <br>
+
+        {% if categories is not empty %}
+
+                <!--Bordered Table-->
+                <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                        <tr>
+                                <th>Nom/Francais</th>
+                                <th>Name/Anglais</th>
+                                <th>Name/Allemand</th>
+                                <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for ca in categories %}
+                                <tr>
+                                        <td>{{ ca.libelleFr }}</td>
+                                        <td>{{ ca.libelleEn }}</td>
+                                        <td>{{ ca.libelleDe }}</td>
+                                        <td>
+                                                <a href="{{ path('global_admin_category_update', {'id' : ca.id}) }}" class="btn btn-xs btn-success">Modifier</a>
+                                                <a href="{{ path('global_admin_category_delete', {'id' : ca.id}) }}" class="hide btn btn-xs btn-primary">Supprimer</a>
+                                        </td>
+                                </tr>
+                        {% endfor %}
+                        </tbody>
+                </table>
+
+        {% endif %}
+
+{% endblock %}
