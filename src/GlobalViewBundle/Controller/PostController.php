@@ -15,7 +15,7 @@ use \DateTime;
 class PostController extends Controller
 {
 
-    public function indexAction()
+    public function indexAction($page)
     {
         $subcategories = $this->getDoctrine()
             ->getRepository('GlobalViewBundle:SubCategory')
@@ -23,10 +23,17 @@ class PostController extends Controller
 
         $posts = $this->getDoctrine()
             ->getRepository('GlobalViewBundle:Post')
-            ->findPosts();
+            ->findPosts($page, 10);
+
+        $pagination = array(
+            'page' => $page,
+            'nbPages' => ceil(count($posts) / 10),
+            'nomRoute' => 'global_admin_post',
+            'paramsRoute' => array()
+        );
 
         return $this->render('GlobalViewBundle:Default:post/post.html.twig', array('subcategories' => $subcategories, 'posts' => $posts, 'post' => new Post(),
-            'successMsg' => null, 'erreurMsg' => null, 'mode' => 'new'));
+            'successMsg' => null, 'erreurMsg' => null, 'mode' => 'new', 'pagination' => $pagination));
     }
 
     public function createAction(Request $request)
@@ -68,11 +75,18 @@ class PostController extends Controller
 
         $posts = $this->getDoctrine()
             ->getRepository('GlobalViewBundle:Post')
-            ->findPosts();
+            ->findPosts(1, 10);
+
+        $pagination = array(
+            'page' => 1,
+            'nbPages' => ceil(count($posts) / 10),
+            'nomRoute' => 'global_admin_post',
+            'paramsRoute' => array()
+        );
 
 
         return $this->render('GlobalViewBundle:Default:post/post.html.twig', array('successMsg' => $successMsg, 'erreurMsg' => $erreurMsg,  'posts' => $posts,
-            'subcategories' => $subcategories, 'post' => new Post(), 'mode' => 'new'));
+            'subcategories' => $subcategories, 'post' => new Post(), 'mode' => 'new', 'pagination' => $pagination));
 
     }
 
@@ -125,11 +139,18 @@ class PostController extends Controller
 
         $posts = $this->getDoctrine()
             ->getRepository('GlobalViewBundle:Post')
-            ->findPosts();
+            ->findPosts(1, 10);
+
+        $pagination = array(
+            'page' => 1,
+            'nbPages' => ceil(count($posts) / 10),
+            'nomRoute' => 'global_admin_post',
+            'paramsRoute' => array()
+        );
 
 
         return $this->render('GlobalViewBundle:Default:post/post.html.twig', array('successMsg' => $successMsg, 'erreurMsg' => $erreurMsg,  'posts' => $posts,
-            'subcategories' => $subcategories, 'post' => $post, 'mode' => $mode));
+            'subcategories' => $subcategories, 'post' => $post, 'mode' => $mode, 'pagination' => $pagination));
     }
 
     public function deleteAction(Request $request, $id)
@@ -137,7 +158,7 @@ class PostController extends Controller
         return $this->render('GlobalViewBundle:Default:post/post.html.twig');
     }
 
-    public function deltailsAction(Request $request, $id)
+    public function detailsAction(Request $request, $id)
     {
         return $this->render('GlobalViewBundle:Default:post/post.html.twig');
     }

@@ -22,7 +22,7 @@
                                     <img src="http://placehold.it/350x185" alt="Pub qui dolorem ipsum quia dol consectetur amet adipisci velit sed">
                                 </figure>
                                 <div class="image-light"></div>
-                                <span class="dashicons dashicons-format-audio"></span>
+                                <span class="dashicons dashicons-format-gallery"></span>
                             </a>
                         </div>
                         <img src="{{ asset('/img/shadow.png') }}" class="shadow" alt="shadow">
@@ -43,6 +43,11 @@
             </div>
             <hr>
         {% endfor %}
+
+        {% if pagination %}
+            {% include 'GlobalViewBundle:Default:pagination.html.twig' %}
+        {% endif %}
+
     </section>
 
     <!-- ADS -->

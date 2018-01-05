@@ -20,18 +20,18 @@ class __TwigTemplate_8ae472a8236d5e4df3382a03194d86a88c644a542958da59fad9e763fb4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1c82e2a3ed984a7942758edadc3890cdf9b4090ab847e384721f50899b93f471 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1c82e2a3ed984a7942758edadc3890cdf9b4090ab847e384721f50899b93f471->enter($__internal_1c82e2a3ed984a7942758edadc3890cdf9b4090ab847e384721f50899b93f471_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/admin:admin.html.twig"));
+        $__internal_b2508c832bfd13dadc40736f424cd8c4451a23e66d94ae57790d2403faa39d7f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b2508c832bfd13dadc40736f424cd8c4451a23e66d94ae57790d2403faa39d7f->enter($__internal_b2508c832bfd13dadc40736f424cd8c4451a23e66d94ae57790d2403faa39d7f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/admin:admin.html.twig"));
 
-        $__internal_1cbea9a01058a00e9b20a1e40229ab86f82286df552923b2817d8d76d4e1b392 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1cbea9a01058a00e9b20a1e40229ab86f82286df552923b2817d8d76d4e1b392->enter($__internal_1cbea9a01058a00e9b20a1e40229ab86f82286df552923b2817d8d76d4e1b392_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/admin:admin.html.twig"));
+        $__internal_0c7a8866f61f28498390849b72a20a40f0ba544fb03d3402bc1a6aab713c9bb4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0c7a8866f61f28498390849b72a20a40f0ba544fb03d3402bc1a6aab713c9bb4->enter($__internal_0c7a8866f61f28498390849b72a20a40f0ba544fb03d3402bc1a6aab713c9bb4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/admin:admin.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1c82e2a3ed984a7942758edadc3890cdf9b4090ab847e384721f50899b93f471->leave($__internal_1c82e2a3ed984a7942758edadc3890cdf9b4090ab847e384721f50899b93f471_prof);
+        $__internal_b2508c832bfd13dadc40736f424cd8c4451a23e66d94ae57790d2403faa39d7f->leave($__internal_b2508c832bfd13dadc40736f424cd8c4451a23e66d94ae57790d2403faa39d7f_prof);
 
         
-        $__internal_1cbea9a01058a00e9b20a1e40229ab86f82286df552923b2817d8d76d4e1b392->leave($__internal_1cbea9a01058a00e9b20a1e40229ab86f82286df552923b2817d8d76d4e1b392_prof);
+        $__internal_0c7a8866f61f28498390849b72a20a40f0ba544fb03d3402bc1a6aab713c9bb4->leave($__internal_0c7a8866f61f28498390849b72a20a40f0ba544fb03d3402bc1a6aab713c9bb4_prof);
 
     }
 
@@ -60,6 +60,6 @@ class __TwigTemplate_8ae472a8236d5e4df3382a03194d86a88c644a542958da59fad9e763fb4
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends \"::admin_base.html.twig\" %}", "GlobalViewBundle:Default/admin:admin.html.twig", "/Users/rachid/Documents/Projet Client/theglobalview/src/GlobalViewBundle/Resources/views/Default/admin/admin.html.twig");
+        return new Twig_Source("{% extends \"::admin_base.html.twig\" %}", "GlobalViewBundle:Default/admin:admin.html.twig", "/Users/Rachid/SymfonyProjects/theglobalview/src/GlobalViewBundle/Resources/views/Default/admin/admin.html.twig");
     }
 }

@@ -91,17 +91,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        {% if (app.request.getLocale() == 'en') %}
-                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_en.png') }}" alt="logo"></a>
-                        {% endif %}
 
-                        {% if (app.request.getLocale() == 'fr') %}
-                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_fr.png') }}" alt="logo"></a>
-                        {% endif %}
-
-                        {% if (app.request.getLocale() == 'de') %}
-                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_de.png') }}" alt="logo"></a>
-                        {% endif %}
+                        {% include 'home_link.html.twig' %}
 
                     </div>
 
@@ -124,39 +115,7 @@
 
                             {% endfor %}
 
-                            <li class="dropdown">
-
-                                {% if (app.request.getLocale() == 'en') %}
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-us"></span> <b class="caret"></b></a>
-                                {% endif %}
-
-                                {% if (app.request.getLocale() == 'fr') %}
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-fr"></span> <b class="caret"></b></a>
-                                {% endif %}
-
-                                {% if (app.request.getLocale() == 'de') %}
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-de"></span> <b class="caret"></b></a>
-                                {% endif %}
-
-                                <ul class="dropdown-menu" style="min-width: 65px !important;">
-
-                                    {% if (app.request.getLocale() == 'en') %}
-                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'fr'})) }}"><span class="flag-icon flag-icon-fr"></span></a></li>
-                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'de'})) }}"><span class="flag-icon flag-icon-de"></span></a></li>
-                                    {% endif %}
-
-                                    {% if (app.request.getLocale() == 'fr') %}
-                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'en'})) }}"><span class="flag-icon flag-icon-us"></span></a></li>
-                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'de'})) }}"><span class="flag-icon flag-icon-de"></span></a></li>
-                                    {% endif %}
-
-                                    {% if (app.request.getLocale() == 'de') %}
-                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'en'})) }}"><span class="flag-icon flag-icon-us"></span></a></li>
-                                        <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale' : 'fr'})) }}"><span class="flag-icon flag-icon-fr"></span></a></li>
-                                    {% endif %}
-
-                                </ul>
-                            </li>
+                            {% include 'lang_link.html.twig' %}
                         </ul>
                     </div>
                 </div>

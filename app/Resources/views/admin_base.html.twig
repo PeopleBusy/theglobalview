@@ -101,15 +101,15 @@
                             <span class="icon-bar"></span>
                         </button>
                         {% if (app.request.getLocale() == 'en') %}
-                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_en.png') }}" alt="logo"></a>
+                            <a class="navbar-brand" href="{{ path('global_admin') }}"><img src="{{ asset('/img/logo_global.png') }}" alt="logo"></a>
                         {% endif %}
 
                         {% if (app.request.getLocale() == 'fr') %}
-                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_fr.png') }}" alt="logo"></a>
+                            <a class="navbar-brand" href="{{ path('global_admin') }}"><img src="{{ asset('/img/logo_global.png') }}" alt="logo"></a>
                         {% endif %}
 
                         {% if (app.request.getLocale() == 'de') %}
-                            <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo_de.png') }}" alt="logo"></a>
+                            <a class="navbar-brand" href="{{ path('global_admin') }}"><img src="{{ asset('/img/logo_global.png') }}" alt="logo"></a>
                         {% endif %}
 
                     </div>

@@ -126,13 +126,15 @@
                             <td>{{ p.titleDe }}</td>
                             <td>{{ p.dateCreation | date('d/m/Y H:i:s') }}</td>
                             <td>
-                                <a href="{{ path('global_admin_post_details', {'id' : p.id}) }}" class="btn btn-xs btn-info">Détails</a>
+                                <a href="{{ path('global_admin_post_details', {'id' : p.id}) }}" class="hide btn btn-xs btn-info">Détails</a>
                                 <a href="{{ path('global_admin_post_update', {'id' : p.id}) }}" class="btn btn-xs btn-success">Modifier</a>
-                                <a href="{{ path('global_admin_post_details', {'id' : p.id}) }}" class="btn btn-xs btn-primary">Supprimer</a>
+                                <a href="{{ path('global_admin_post_details', {'id' : p.id}) }}" class="hide btn btn-xs btn-primary">Supprimer</a>
                             </td>
                         </tr>
                 {% endfor %}
                 </tbody>
         </table>
+
+    {% include 'GlobalViewBundle:Default:pagination.html.twig' %}
 
 {% endblock %}

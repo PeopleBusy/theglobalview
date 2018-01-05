@@ -1,0 +1,11 @@
+{% if (app.request.getLocale() == 'en') %}
+        <a class="navbar-brand" href="{{ path('global_view_homepage') }}"><img src="{{ asset('/img/logo_global.png') }}" alt="logo"></a>
+{% endif %}
+
+{% if (app.request.getLocale() == 'fr') %}
+        <a class="navbar-brand" href="{{ path('global_view_homepage') }}"><img src="{{ asset('/img/logo_global.png') }}" alt="logo"></a>
+{% endif %}
+
+{% if (app.request.getLocale() == 'de') %}
+        <a class="navbar-brand" href="{{ path('global_view_homepage') }}"><img src="{{ asset('/img/logo_global.png') }}" alt="logo"></a>
+{% endif %}

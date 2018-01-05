@@ -119,8 +119,8 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // global_view_posts_by_subcategory
-        if (0 === strpos($pathinfo, '/posts/subcategory') && preg_match('#^/posts/subcategory/(?P<id>[^/]++)(?:/(?P<_locale>en|fr|de))?$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_posts_by_subcategory')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::subcategorypostsAction',  '_locale' => 'en',));
+        if (0 === strpos($pathinfo, '/posts') && preg_match('#^/posts/(?P<page>[^/]++)/subcategory/(?P<id>[^/]++)(?:/(?P<_locale>en|fr|de))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_posts_by_subcategory')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::subcategorypostsAction',  '_locale' => 'en',  'page' => 1,));
         }
 
         // global_login
@@ -162,7 +162,12 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
             }
 
-            elseif (0 === strpos($pathinfo, '/admin/subcategory')) {
+            // global_admin_post_create
+            if ('/admin/create/post' === $pathinfo) {
+                return array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::createAction',  '_route' => 'global_admin_post_create',);
+            }
+
+            if (0 === strpos($pathinfo, '/admin/subcategory')) {
                 // global_admin_subcategory
                 if ('/admin/subcategory' === $pathinfo) {
                     return array (  '_controller' => 'GlobalViewBundle\\Controller\\SubCategoryController::indexAction',  '_route' => 'global_admin_subcategory',);
@@ -185,32 +190,24 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
             }
 
-            elseif (0 === strpos($pathinfo, '/admin/post')) {
-                // global_admin_post
-                if ('/admin/post' === $pathinfo) {
-                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::indexAction',  '_route' => 'global_admin_post',);
-                }
+            // global_admin_post
+            if (0 === strpos($pathinfo, '/admin/post') && preg_match('#^/admin/post(?:/(?P<page>[^/]++))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::indexAction',  'page' => 1,));
+            }
 
-                // global_admin_post_create
-                if ('/admin/post/create' === $pathinfo) {
-                    return array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::createAction',  '_route' => 'global_admin_post_create',);
-                }
+            // global_admin_post_update
+            if (0 === strpos($pathinfo, '/admin/update/post') && preg_match('#^/admin/update/post/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_update')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::updateAction',));
+            }
 
-                // global_admin_post_update
-                if (0 === strpos($pathinfo, '/admin/post/update') && preg_match('#^/admin/post/update/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_update')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::updateAction',));
-                }
+            // global_admin_post_delete
+            if (0 === strpos($pathinfo, '/admin/delete/post') && preg_match('#^/admin/delete/post/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_delete')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::deleteAction',));
+            }
 
-                // global_admin_post_delete
-                if (0 === strpos($pathinfo, '/admin/post/delete') && preg_match('#^/admin/post/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_delete')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::deleteAction',));
-                }
-
-                // global_admin_post_details
-                if (0 === strpos($pathinfo, '/admin/post/details') && preg_match('#^/admin/post/details/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_details')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::detailsAction',));
-                }
-
+            // global_admin_post_details
+            if (0 === strpos($pathinfo, '/admin/details/post') && preg_match('#^/admin/details/post/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_admin_post_details')), array (  '_controller' => 'GlobalViewBundle\\Controller\\PostController::detailsAction',));
             }
 
         }

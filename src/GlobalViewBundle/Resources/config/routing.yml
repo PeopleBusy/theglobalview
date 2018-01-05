@@ -5,8 +5,8 @@ global_view_homepage:
         _locale: en|fr|de
 
 global_view_posts_by_subcategory:
-    path:     /posts/subcategory/{id}/{_locale}
-    defaults: { _controller: GlobalViewBundle:Default:subcategoryposts, _locale: en }
+    path:     /posts/{page}/subcategory/{id}/{_locale}
+    defaults: { _controller: GlobalViewBundle:Default:subcategoryposts, _locale: en, page: 1 }
     requirements:
         _locale: en|fr|de
 
@@ -64,21 +64,22 @@ global_admin_subcategory_delete:
 
 
 global_admin_post:
-    path:     /admin/post
-    defaults: { _controller: GlobalViewBundle:Post:index }
+    path:     /admin/post/{page}
+    defaults: { _controller: GlobalViewBundle:Post:index, page: 1 }
+
 
 global_admin_post_create:
-    path:     /admin/post/create
+    path:     /admin/create/post
     defaults: { _controller: GlobalViewBundle:Post:create }
 
 global_admin_post_update:
-    path:     /admin/post/update/{id}
+    path:     /admin/update/post/{id}
     defaults: { _controller: GlobalViewBundle:Post:update }
 
 global_admin_post_delete:
-    path:     /admin/post/delete/{id}
+    path:     /admin/delete/post/{id}
     defaults: { _controller: GlobalViewBundle:Post:delete }
 
 global_admin_post_details:
-    path:     /admin/post/details/{id}
+    path:     /admin/details/post/{id}
     defaults: { _controller: GlobalViewBundle:Post:details }
