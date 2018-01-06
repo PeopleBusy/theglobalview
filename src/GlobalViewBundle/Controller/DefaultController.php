@@ -13,13 +13,13 @@ class DefaultController extends Controller
             ->getRepository('GlobalViewBundle:Category')
             ->findAll();
 
-        $posts = $popularPosts = $this->getDoctrine()
+        $posts = $this->getDoctrine()
+            ->getRepository('GlobalViewBundle:Post')
+            ->findFirstPosts(5);
+
+        $popularPosts = $this->getDoctrine()
             ->getRepository('GlobalViewBundle:Post')
             ->findLastPosts(5);
-
-        /*$popularPosts = $this->getDoctrine()
-            ->getRepository('GlobalViewBundle:Post')
-            ->findLastPosts(5);*/
 
 
         if($_locale == "en"){
@@ -68,6 +68,55 @@ class DefaultController extends Controller
 
         if($_locale == "de"){
             return $this->render('GlobalViewBundle:Default:index_de.html.twig', array('categories' => $categories, 'posts' => $posts, 'popularPosts' => $popularPosts, 'pagination' => $pagination));
+        }
+
+
+    }
+
+    public function detailpostAction(Request $request, $_locale, $id, $page)
+    {
+        $post = $this->getDoctrine()
+            ->getRepository('GlobalViewBundle:Post')
+            ->find($id);
+
+        if (!$post) {
+            throw $this->createNotFoundException(
+                'Aucune article trouvé avec l\id ' . $id
+            );
+        }
+
+        $categories = $contratagent = $this->getDoctrine()
+            ->getRepository('GlobalViewBundle:Category')
+            ->findAll();
+
+        $popularPosts = $this->getDoctrine()
+            ->getRepository('GlobalViewBundle:Post')
+            ->findLastPosts(5);
+
+        $posts = $this->getDoctrine()
+            ->getRepository('GlobalViewBundle:Post')
+            ->findPostsBySubCategory($post->getSubcategory()->getId(), $page, 1);
+
+        $pagination = array(
+            'page' => $page,
+            'nbPages' => ceil(count($posts) / 1),
+            'nomRoute' => 'global_view_post_detail',
+            'paramsRoute' => array('id' => $id)
+        );
+
+        if($_locale == "en"){
+            return $this->render('GlobalViewBundle:Default:article_detail_en.html.twig', array('categories' => $categories, 'posts' => $posts, 'popularPosts' => $popularPosts, 'pagination' => $pagination,
+                'post' =>$post));
+        }
+
+        if($_locale == "fr"){
+            return $this->render('GlobalViewBundle:Default:article_detail_fr.html.twig', array('categories' => $categories, 'posts' => $posts, 'popularPosts' => $popularPosts, 'pagination' => $pagination,
+                'post' =>$post));
+        }
+
+        if($_locale == "de"){
+            return $this->render('GlobalViewBundle:Default:article_detail_de.html.twig', array('categories' => $categories, 'posts' => $posts, 'popularPosts' => $popularPosts, 'pagination' => $pagination,
+                'post' =>$post));
         }
 
 

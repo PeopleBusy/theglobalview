@@ -102,4 +102,18 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
 
     }
 
+    public function findFirstPosts($number){
+
+        $qb = $this->createQueryBuilder('p');
+        $qb->select('p')
+            ->orderBy('p.id', 'ASC')
+            ->setMaxResults($number);
+
+
+        $query = $qb->getQuery();
+
+        return $query->getResult();
+
+    }
+
 }

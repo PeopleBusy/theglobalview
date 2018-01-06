@@ -10,6 +10,12 @@ global_view_posts_by_subcategory:
     requirements:
         _locale: en|fr|de
 
+global_view_post_detail:
+    path:     /post/{page}/detail/{id}/{_locale}
+    defaults: { _controller: GlobalViewBundle:Default:detailpost, _locale: en, page: 1 }
+    requirements:
+        _locale: en|fr|de
+
 global_login:
     path:     /login
     defaults: { _controller: GlobalViewBundle:Login:login }

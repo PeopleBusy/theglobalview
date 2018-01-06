@@ -19,7 +19,11 @@
                         <div class="frame">
                             <a class="image" href="#">
                                 <figure class="image-holder">
-                                    <img src="http://placehold.it/350x185" alt="Pub qui dolorem ipsum quia dol consectetur amet adipisci velit sed">
+                                    {% if p.imageUrl %}
+                                        <img src="{{ asset('/uploads/articles/' ~ p.imageUrl ) }}" width="350px" height="185px" />
+                                    {% else %}
+                                        <img src="http://placehold.it/350x185" alt="">
+                                    {% endif %}
                                 </figure>
                                 <div class="image-light"></div>
                                 <span class="dashicons dashicons-format-gallery"></span>
@@ -30,7 +34,7 @@
 
                     <!--Content-->
                     <div class="col-sm-6">
-                        <h4><a href="#">{{ p.titleDe }}</a></h4>
+                        <h4><a href="{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'de'}) }}">{{ p.titleDe }}</a></h4>
                         <p class="post-meta">
                             <a href="#"><span class="fa fa-clock-o"></span> {{ p.dateCreation | date('d/m/Y H:i:s') }}</a> &nbsp;
                             <a href="{{ path('global_view_posts_by_subcategory', {'id' : p.subcategory.id, '_locale' : 'de'}) }}"><span class="fa fa-folder"></span> {{ p.subcategory.nomDe }}</a> &nbsp;

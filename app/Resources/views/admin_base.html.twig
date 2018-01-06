@@ -117,7 +117,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="main-nav-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
+                            <li class="active"><a href="{{ path('global_admin') }}"><i class="fa fa-home"></i></a></li>
                             <li class="">
                                 <a href="{{ path('global_admin_category') }}"> Gestion des categories </a>
                             </li>
@@ -197,6 +197,7 @@
 
         <!-- jQuery  -->
         <script src="{{ asset('/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('/js/app.js') }}"></script>
         <script src="{{ asset('/js/jquery-ui.custom.min.js') }}"></script>
 
         <!-- Warta scripts -->

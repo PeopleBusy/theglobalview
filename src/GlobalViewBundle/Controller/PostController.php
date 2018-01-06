@@ -56,7 +56,21 @@ class PostController extends Controller
             $post->setDescriptionFr($request->get('description_fr'));
             $post->setDescriptionDe($request->get('description_de'));
 
-            $post->setImageUrl($request->get('image_url'));
+            $file = $request->files->get('image_url');
+
+            //var_dump($this->getParameter('articles_directory')); die();
+
+            // If a file was uploaded
+            if(!is_null($file)){
+                // generate a random name for the file but keep the extension
+                $filename = md5(uniqid()).".".$file->getClientOriginalExtension();
+
+                $file->move($this->getParameter('articles_directory'), $filename); // move the file to a path
+
+                $post->setImageUrl($filename);
+            }
+
+
 
             $post->setDateCreation(new DateTime());
             $post->setEtat(true);
@@ -119,7 +133,20 @@ class PostController extends Controller
             $post->setDescriptionFr($request->get('description_fr'));
             $post->setDescriptionDe($request->get('description_de'));
 
-            $post->setImageUrl($request->get('image_url'));
+            $file = $request->files->get('image_url');
+
+            //var_dump($this->getParameter('articles_directory')); die();
+
+            // If a file was uploaded
+            if(!is_null($file)){
+                // generate a random name for the file but keep the extension
+                $filename = md5(uniqid()).".".$file->getClientOriginalExtension();
+
+                $file->move($this->getParameter('articles_directory'), $filename); // move the file to a path
+
+                $post->setImageUrl($filename);
+            }
+
             $post->setEtat(true);
 
             $em = $this->getDoctrine()->getManager();

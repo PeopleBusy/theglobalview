@@ -20,15 +20,15 @@
 
 
     {% if mode == 'new' %}
-            <form method="post" action="{{ path('global_admin_post_create') }}">
+            <form method="post" action="{{ path('global_admin_post_create') }}" enctype="multipart/form-data">
     {% endif %}
 
     {% if mode == 'edit' %}
-        <form method="post" action="{{ path('global_admin_post_update', {'id': post.id}) }}">
+        <form method="post" action="{{ path('global_admin_post_update', {'id': post.id}) }}" enctype="multipart/form-data">
     {% endif %}
 
     {% if mode == 'delete' %}
-        <form method="post" action="{{ path('global_admin_post_delete', {'id': post.id}) }}">
+        <form method="post" action="{{ path('global_admin_post_delete', {'id': post.id}) }}" enctype="multipart/form-data">
     {% endif %}
 
                 <div class="row">
@@ -56,11 +56,16 @@
                         </div>
                         <div class="form-group col-md-4">
                                 <label>Image:</label>
-                                <input type="file" class="form-control" name="image_url"/>
+                                <input type="file" class="form-control" name="image_url" id="article-img"  accept="image/*"/>
+
                         </div>
 
                         <div class="form-group col-md-4">
-                                Preview Image
+                            {% if post.imageUrl %}
+                                <img src="{{ asset('/uploads/articles/' ~ post.imageUrl ) }}" id="article-img-tag" width="200px" />
+                            {% else %}
+                                <img src="" id="article-img-tag" width="200px" />
+                            {% endif %}
                         </div>
                 </div>
 

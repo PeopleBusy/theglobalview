@@ -99,7 +99,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="main-nav-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
+                            <li class="active"><a href="{{ path('global_view_homepage') }}"><i class="fa fa-home"></i></a></li>
 
                             {% for ca in categories %}
                                     <li class="dropdown">
@@ -150,74 +150,16 @@
                             <div class="content">
                                 <ul>
                                     {% for p in popularPosts %}
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> {{ p.titleFr }}</a></li>
+                                        <li><a href="{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'fr'}) }}"><i class="fa fa-angle-double-right"></i> {{ p.titleFr }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </div>
                         </section>
 
                         <!-- CAROUSEL  -->
-                        <section class="widget no-mobile">
-                            <div class="frame thick">
-                                <div id="carousel-medium" class="carousel slide carousel-medium" data-ride="carousel">
-                                    <!-- Carousel contents -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <div class="item-inner">
-                                                <div data-src="http://placehold.it/730x370" data-alt="Doctype Pellentesque pellentesque faucibus urna ac feugiat"></div>
-                                                <div class="carousel-caption hide">
-                                                    <div><a href="#"><h3>Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat</h3></a></div>
-                                                    <div class="hidden-xs">
-                                                        <p>
-                                                            Ut eleifend, ligula id tristique gravida, lectus risus convallis nunc, ut varius ipsum mauris
-                                                            vel erat. Pellentesque eleifend accumsan lacus vel rutrum..
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <div class="item-inner">
-                                                <div data-src="http://placehold.it/730x370" data-alt="Mauris lacus nisl, suscipit ut orci ut, gravida dapibus neque Interdum et malesuada"></div>
-                                                <div class="carousel-caption hide">
-                                                    <div><a href="#"><h1>Mauris Lacus Nisl Suscipit Ut Orci Ut Gravida Dapibus Neque</h1></a></div>
-                                                    <div class="hidden-xs">
-                                                        <p>
-                                                            Fames ac ante ipsum primis in faucibus. Aenean vulputate a nunc quis suscipit. Praesent non risus consequat,
-                                                            volutpat mi eu, porta nibh. Pellentesque habitant morbi tristique senectus et..
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <div class="item-inner">
-                                                <div data-src="http://placehold.it/730x370" data-alt="Stones turpis egestas Curabitur scelerisque sagittis lectus ac consequat Mauris dictum sollicitudin tincidunt"></div>
-                                                <div class="carousel-caption hide">
-                                                    <div><a href="#"><h1>Stones Turpis Egestas Curabitur Scelerisque Sagittis Lectus Ac</h1></a></div>
-                                                    <div class="hidden-xs">
-                                                        <p>
-                                                            Nam sagittis neque et lectus varius imperdiet. Phasellus blandit viverra diam, et tincidunt arcu tempus ut.
-                                                            Nulla gravida erat nisi, sed laoreet nulla fringilla id. Maecenas tristique erat...
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Light -->
-                                    <div class="image-light"></div>
-
-                                    <!-- Carousel Controls -->
-                                    <a class="left carousel-control" href="#carousel-medium" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
-                                    <a class="right carousel-control" href="#carousel-medium" data-slide="next"><span class="fa fa-chevron-right"></span></a>
-                                </div>
-                            </div>
-                            <img src="{{ asset('/img/shadow.png') }}" class="shadow" alt="shadow">
-                        </section>
+                        {% block carousel_content %}
+                            {% include 'carousel.html.twig' %}
+                        {% endblock %}
 
                         <div class="articles">
                             {% block article_content %}{% endblock %}
@@ -382,15 +324,20 @@
                                             <div class="article-tiny">
                                                 <a href="#" class="image">
                                                     <figure class="image-holder">
-                                                        <img src="http://placehold.it/95x75" alt="Mauris mattis ullamcorper euismod Nulla convallis ">
+                                                        {% if p.imageUrl %}
+                                                            <img src="{{ asset('/uploads/articles/' ~ p.imageUrl ) }}" width="95px" height="75px" />
+                                                        {% else %}
+                                                            <img src="http://placehold.it/95x75" alt="">
+                                                        {% endif %}
                                                     </figure>
                                                     <div class="image-light"></div>
                                                     <span class="dashicons dashicons-format-gallery"></span>
                                                 </a>
-                                                <h5><a href="#">{{ p.titleFr }}</a></h5>
+                                                <h5><a href="{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'fr'}) }}">{{ p.titleFr }}</a></h5>
                                                 <p class="post-meta">
                                                     <a href="#"><span class="fa fa-clock-o"></span> {{ p.dateCreation | date('d/m/Y H:i:s') }}</a> &nbsp;
-                                                    <a href="#"><span class="fa fa-folder"></span> {{ p.subcategory.nomFr }}</a>
+                                                    <a href="{{ path('global_view_posts_by_subcategory', {'id' : p.subcategory.id, '_locale' : 'fr'}) }}">
+                                                        <span class="fa fa-folder"></span> {{ p.subcategory.nomFr }}</a>
                                                 </p>
                                             </div>
                                             <hr>

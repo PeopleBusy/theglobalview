@@ -23,65 +23,65 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bc091ea283fdf23927bd10ba1e8d6db4e6570f4c3c9e31b4e81394192ab45fa3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bc091ea283fdf23927bd10ba1e8d6db4e6570f4c3c9e31b4e81394192ab45fa3->enter($__internal_bc091ea283fdf23927bd10ba1e8d6db4e6570f4c3c9e31b4e81394192ab45fa3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/post:post.html.twig"));
+        $__internal_3dba358442848accb22274dd7551fa0a7d540c13c1f6877f1918354718969dad = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3dba358442848accb22274dd7551fa0a7d540c13c1f6877f1918354718969dad->enter($__internal_3dba358442848accb22274dd7551fa0a7d540c13c1f6877f1918354718969dad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/post:post.html.twig"));
 
-        $__internal_07dd9acbe4121e6966a553f17df99705446e2f5595a8ae739d52f62da0fd6a63 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_07dd9acbe4121e6966a553f17df99705446e2f5595a8ae739d52f62da0fd6a63->enter($__internal_07dd9acbe4121e6966a553f17df99705446e2f5595a8ae739d52f62da0fd6a63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/post:post.html.twig"));
+        $__internal_415cf439d96736874f13100843f9d7fa870d4fb8a5766b099cc2a6d4e8465a1e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_415cf439d96736874f13100843f9d7fa870d4fb8a5766b099cc2a6d4e8465a1e->enter($__internal_415cf439d96736874f13100843f9d7fa870d4fb8a5766b099cc2a6d4e8465a1e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/post:post.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_bc091ea283fdf23927bd10ba1e8d6db4e6570f4c3c9e31b4e81394192ab45fa3->leave($__internal_bc091ea283fdf23927bd10ba1e8d6db4e6570f4c3c9e31b4e81394192ab45fa3_prof);
+        $__internal_3dba358442848accb22274dd7551fa0a7d540c13c1f6877f1918354718969dad->leave($__internal_3dba358442848accb22274dd7551fa0a7d540c13c1f6877f1918354718969dad_prof);
 
         
-        $__internal_07dd9acbe4121e6966a553f17df99705446e2f5595a8ae739d52f62da0fd6a63->leave($__internal_07dd9acbe4121e6966a553f17df99705446e2f5595a8ae739d52f62da0fd6a63_prof);
+        $__internal_415cf439d96736874f13100843f9d7fa870d4fb8a5766b099cc2a6d4e8465a1e->leave($__internal_415cf439d96736874f13100843f9d7fa870d4fb8a5766b099cc2a6d4e8465a1e_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_cc521fc23a8c91cf51c07568938f64b85c495f8e0fc86b5daeca167670c51714 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_cc521fc23a8c91cf51c07568938f64b85c495f8e0fc86b5daeca167670c51714->enter($__internal_cc521fc23a8c91cf51c07568938f64b85c495f8e0fc86b5daeca167670c51714_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_8c2947f4ed9505dc1c35f5be1cefdff826597a383b87855472bac112beef7b61 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8c2947f4ed9505dc1c35f5be1cefdff826597a383b87855472bac112beef7b61->enter($__internal_8c2947f4ed9505dc1c35f5be1cefdff826597a383b87855472bac112beef7b61_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_043e8b4eea9f9c0ec0891157dd7b5c0157d7b72068470fbc78a58b026c19ea2e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_043e8b4eea9f9c0ec0891157dd7b5c0157d7b72068470fbc78a58b026c19ea2e->enter($__internal_043e8b4eea9f9c0ec0891157dd7b5c0157d7b72068470fbc78a58b026c19ea2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_9127f0dbe86c182dd38b273dc048ed465e1d02162df482a509918703b62ed129 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9127f0dbe86c182dd38b273dc048ed465e1d02162df482a509918703b62ed129->enter($__internal_9127f0dbe86c182dd38b273dc048ed465e1d02162df482a509918703b62ed129_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo " Posts ";
         
-        $__internal_043e8b4eea9f9c0ec0891157dd7b5c0157d7b72068470fbc78a58b026c19ea2e->leave($__internal_043e8b4eea9f9c0ec0891157dd7b5c0157d7b72068470fbc78a58b026c19ea2e_prof);
+        $__internal_9127f0dbe86c182dd38b273dc048ed465e1d02162df482a509918703b62ed129->leave($__internal_9127f0dbe86c182dd38b273dc048ed465e1d02162df482a509918703b62ed129_prof);
 
         
-        $__internal_cc521fc23a8c91cf51c07568938f64b85c495f8e0fc86b5daeca167670c51714->leave($__internal_cc521fc23a8c91cf51c07568938f64b85c495f8e0fc86b5daeca167670c51714_prof);
+        $__internal_8c2947f4ed9505dc1c35f5be1cefdff826597a383b87855472bac112beef7b61->leave($__internal_8c2947f4ed9505dc1c35f5be1cefdff826597a383b87855472bac112beef7b61_prof);
 
     }
 
     // line 5
     public function block_admin_title($context, array $blocks = array())
     {
-        $__internal_4ea44a02507de1c9abd6302cc710bae0d9310c06b016ee526c113888249ca829 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4ea44a02507de1c9abd6302cc710bae0d9310c06b016ee526c113888249ca829->enter($__internal_4ea44a02507de1c9abd6302cc710bae0d9310c06b016ee526c113888249ca829_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_title"));
+        $__internal_c88fd5940020ad9a898039827e7449390317ae4975e8a3ee864c01714914926a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c88fd5940020ad9a898039827e7449390317ae4975e8a3ee864c01714914926a->enter($__internal_c88fd5940020ad9a898039827e7449390317ae4975e8a3ee864c01714914926a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_title"));
 
-        $__internal_8609f10232be394b5e9ea2661b362b79627f2d3d928e20a56e7a668e3a8be055 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8609f10232be394b5e9ea2661b362b79627f2d3d928e20a56e7a668e3a8be055->enter($__internal_8609f10232be394b5e9ea2661b362b79627f2d3d928e20a56e7a668e3a8be055_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_title"));
+        $__internal_71d24e13dfbb9a5a9e3256858a681fc26a18fc73234276f4d6e3f89fe47031b7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_71d24e13dfbb9a5a9e3256858a681fc26a18fc73234276f4d6e3f89fe47031b7->enter($__internal_71d24e13dfbb9a5a9e3256858a681fc26a18fc73234276f4d6e3f89fe47031b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_title"));
 
         echo "Page Posts";
         
-        $__internal_8609f10232be394b5e9ea2661b362b79627f2d3d928e20a56e7a668e3a8be055->leave($__internal_8609f10232be394b5e9ea2661b362b79627f2d3d928e20a56e7a668e3a8be055_prof);
+        $__internal_71d24e13dfbb9a5a9e3256858a681fc26a18fc73234276f4d6e3f89fe47031b7->leave($__internal_71d24e13dfbb9a5a9e3256858a681fc26a18fc73234276f4d6e3f89fe47031b7_prof);
 
         
-        $__internal_4ea44a02507de1c9abd6302cc710bae0d9310c06b016ee526c113888249ca829->leave($__internal_4ea44a02507de1c9abd6302cc710bae0d9310c06b016ee526c113888249ca829_prof);
+        $__internal_c88fd5940020ad9a898039827e7449390317ae4975e8a3ee864c01714914926a->leave($__internal_c88fd5940020ad9a898039827e7449390317ae4975e8a3ee864c01714914926a_prof);
 
     }
 
     // line 7
     public function block_admin_content($context, array $blocks = array())
     {
-        $__internal_c86eb0012cc013d1e66f9748074641d570e1208745cd48f8f3bb2fe331bd932c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c86eb0012cc013d1e66f9748074641d570e1208745cd48f8f3bb2fe331bd932c->enter($__internal_c86eb0012cc013d1e66f9748074641d570e1208745cd48f8f3bb2fe331bd932c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_content"));
+        $__internal_d3ebe6428b3debed49c9e81ba662f7e6c7088e3d0d0302ea3852c3bd0e033119 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d3ebe6428b3debed49c9e81ba662f7e6c7088e3d0d0302ea3852c3bd0e033119->enter($__internal_d3ebe6428b3debed49c9e81ba662f7e6c7088e3d0d0302ea3852c3bd0e033119_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_content"));
 
-        $__internal_fbadf68ba9b955f1e555e3adb23e96a49cb6d82451cd9f470df41566cdb65a39 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fbadf68ba9b955f1e555e3adb23e96a49cb6d82451cd9f470df41566cdb65a39->enter($__internal_fbadf68ba9b955f1e555e3adb23e96a49cb6d82451cd9f470df41566cdb65a39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_content"));
+        $__internal_9613f725718d55ec48603fc635c38f7971eaf13e919d392f2e3db452d8757141 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9613f725718d55ec48603fc635c38f7971eaf13e919d392f2e3db452d8757141->enter($__internal_9613f725718d55ec48603fc635c38f7971eaf13e919d392f2e3db452d8757141_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_content"));
 
         // line 8
         echo "
@@ -120,7 +120,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
             // line 23
             echo "            <form method=\"post\" action=\"";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_admin_post_create");
-            echo "\">
+            echo "\" enctype=\"multipart/form-data\">
     ";
         }
         // line 25
@@ -131,7 +131,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
             // line 27
             echo "        <form method=\"post\" action=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_admin_post_update", array("id" => $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()))), "html", null, true);
-            echo "\">
+            echo "\" enctype=\"multipart/form-data\">
     ";
         }
         // line 29
@@ -142,7 +142,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
             // line 31
             echo "        <form method=\"post\" action=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_admin_post_delete", array("id" => $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()))), "html", null, true);
-            echo "\">
+            echo "\" enctype=\"multipart/form-data\">
     ";
         }
         // line 33
@@ -228,33 +228,47 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
                         </div>
                         <div class=\"form-group col-md-4\">
                                 <label>Image:</label>
-                                <input type=\"file\" class=\"form-control\" name=\"image_url\"/>
+                                <input type=\"file\" class=\"form-control\" name=\"image_url\" id=\"article-img\"  accept=\"image/*\"/>
+
                         </div>
 
                         <div class=\"form-group col-md-4\">
-                                Preview Image
-                        </div>
+                            ";
+        // line 64
+        if ($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "imageUrl", array())) {
+            // line 65
+            echo "                                <img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(("/uploads/articles/" . $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "imageUrl", array()))), "html", null, true);
+            echo "\" id=\"article-img-tag\" width=\"200px\" />
+                            ";
+        } else {
+            // line 67
+            echo "                                <img src=\"\" id=\"article-img-tag\" width=\"200px\" />
+                            ";
+        }
+        // line 69
+        echo "                        </div>
                 </div>
 
 
                 <div class=\"input-group\">
                         <i class=\"fa fa-list\"></i>
                         <input type=\"text\" name=\"title_fr\" value=\"";
-        // line 70
+        // line 75
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "titleFr", array()), "html", null, true);
         echo "\" placeholder=\"Titre du post\"  required>
                 </div>
                 <div class=\"input-group\">
                         <i class=\"fa fa-list\"></i>
                         <input type=\"text\" name=\"title_en\" value=\"";
-        // line 74
+        // line 79
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "titleEn", array()), "html", null, true);
         echo "\" placeholder=\"Post title\"  required>
                 </div>
                 <div class=\"input-group\">
                         <i class=\"fa fa-list\"></i>
                         <input type=\"text\" name=\"title_de\" value=\"";
-        // line 78
+        // line 83
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "titleDe", array()), "html", null, true);
         echo "\" placeholder=\"Post titel\"  required>
                 </div>
@@ -267,7 +281,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
                         <div class=\"form-group col-md-4\">
                                 <label>Description du post:</label>
                                 <textarea name=\"description_fr\" placeholder=\"Description du post\" rows=\"6\"  required>";
-        // line 88
+        // line 93
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "descriptionFr", array()), "html", null, true);
         echo "</textarea>
                         </div>
@@ -275,7 +289,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
                         <div class=\"form-group col-md-4\">
                                 <label>Post description:</label>
                                 <textarea name=\"description_en\" placeholder=\"Post description\" rows=\"6\"  required>";
-        // line 93
+        // line 98
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "descriptionEn", array()), "html", null, true);
         echo "</textarea>
                         </div>
@@ -283,7 +297,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
                         <div class=\"form-group col-md-4\">
                                 <label>Post Beschreibung:</label>
                                 <textarea name=\"description_de\" placeholder=\"Post Beschreibung\" rows=\"6\"  required>";
-        // line 98
+        // line 103
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "descriptionDe", array()), "html", null, true);
         echo "</textarea>
                         </div>
@@ -309,14 +323,14 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
                 </thead>
                 <tbody>
                 ";
-        // line 121
+        // line 126
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? $this->getContext($context, "posts")));
         foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
-            // line 122
+            // line 127
             echo "                        <tr>
                             <td>";
-            // line 123
+            // line 128
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "subcategory", array()), "nomFr", array()), "html", null, true);
             echo " / ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "subcategory", array()), "nomEn", array()), "html", null, true);
@@ -324,32 +338,32 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "subcategory", array()), "nomDe", array()), "html", null, true);
             echo "</td>
                             <td>";
-            // line 124
+            // line 129
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "titleFr", array()), "html", null, true);
             echo "</td>
                             <td>";
-            // line 125
+            // line 130
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "titleEn", array()), "html", null, true);
             echo "</td>
                             <td>";
-            // line 126
+            // line 131
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "titleDe", array()), "html", null, true);
             echo "</td>
                             <td>";
-            // line 127
+            // line 132
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["p"], "dateCreation", array()), "d/m/Y H:i:s"), "html", null, true);
             echo "</td>
                             <td>
                                 <a href=\"";
-            // line 129
+            // line 134
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_admin_post_details", array("id" => $this->getAttribute($context["p"], "id", array()))), "html", null, true);
             echo "\" class=\"hide btn btn-xs btn-info\">Détails</a>
                                 <a href=\"";
-            // line 130
+            // line 135
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_admin_post_update", array("id" => $this->getAttribute($context["p"], "id", array()))), "html", null, true);
             echo "\" class=\"btn btn-xs btn-success\">Modifier</a>
                                 <a href=\"";
-            // line 131
+            // line 136
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_admin_post_details", array("id" => $this->getAttribute($context["p"], "id", array()))), "html", null, true);
             echo "\" class=\"hide btn btn-xs btn-primary\">Supprimer</a>
                             </td>
@@ -359,21 +373,21 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 135
+        // line 140
         echo "                </tbody>
         </table>
 
     ";
-        // line 138
-        $this->loadTemplate("GlobalViewBundle:Default:pagination.html.twig", "GlobalViewBundle:Default/post:post.html.twig", 138)->display($context);
-        // line 139
+        // line 143
+        $this->loadTemplate("GlobalViewBundle:Default:pagination.html.twig", "GlobalViewBundle:Default/post:post.html.twig", 143)->display($context);
+        // line 144
         echo "
 ";
         
-        $__internal_fbadf68ba9b955f1e555e3adb23e96a49cb6d82451cd9f470df41566cdb65a39->leave($__internal_fbadf68ba9b955f1e555e3adb23e96a49cb6d82451cd9f470df41566cdb65a39_prof);
+        $__internal_9613f725718d55ec48603fc635c38f7971eaf13e919d392f2e3db452d8757141->leave($__internal_9613f725718d55ec48603fc635c38f7971eaf13e919d392f2e3db452d8757141_prof);
 
         
-        $__internal_c86eb0012cc013d1e66f9748074641d570e1208745cd48f8f3bb2fe331bd932c->leave($__internal_c86eb0012cc013d1e66f9748074641d570e1208745cd48f8f3bb2fe331bd932c_prof);
+        $__internal_d3ebe6428b3debed49c9e81ba662f7e6c7088e3d0d0302ea3852c3bd0e033119->leave($__internal_d3ebe6428b3debed49c9e81ba662f7e6c7088e3d0d0302ea3852c3bd0e033119_prof);
 
     }
 
@@ -389,7 +403,7 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
 
     public function getDebugInfo()
     {
-        return array (  370 => 139,  368 => 138,  363 => 135,  353 => 131,  349 => 130,  345 => 129,  340 => 127,  336 => 126,  332 => 125,  328 => 124,  320 => 123,  317 => 122,  313 => 121,  287 => 98,  279 => 93,  271 => 88,  258 => 78,  251 => 74,  244 => 70,  226 => 54,  223 => 53,  216 => 51,  204 => 49,  192 => 47,  190 => 46,  187 => 45,  182 => 44,  179 => 43,  164 => 41,  159 => 40,  157 => 39,  149 => 33,  143 => 31,  141 => 30,  138 => 29,  132 => 27,  130 => 26,  127 => 25,  121 => 23,  119 => 22,  115 => 20,  109 => 17,  106 => 16,  104 => 15,  101 => 14,  95 => 11,  92 => 10,  90 => 9,  87 => 8,  78 => 7,  60 => 5,  42 => 3,  11 => 1,);
+        return array (  384 => 144,  382 => 143,  377 => 140,  367 => 136,  363 => 135,  359 => 134,  354 => 132,  350 => 131,  346 => 130,  342 => 129,  334 => 128,  331 => 127,  327 => 126,  301 => 103,  293 => 98,  285 => 93,  272 => 83,  265 => 79,  258 => 75,  250 => 69,  246 => 67,  240 => 65,  238 => 64,  226 => 54,  223 => 53,  216 => 51,  204 => 49,  192 => 47,  190 => 46,  187 => 45,  182 => 44,  179 => 43,  164 => 41,  159 => 40,  157 => 39,  149 => 33,  143 => 31,  141 => 30,  138 => 29,  132 => 27,  130 => 26,  127 => 25,  121 => 23,  119 => 22,  115 => 20,  109 => 17,  106 => 16,  104 => 15,  101 => 14,  95 => 11,  92 => 10,  90 => 9,  87 => 8,  78 => 7,  60 => 5,  42 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -424,15 +438,15 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
 
 
     {% if mode == 'new' %}
-            <form method=\"post\" action=\"{{ path('global_admin_post_create') }}\">
+            <form method=\"post\" action=\"{{ path('global_admin_post_create') }}\" enctype=\"multipart/form-data\">
     {% endif %}
 
     {% if mode == 'edit' %}
-        <form method=\"post\" action=\"{{ path('global_admin_post_update', {'id': post.id}) }}\">
+        <form method=\"post\" action=\"{{ path('global_admin_post_update', {'id': post.id}) }}\" enctype=\"multipart/form-data\">
     {% endif %}
 
     {% if mode == 'delete' %}
-        <form method=\"post\" action=\"{{ path('global_admin_post_delete', {'id': post.id}) }}\">
+        <form method=\"post\" action=\"{{ path('global_admin_post_delete', {'id': post.id}) }}\" enctype=\"multipart/form-data\">
     {% endif %}
 
                 <div class=\"row\">
@@ -460,11 +474,16 @@ class __TwigTemplate_eed0c47cf3e26dc0c6d5fa6b642bfcd3692f93f0df5aabf803c48288cd4
                         </div>
                         <div class=\"form-group col-md-4\">
                                 <label>Image:</label>
-                                <input type=\"file\" class=\"form-control\" name=\"image_url\"/>
+                                <input type=\"file\" class=\"form-control\" name=\"image_url\" id=\"article-img\"  accept=\"image/*\"/>
+
                         </div>
 
                         <div class=\"form-group col-md-4\">
-                                Preview Image
+                            {% if post.imageUrl %}
+                                <img src=\"{{ asset('/uploads/articles/' ~ post.imageUrl ) }}\" id=\"article-img-tag\" width=\"200px\" />
+                            {% else %}
+                                <img src=\"\" id=\"article-img-tag\" width=\"200px\" />
+                            {% endif %}
                         </div>
                 </div>
 

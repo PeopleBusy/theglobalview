@@ -1,0 +1,94 @@
+{% extends "::base_fr.html.twig" %}
+
+{% block carousel_content %}{% endblock %}
+
+{% block article_content %}
+
+    <!-- ARTICLES V1 WIDGET -->
+    <section class="widget articles-v1">
+        <!-- Widget Header -->
+        <header class="clearfix">
+            <h4>{{ post.titleFr }}</h4>
+            <a href="#" class="control"><i class="fa fa-plus"></i></a>
+        </header>
+
+        <!-- POST CONTENT -->
+        <article class="article-large hentry">
+            <!--Image-->
+            <div class="frame thick clearfix">
+                <a href="http://placehold.it/1024x512.jpg" class="image" data-lightbox title="{{ post.titleFr }}">
+                    <figure class="image-holder">
+                        {% if post.imageUrl %}
+                            <img src="{{ asset('/uploads/articles/' ~ post.imageUrl ) }}" width="730px" height="370px" />
+                        {% else %}
+                            <img src="http://placehold.it/730x370.jpg" alt="">
+                        {% endif %}
+                    </figure>
+                    <div class="image-light"></div>
+                </a>
+                <div class="hide icons entry-footer">
+                    <span class="vcard">
+                        <a href="#" class="url fn" title="Siska"><span class="hidden">Siska</span><img src="http://placehold.it/75x75.jpg" alt="Siska"></a>
+                    </span>
+                    <a href="#" title="Post format image"><i class="dashicons dashicons-format-image"></i></a>
+                    <a href="#" title="1,347 Comments"><i class="fa fa-comments"></i><span class="comment">1,347</span></a>
+                </div>
+                <p class="post-meta entry-footer pull-right">
+                    <a href="#" rel="bookmark"><time class="entry-date published updated" datetime="2014-01-08T11:42:20+00:00">{{ post.dateCreation | date('d/m/Y H:i:s') }}</time></a>
+                </p>
+            </div>
+            <img src="{{ asset('/img/shadow.png') }}" class="shadow" alt="shadow">
+
+            <header class="hidden">
+                <h1 class="entry-title">Quasi Architecto Beatae Vitae Dicta Sunt Explicabo Nemo Enim Ipsam Voluptatem</h1>
+            </header>
+
+            <div class="entry-content">
+
+                <a class="pull-right" href="{{ path('global_view_posts_by_subcategory', {'id' : post.subcategory.id, '_locale' : 'fr'}) }}">
+                    <span class="fa fa-folder"></span> {{ post.subcategory.nomEn }}</a>
+                <p>
+                    {{ post.descriptionFr }}
+                </p>
+
+                <div class="page-links hide">
+                    {% if pagination %}
+                        {% include 'GlobalViewBundle:Default:pagination.html.twig' %}
+                    {% endif %}
+                </div>
+
+                <!-- SHARE POST -->
+                <section class="share-post clearfix hide">
+                    <h5>Share:</h5>
+                    <ul>
+                        <li><a href="#"><i class="sc-sm sc-facebook"></i><span>426</span></a></li>
+                        <li><a href="#"><i class="sc-sm sc-twitter"></i><span>526</span></a></li>
+                        <li><a href="#"><i class="sc-sm sc-pinterest"></i><span>283</span></a></li>
+                        <li><a href="#"><i class="sc-sm sc-linkedin"></i><span>329</span></a></li>
+                        <li><a href="#"><i class="sc-sm sc-googleplus"></i><span>429</span></a></li>
+                    </ul>
+                </section>
+
+            </div><!-- .entry-content -->
+
+        </article><!-- .hentry -->
+
+
+
+    </section>
+
+    <!-- ADS -->
+    <section class="widget">
+        <!-- Widget Header -->
+        <header class="clearfix"><h4>Publicités</h4></header>
+
+        <!-- Widget Content -->
+        <div class="frame thick">
+            <a href="http://themeforest.net/user/friskamax/portfolio?ref=friskamax" target="_blank">
+                <img src="http://placehold.it/728x90/f0f0f9" alt="ads">
+            </a>
+        </div>
+        <img src="{{ asset('/img/shadow.png') }}" alt="shadow" class="shadow">
+    </section>
+
+{% endblock %}

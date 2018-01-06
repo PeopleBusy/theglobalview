@@ -118,9 +118,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_homepage')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::indexAction',  '_locale' => 'en',));
         }
 
-        // global_view_posts_by_subcategory
-        if (0 === strpos($pathinfo, '/posts') && preg_match('#^/posts/(?P<page>[^/]++)/subcategory/(?P<id>[^/]++)(?:/(?P<_locale>en|fr|de))?$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_posts_by_subcategory')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::subcategorypostsAction',  '_locale' => 'en',  'page' => 1,));
+        if (0 === strpos($pathinfo, '/post')) {
+            // global_view_posts_by_subcategory
+            if (0 === strpos($pathinfo, '/posts') && preg_match('#^/posts/(?P<page>[^/]++)/subcategory/(?P<id>[^/]++)(?:/(?P<_locale>en|fr|de))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_posts_by_subcategory')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::subcategorypostsAction',  '_locale' => 'en',  'page' => 1,));
+            }
+
+            // global_view_post_detail
+            if (preg_match('#^/post/(?P<page>[^/]++)/detail/(?P<id>[^/]++)(?:/(?P<_locale>en|fr|de))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'global_view_post_detail')), array (  '_controller' => 'GlobalViewBundle\\Controller\\DefaultController::detailpostAction',  '_locale' => 'en',  'page' => 1,));
+            }
+
         }
 
         // global_login
