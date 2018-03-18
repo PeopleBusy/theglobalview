@@ -15,11 +15,11 @@ class __TwigTemplate_8e5cbaa7a57f517217064728204b9629e0797b6987ea57682da229c336f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_686f9fdc7e6c6ac1b25be87f25b7ad9570e052e1f4712a1e65cc29d2198114e2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_686f9fdc7e6c6ac1b25be87f25b7ad9570e052e1f4712a1e65cc29d2198114e2->enter($__internal_686f9fdc7e6c6ac1b25be87f25b7ad9570e052e1f4712a1e65cc29d2198114e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/login:login.html.twig"));
+        $__internal_20b06cc1f74bf0e6e4349b3c706051430a9f500639fedbcfff9199641089425c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_20b06cc1f74bf0e6e4349b3c706051430a9f500639fedbcfff9199641089425c->enter($__internal_20b06cc1f74bf0e6e4349b3c706051430a9f500639fedbcfff9199641089425c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/login:login.html.twig"));
 
-        $__internal_0027ef3ccd5a0b5acf26c7aa9b055e9a300b876e0c1da994d15882d31f639430 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0027ef3ccd5a0b5acf26c7aa9b055e9a300b876e0c1da994d15882d31f639430->enter($__internal_0027ef3ccd5a0b5acf26c7aa9b055e9a300b876e0c1da994d15882d31f639430_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/login:login.html.twig"));
+        $__internal_3f6117dba03b7f23a4df297205caf591ebbf6efbd1aa5dfba52ee6ca84424910 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3f6117dba03b7f23a4df297205caf591ebbf6efbd1aa5dfba52ee6ca84424910->enter($__internal_3f6117dba03b7f23a4df297205caf591ebbf6efbd1aa5dfba52ee6ca84424910_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default/login:login.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -37,7 +37,7 @@ class __TwigTemplate_8e5cbaa7a57f517217064728204b9629e0797b6987ea57682da229c336f
     <!-- Stylesheets -->
     <link href=\"";
         // line 14
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/css/style.min.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/css/style.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
     <link href=\"";
         // line 15
@@ -73,7 +73,7 @@ class __TwigTemplate_8e5cbaa7a57f517217064728204b9629e0797b6987ea57682da229c336f
 
     <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 32
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/logo_global.png"), "html", null, true);
         echo "\" />
     <style>
         .sf-display-none{
@@ -139,10 +139,10 @@ class __TwigTemplate_8e5cbaa7a57f517217064728204b9629e0797b6987ea57682da229c336f
 </html>
 ";
         
-        $__internal_686f9fdc7e6c6ac1b25be87f25b7ad9570e052e1f4712a1e65cc29d2198114e2->leave($__internal_686f9fdc7e6c6ac1b25be87f25b7ad9570e052e1f4712a1e65cc29d2198114e2_prof);
+        $__internal_20b06cc1f74bf0e6e4349b3c706051430a9f500639fedbcfff9199641089425c->leave($__internal_20b06cc1f74bf0e6e4349b3c706051430a9f500639fedbcfff9199641089425c_prof);
 
         
-        $__internal_0027ef3ccd5a0b5acf26c7aa9b055e9a300b876e0c1da994d15882d31f639430->leave($__internal_0027ef3ccd5a0b5acf26c7aa9b055e9a300b876e0c1da994d15882d31f639430_prof);
+        $__internal_3f6117dba03b7f23a4df297205caf591ebbf6efbd1aa5dfba52ee6ca84424910->leave($__internal_3f6117dba03b7f23a4df297205caf591ebbf6efbd1aa5dfba52ee6ca84424910_prof);
 
     }
 
@@ -184,7 +184,7 @@ class __TwigTemplate_8e5cbaa7a57f517217064728204b9629e0797b6987ea57682da229c336f
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets -->
-    <link href=\"{{ asset('/css/style.min.css') }}\" rel=\"stylesheet\">
+    <link href=\"{{ asset('/css/style.css') }}\" rel=\"stylesheet\">
     <link href=\"{{ asset('/css/custom.css') }}\" rel=\"stylesheet\">
 
     <!-- Flags icons css -->
@@ -202,7 +202,7 @@ class __TwigTemplate_8e5cbaa7a57f517217064728204b9629e0797b6987ea57682da229c336f
     <script src=\"{{ asset('/js/ie8.js') }}\"></script>
     <![endif]-->
 
-    <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('favicon.ico') }}\" />
+    <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/img/logo_global.png') }}\" />
     <style>
         .sf-display-none{
             display: none !important;

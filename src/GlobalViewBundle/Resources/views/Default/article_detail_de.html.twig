@@ -16,8 +16,8 @@
         <article class="article-large hentry">
             <!--Image-->
             <div class="frame thick clearfix">
-                <a href="http://placehold.it/1024x512.jpg" class="image" data-lightbox title="{{ post.titleDe }}">
-                    <figure class="image-holder">
+                <a href="{{ asset('/uploads/articles/' ~ post.imageUrl ) }}" class="image" data-lightbox title="{{ post.titleDe }}">
+                    <figure class="">
                         {% if post.imageUrl %}
                             <img src="{{ asset('/uploads/articles/' ~ post.imageUrl ) }}" width="730px" height="370px" />
                         {% else %}

@@ -20,9 +20,13 @@
                             <a class="image" href="#">
                                 <figure class="image-holder">
                                     {% if p.imageUrl %}
-                                        <img src="{{ asset('/uploads/articles/' ~ p.imageUrl ) }}" width="350px" height="185px" />
+                                        <a href="{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'fr'}) }}">
+                                            <img src="{{ asset('/uploads/articles/' ~ p.imageUrl ) }}" width="350px" height="185px" />
+                                        </a>
                                     {% else %}
-                                        <img src="http://placehold.it/350x185" alt="">
+                                        <a href="{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'fr'}) }}">
+                                            <img src="http://placehold.it/350x185" alt="">
+                                        </a>
                                     {% endif %}
                                 </figure>
                                 <div class="image-light"></div>
@@ -41,7 +45,7 @@
                             <a class="hide" href="#"><span class="fa fa-comments"></span> 1,324</a> &nbsp;
                             <a class="hide" href="#"><span class="fa fa-eye"></span> 0</a>
                         </p>
-                        <p>{{ p.descriptionEn }}</p>
+                        <p>{{ (p.descriptionEn|length > 160 ? p.descriptionEn|slice(0, 160) ~ '&hellip;' : p.descriptionEn)|raw }}</p>
                     </div>
                 </div>
             </div>

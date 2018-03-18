@@ -11075,7 +11075,7 @@ aside .col-sm-6:nth-child(2n+1) {
 @media (min-width: 828px) {
   .boxed-style body,
   #sign-in body {
-    background: url('../img/body-background-medium.jpg') fixed center;
+    background: url('../img/bg_img5.jpg') fixed center;
     margin: 45px;
   }
 }
@@ -11088,6 +11088,6 @@ aside .col-sm-6:nth-child(2n+1) {
 @media (min-width: 1367px) {
   .boxed-style body,
   #sign-in body {
-    background-image: url('../img/body-background-large.jpg');
+    background-image: url('../img/bg_img5.jpg') !important;
   }
 }

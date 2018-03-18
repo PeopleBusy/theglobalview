@@ -15,20 +15,20 @@ class __TwigTemplate_67ac38eb8851a1e005ef822c718c50ff1a2b331fe31ad61881edc4b6ce0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_57dbf734d52d1d673ce141f1835d50b5d12994f65da938911bb709c6944c6bf9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_57dbf734d52d1d673ce141f1835d50b5d12994f65da938911bb709c6944c6bf9->enter($__internal_57dbf734d52d1d673ce141f1835d50b5d12994f65da938911bb709c6944c6bf9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_options.html.php"));
+        $__internal_1f28876c77a821ad306772b7fd62248d39a1e1e0ae122b3ecffac4c48a8dde36 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1f28876c77a821ad306772b7fd62248d39a1e1e0ae122b3ecffac4c48a8dde36->enter($__internal_1f28876c77a821ad306772b7fd62248d39a1e1e0ae122b3ecffac4c48a8dde36_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_options.html.php"));
 
-        $__internal_7799f794aa7602948c4b097060ab05c4c018596bb2b63bd7fe20ae7c4b992dbd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7799f794aa7602948c4b097060ab05c4c018596bb2b63bd7fe20ae7c4b992dbd->enter($__internal_7799f794aa7602948c4b097060ab05c4c018596bb2b63bd7fe20ae7c4b992dbd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_options.html.php"));
+        $__internal_6a9c7e8e0c029bb0eb0da4c0523c1b7b045872a40dca390877d9bf9011bbc78a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6a9c7e8e0c029bb0eb0da4c0523c1b7b045872a40dca390877d9bf9011bbc78a->enter($__internal_6a9c7e8e0c029bb0eb0da4c0523c1b7b045872a40dca390877d9bf9011bbc78a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_options.html.php"));
 
         // line 1
         echo "<?php echo \$view['form']->block(\$form, 'choice_widget_options') ?>
 ";
         
-        $__internal_57dbf734d52d1d673ce141f1835d50b5d12994f65da938911bb709c6944c6bf9->leave($__internal_57dbf734d52d1d673ce141f1835d50b5d12994f65da938911bb709c6944c6bf9_prof);
+        $__internal_1f28876c77a821ad306772b7fd62248d39a1e1e0ae122b3ecffac4c48a8dde36->leave($__internal_1f28876c77a821ad306772b7fd62248d39a1e1e0ae122b3ecffac4c48a8dde36_prof);
 
         
-        $__internal_7799f794aa7602948c4b097060ab05c4c018596bb2b63bd7fe20ae7c4b992dbd->leave($__internal_7799f794aa7602948c4b097060ab05c4c018596bb2b63bd7fe20ae7c4b992dbd_prof);
+        $__internal_6a9c7e8e0c029bb0eb0da4c0523c1b7b045872a40dca390877d9bf9011bbc78a->leave($__internal_6a9c7e8e0c029bb0eb0da4c0523c1b7b045872a40dca390877d9bf9011bbc78a_prof);
 
     }
 

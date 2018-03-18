@@ -16,8 +16,8 @@
         <article class="article-large hentry">
             <!--Image-->
             <div class="frame thick clearfix">
-                <a href="http://placehold.it/1024x512.jpg" class="image" data-lightbox title="{{ post.titleFr }}">
-                    <figure class="image-holder">
+                <a href="{{ asset('/uploads/articles/' ~ post.imageUrl ) }}" class="image" data-lightbox title="{{ post.titleFr }}">
+                    <figure class="">
                         {% if post.imageUrl %}
                             <img src="{{ asset('/uploads/articles/' ~ post.imageUrl ) }}" width="730px" height="370px" />
                         {% else %}
@@ -46,7 +46,7 @@
             <div class="entry-content">
 
                 <a class="pull-right" href="{{ path('global_view_posts_by_subcategory', {'id' : post.subcategory.id, '_locale' : 'fr'}) }}">
-                    <span class="fa fa-folder"></span> {{ post.subcategory.nomEn }}</a>
+                    <span class="fa fa-folder"></span> {{ post.subcategory.nomFr }}</a>
                 <p>
                     {{ post.descriptionFr }}
                 </p>

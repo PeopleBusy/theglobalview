@@ -21,29 +21,29 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b6658f3d2971afc7dfe2fe8a19f6114c0bf6b6a6634e00a51746b9df14eda022 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b6658f3d2971afc7dfe2fe8a19f6114c0bf6b6a6634e00a51746b9df14eda022->enter($__internal_b6658f3d2971afc7dfe2fe8a19f6114c0bf6b6a6634e00a51746b9df14eda022_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default:index_en.html.twig"));
+        $__internal_ccfcaee9a637ec7fc94861bc4c5d90e8bd9f5d1109ff8283daa5dbd142ce9950 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ccfcaee9a637ec7fc94861bc4c5d90e8bd9f5d1109ff8283daa5dbd142ce9950->enter($__internal_ccfcaee9a637ec7fc94861bc4c5d90e8bd9f5d1109ff8283daa5dbd142ce9950_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default:index_en.html.twig"));
 
-        $__internal_2c578b8cdedb35078de69b8d6fe926ed42ea89b51e22cc4839596875b0903c39 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2c578b8cdedb35078de69b8d6fe926ed42ea89b51e22cc4839596875b0903c39->enter($__internal_2c578b8cdedb35078de69b8d6fe926ed42ea89b51e22cc4839596875b0903c39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default:index_en.html.twig"));
+        $__internal_666038c6715238d6b4cb26e95c1793eb31db41ab10b24494c2b7eac8de2c23ca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_666038c6715238d6b4cb26e95c1793eb31db41ab10b24494c2b7eac8de2c23ca->enter($__internal_666038c6715238d6b4cb26e95c1793eb31db41ab10b24494c2b7eac8de2c23ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GlobalViewBundle:Default:index_en.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b6658f3d2971afc7dfe2fe8a19f6114c0bf6b6a6634e00a51746b9df14eda022->leave($__internal_b6658f3d2971afc7dfe2fe8a19f6114c0bf6b6a6634e00a51746b9df14eda022_prof);
+        $__internal_ccfcaee9a637ec7fc94861bc4c5d90e8bd9f5d1109ff8283daa5dbd142ce9950->leave($__internal_ccfcaee9a637ec7fc94861bc4c5d90e8bd9f5d1109ff8283daa5dbd142ce9950_prof);
 
         
-        $__internal_2c578b8cdedb35078de69b8d6fe926ed42ea89b51e22cc4839596875b0903c39->leave($__internal_2c578b8cdedb35078de69b8d6fe926ed42ea89b51e22cc4839596875b0903c39_prof);
+        $__internal_666038c6715238d6b4cb26e95c1793eb31db41ab10b24494c2b7eac8de2c23ca->leave($__internal_666038c6715238d6b4cb26e95c1793eb31db41ab10b24494c2b7eac8de2c23ca_prof);
 
     }
 
     // line 3
     public function block_article_content($context, array $blocks = array())
     {
-        $__internal_2c12d40707f8fd61cea7e23f25508c857775b45971c8be892df0435dd0aa91dc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2c12d40707f8fd61cea7e23f25508c857775b45971c8be892df0435dd0aa91dc->enter($__internal_2c12d40707f8fd61cea7e23f25508c857775b45971c8be892df0435dd0aa91dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_content"));
+        $__internal_aa28c56cbf99749832cb6b7871ffdf342347c5cbd9f477085758761a1845997b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_aa28c56cbf99749832cb6b7871ffdf342347c5cbd9f477085758761a1845997b->enter($__internal_aa28c56cbf99749832cb6b7871ffdf342347c5cbd9f477085758761a1845997b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_content"));
 
-        $__internal_b4a99dda4eb90cbd6e5594fa16d46ac31d97f0f4b222d92900b5fb039aa2879c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b4a99dda4eb90cbd6e5594fa16d46ac31d97f0f4b222d92900b5fb039aa2879c->enter($__internal_b4a99dda4eb90cbd6e5594fa16d46ac31d97f0f4b222d92900b5fb039aa2879c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_content"));
+        $__internal_29fa85435563b9699e0cf31dc89ee7534a8d64eaae828c49784f687000bcc297 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_29fa85435563b9699e0cf31dc89ee7534a8d64eaae828c49784f687000bcc297->enter($__internal_29fa85435563b9699e0cf31dc89ee7534a8d64eaae828c49784f687000bcc297_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "article_content"));
 
         // line 4
         echo "
@@ -73,23 +73,32 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
             // line 22
             if ($this->getAttribute($context["p"], "imageUrl", array())) {
                 // line 23
-                echo "                                        <img src=\"";
+                echo "                                        <a href=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_view_post_detail", array("id" => $this->getAttribute($context["p"], "id", array()), "_locale" => "fr")), "html", null, true);
+                echo "\">
+                                            <img src=\"";
+                // line 24
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(("/uploads/articles/" . $this->getAttribute($context["p"], "imageUrl", array()))), "html", null, true);
                 echo "\" width=\"350px\" height=\"185px\" />
+                                        </a>
                                     ";
             } else {
-                // line 25
-                echo "                                        <img src=\"http://placehold.it/350x185\" alt=\"\">
+                // line 27
+                echo "                                        <a href=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_view_post_detail", array("id" => $this->getAttribute($context["p"], "id", array()), "_locale" => "fr")), "html", null, true);
+                echo "\">
+                                            <img src=\"http://placehold.it/350x185\" alt=\"\">
+                                        </a>
                                     ";
             }
-            // line 27
+            // line 31
             echo "                                </figure>
                                 <div class=\"image-light\"></div>
                                 <span class=\"dashicons dashicons-format-gallery\"></span>
                             </a>
                         </div>
                         <img src=\"";
-            // line 32
+            // line 36
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/shadow.png"), "html", null, true);
             echo "\" class=\"shadow\" alt=\"shadow\">
                     </div>
@@ -97,18 +106,18 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
                     <!--Content-->
                     <div class=\"col-sm-6\">
                         <h4><a href=\"";
-            // line 37
+            // line 41
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_view_post_detail", array("id" => $this->getAttribute($context["p"], "id", array()), "_locale" => "en")), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "titleEn", array()), "html", null, true);
             echo "</a></h4>
                         <p class=\"post-meta\">
                             <a href=\"#\"><span class=\"fa fa-clock-o\"></span> ";
-            // line 39
+            // line 43
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["p"], "dateCreation", array()), "d/m/Y H:i:s"), "html", null, true);
             echo "</a> &nbsp;
                             <a href=\"";
-            // line 40
+            // line 44
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("global_view_posts_by_subcategory", array("id" => $this->getAttribute($this->getAttribute($context["p"], "subcategory", array()), "id", array()), "_locale" => "en")), "html", null, true);
             echo "\"><span class=\"fa fa-folder\"></span> ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "subcategory", array()), "nomEn", array()), "html", null, true);
@@ -117,8 +126,8 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
                             <a class=\"hide\" href=\"#\"><span class=\"fa fa-eye\"></span> 0</a>
                         </p>
                         <p>";
-            // line 44
-            echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "descriptionEn", array()), "html", null, true);
+            // line 48
+            echo (((twig_length_filter($this->env, $this->getAttribute($context["p"], "descriptionEn", array())) > 160)) ? ((twig_slice($this->env, $this->getAttribute($context["p"], "descriptionEn", array()), 0, 160) . "&hellip;")) : ($this->getAttribute($context["p"], "descriptionEn", array())));
             echo "</p>
                     </div>
                 </div>
@@ -129,18 +138,18 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 50
+        // line 54
         echo "
         ";
-        // line 51
+        // line 55
         if (($context["pagination"] ?? $this->getContext($context, "pagination"))) {
-            // line 52
+            // line 56
             echo "            ";
-            $this->loadTemplate("GlobalViewBundle:Default:pagination.html.twig", "GlobalViewBundle:Default:index_en.html.twig", 52)->display($context);
-            // line 53
+            $this->loadTemplate("GlobalViewBundle:Default:pagination.html.twig", "GlobalViewBundle:Default:index_en.html.twig", 56)->display($context);
+            // line 57
             echo "        ";
         }
-        // line 54
+        // line 58
         echo "    </section>
 
     <!-- ADS -->
@@ -155,17 +164,17 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
             </a>
         </div>
         <img src=\"";
-        // line 67
+        // line 71
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("/img/shadow.png"), "html", null, true);
         echo "\" alt=\"shadow\" class=\"shadow\">
     </section>
 
 ";
         
-        $__internal_b4a99dda4eb90cbd6e5594fa16d46ac31d97f0f4b222d92900b5fb039aa2879c->leave($__internal_b4a99dda4eb90cbd6e5594fa16d46ac31d97f0f4b222d92900b5fb039aa2879c_prof);
+        $__internal_29fa85435563b9699e0cf31dc89ee7534a8d64eaae828c49784f687000bcc297->leave($__internal_29fa85435563b9699e0cf31dc89ee7534a8d64eaae828c49784f687000bcc297_prof);
 
         
-        $__internal_2c12d40707f8fd61cea7e23f25508c857775b45971c8be892df0435dd0aa91dc->leave($__internal_2c12d40707f8fd61cea7e23f25508c857775b45971c8be892df0435dd0aa91dc_prof);
+        $__internal_aa28c56cbf99749832cb6b7871ffdf342347c5cbd9f477085758761a1845997b->leave($__internal_aa28c56cbf99749832cb6b7871ffdf342347c5cbd9f477085758761a1845997b_prof);
 
     }
 
@@ -181,7 +190,7 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
 
     public function getDebugInfo()
     {
-        return array (  159 => 67,  144 => 54,  141 => 53,  138 => 52,  136 => 51,  133 => 50,  121 => 44,  112 => 40,  108 => 39,  101 => 37,  93 => 32,  86 => 27,  82 => 25,  76 => 23,  74 => 22,  65 => 15,  61 => 14,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  168 => 71,  153 => 58,  150 => 57,  147 => 56,  145 => 55,  142 => 54,  130 => 48,  121 => 44,  117 => 43,  110 => 41,  102 => 36,  95 => 31,  87 => 27,  81 => 24,  76 => 23,  74 => 22,  65 => 15,  61 => 14,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -216,9 +225,13 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
                             <a class=\"image\" href=\"#\">
                                 <figure class=\"image-holder\">
                                     {% if p.imageUrl %}
-                                        <img src=\"{{ asset('/uploads/articles/' ~ p.imageUrl ) }}\" width=\"350px\" height=\"185px\" />
+                                        <a href=\"{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'fr'}) }}\">
+                                            <img src=\"{{ asset('/uploads/articles/' ~ p.imageUrl ) }}\" width=\"350px\" height=\"185px\" />
+                                        </a>
                                     {% else %}
-                                        <img src=\"http://placehold.it/350x185\" alt=\"\">
+                                        <a href=\"{{ path('global_view_post_detail', {'id' : p.id, '_locale' : 'fr'}) }}\">
+                                            <img src=\"http://placehold.it/350x185\" alt=\"\">
+                                        </a>
                                     {% endif %}
                                 </figure>
                                 <div class=\"image-light\"></div>
@@ -237,7 +250,7 @@ class __TwigTemplate_ea93d7465495d8310ccce037be68a9da310a4c5d4e278b4f8519ef8248c
                             <a class=\"hide\" href=\"#\"><span class=\"fa fa-comments\"></span> 1,324</a> &nbsp;
                             <a class=\"hide\" href=\"#\"><span class=\"fa fa-eye\"></span> 0</a>
                         </p>
-                        <p>{{ p.descriptionEn }}</p>
+                        <p>{{ (p.descriptionEn|length > 160 ? p.descriptionEn|slice(0, 160) ~ '&hellip;' : p.descriptionEn)|raw }}</p>
                     </div>
                 </div>
             </div>
